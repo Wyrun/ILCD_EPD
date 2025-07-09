@@ -1,0 +1,24 @@
+
+.fieldname { background: #FFF3D9; color: #002277; }
+.fieldname_epd { background: #DEE7F7; }
+.fieldname_epd2 { background: #EED6F6; }
+.root { background: #ffb951; font-weight: bold; font-style: italic; }
+.title { background: #fc9336; font-weight: bold; }
+
+
+
+
+.tablegrid-all th,
+.tablegrid-all td {
+    border: 1px solid #AB845D;
+}
+
+.tablegrid-all {
+    border-collapse: collapse;
+}
+
+table.top {
+    border: 1px solid #AB845D;
+    background-color: #FFFBF3;
+}
+
