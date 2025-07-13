@@ -1,0 +1,25 @@
+= EPD Data Set Documentation
+:doctype: book
+:stylesheet: ilcd.css
+:source-highlighter: highlightjs
+:scripts: ilcd.js
+
+This document lists the ILCD format fields that are used to model EPD data …
+
+// Include modular pieces
+include::legend.adoc[]
+
+include::controls.adoc[]
+
+// Main data table
+[cols="2,2,4,1,1,3,3,3,3,1,4,4,4", options="header", frame="all", grid="all", id="tableID"]
+|===
+| Field Name (de) | Field Name (en) | Element/Attribute Name | Requ. | Occ. | Datatype | Definition (de) | Definition (en) | Original ILCD Definition (en) | eDoc ID | EN15804+A2 mapping comment | ISO 22057 GUID | ISO 22057 mapping comment
+
+// Sample rows (Python generator will fill these)
+| Prozeßdatensatz | Process data set | processDataSet | m | [1,1] |  | Datensatz für die Dokumentation von EPD-Daten | Data set for the documentation of EPD data. | Data set for unit processes, partly terminated systems, and LCI results. May contain LCIA results. | 1 |  |  |
+
+| Version | version | @version | m |  | link:ILCD_Common_DataTypes.html#SchemaVersion[SchemaVersion] | ILCD-Formatversion | ~ | Indicates which version of the ILCD format is used | 1-a |  |  |
+
+// … rest of rows …
+|===

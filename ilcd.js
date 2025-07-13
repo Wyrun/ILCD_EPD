@@ -1,95 +1,77 @@
 // ilcd.js
-// Moved JavaScript from HTML to external file
 
 /**
- * Toggle language columns and definitions
- * @param {string} strLang - 'en' or 'de'
+ * Helper to locate the rendered <table> within AsciiDoc output
+ * @param {string} tableId - ID applied to the AsciiDoc table block
+ * @returns {HTMLTableElement|null}
  */
-function selectLang(strLang) {
-    var checkFieldNameEn = document.getElementById('checkFieldNameEn');
-    var checkFieldNameDe = document.getElementById('checkFieldNameDe');
-    var checkDefinitionEn = document.getElementById('checkDefinitionEn');
-    var checkDefinitionDe = document.getElementById('checkDefinitionDe');
-
-    if (strLang === 'en') {
-        checkFieldNameEn.checked = true;
-        checkFieldNameDe.checked = false;
-        checkDefinitionEn.checked = true;
-        checkDefinitionDe.checked = false;
-
-        toggleCol('tableID', 0, 'none');
-        toggleCol('tableID', 1, '');
-        toggleCol('tableID', 6, 'none');
-        toggleCol('tableID', 7, '');
-    } else {
-        checkFieldNameEn.checked = false;
-        checkFieldNameDe.checked = true;
-        checkDefinitionEn.checked = false;
-        checkDefinitionDe.checked = true;
-
-        toggleCol('tableID', 0, '');
-        toggleCol('tableID', 1, 'none');
-        toggleCol('tableID', 6, '');
-        toggleCol('tableID', 7, 'none');
+function getTableById(tableId) {
+    const wrapper = document.getElementById(tableId);
+    if (!wrapper) return null;
+    // Asciidoctor wraps it in <div class="tableblock">
+    if (wrapper.classList.contains('tableblock')) {
+        const tbl = wrapper.querySelector('div.content > table');
+        return tbl || null;
     }
+    // if direct <table id=>
+    if (wrapper.tagName.toLowerCase() === 'table') {
+        return wrapper;
+    }
+    return null;
 }
 
 /**
- * Show or hide a column in the table
- * @param {string} strID - ID of the table
- * @param {number} intCol - zero-based column index
- * @param {string|null} strDisplay - 'none' to hide, '' to show, or null to toggle
+ * Toggle a column's visibility
+ * @param {string} tableId
+ * @param {number} colIndex
+ * @param {string} display - '' to show, 'none' to hide
  */
-function toggleCol(strID, intCol, strDisplay) {
-    var objTable = document.getElementById(strID);
-    if (!objTable) return;
-    if (strDisplay == null) {
-        strDisplay = (objTable.rows[0].cells[intCol].style.display === 'none') ? '' : 'none';
-    }
-
-    var currentStatus = (objTable.rows[0].cells[intCol].style.display === 'none') ? 'hide' : 'show';
-    var newStatus = (strDisplay === 'none') ? 'hide' : 'show';
-
-    var action;
-    if (currentStatus === 'hide' && newStatus === 'show') action = 'show';
-    else if (currentStatus === 'show' && newStatus === 'hide') action = 'hide';
-    else action = 'none';
-
-    // Toggle each cell in that column
-    for (var i = 0; i < objTable.rows.length; i++) {
-        var cell = objTable.rows[i].cells[intCol];
+function toggleCol(tableId, colIndex, display) {
+    const table = getTableById(tableId);
+    if (!table) return;
+    Array.from(table.rows).forEach(row => {
+        const cell = row.cells[colIndex];
         if (cell && cell.colSpan === 1) {
-            cell.style.display = strDisplay;
+            cell.style.display = display;
         }
-    }
+    });
+    // adjust colSpan for any spanning cells
+    table.querySelectorAll('td[colspan], th[colspan]').forEach(cell => {
+        cell.colSpan = Math.max(1, cell.colSpan + (display === '' ? 1 : -1));
+    });
+}
 
-    // Adjust colSpan for cells that span multiple columns
-    var objCells = objTable.getElementsByTagName('td');
-    for (var j = 0; j < objCells.length; j++) {
-        var td = objCells[j];
-        if (td.colSpan > 1) {
-            if (action === 'hide') td.colSpan--;
-            else if (action === 'show') td.colSpan++;
-        }
+/**
+ * Show/hide language columns
+ * @param {'en'|'de'} lang
+ */
+function selectLang(lang) {
+    if (lang === 'en') {
+        toggleCol('tableID', 0, 'none'); // hide German header
+        toggleCol('tableID', 1, '');     // show English header
+        toggleCol('tableID', 6, 'none'); // hide Def (de)
+        toggleCol('tableID', 7, '');     // show Def (en)
+    } else {
+        toggleCol('tableID', 0, '');     // show German
+        toggleCol('tableID', 1, 'none'); // hide English
+        toggleCol('tableID', 6, '');     // show Def (de)
+        toggleCol('tableID', 7, 'none'); // hide Def (en)
     }
 }
 
 /**
- * Initialize column visibility based on checked boxes
+ * Wire up the controls on DOM ready
  */
-function initializeColumns() {
-    var form = document.getElementById('formSelectFields');
-    if (!form) return;
-
-    for (var i = 0; i < form.elements.length; i++) {
-        var el = form.elements[i];
-        if (el.type === 'checkbox') {
-            toggleCol('tableID', parseInt(el.value, 10), el.checked ? '' : 'none');
-        }
-    }
-    // Default to English
-    selectLang('en');
+function initializeControls() {
+    // language radios use inline onclick, so just honor default
+    const tableInit = document.querySelector('#formSelectLang input[value=en]');
+    if (tableInit) tableInit.checked = true, selectLang('en');
+    // toggle checkboxes
+    document.querySelectorAll('#formSelectFields input[type=checkbox]').forEach(cb => {
+        // initialize
+        toggleCol('tableID', Number(cb.value), cb.checked ? '' : 'none');
+        // inline handlers not needed; keep or remove as desired
+    });
 }
 
-// Run on page load
-window.onload = initializeColumns;
+window.addEventListener('DOMContentLoaded', initializeControls);

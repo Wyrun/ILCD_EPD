@@ -1,0 +1,21 @@
+++++
+<form id="formSelectLang">
+  Language:
+  <input type="radio" name="lang" id="langEn" value="en" checked/> <label for="langEn">en</label>
+  <input type="radio" name="lang" id="langDe" value="de"/>  <label for="langDe">de</label>
+</form>
+
+<form id="formSelectFields">
+  Show:
+  <input type="checkbox" id="checkFieldNameDe" value="0" checked/> <label for="checkFieldNameDe">Field Name (de)</label>
+  <input type="checkbox" id="checkFieldNameEn" value="1" checked/> <label for="checkFieldNameEn">Field Name (en)</label>
+  <input type="checkbox" id="checkID" value="2" checked/> <label for="checkID">Element/Attribute Name</label>
+  <input type="checkbox" id="checkRequirement" value="3" checked/> <label for="checkRequirement">Requ.</label>
+  <input type="checkbox" id="checkOccurrences" value="4" checked/> <label for="checkOccurrences">Occ.</label>
+  <input type="checkbox" id="checkDataType" value="5" checked/> <label for="checkDataType">Datatype</label>
+  <input type="checkbox" id="checkDefinitionDe" value="6" checked/> <label for="checkDefinitionDe">Definition (de)</label>
+  <input type="checkbox" id="checkDefinitionEn" value="7" checked/> <label for="checkDefinitionEn">Definition (en)</label>
+  <input type="checkbox" id="checkOrigDefinition" value="8" checked/> <label for="checkOrigDefinition">Original ILCD Definition (en)</label>
+  <input type="checkbox" id="checkEDocId" value="9" checked/> <label for="checkEDocId">eDoc ID</label>
+</form>
+++++
