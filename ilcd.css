@@ -5,6 +5,19 @@
 .root { background: #ffb951; font-weight: bold; font-style: italic; }
 .title { background: #fc9336; font-weight: bold; }
 
+/* Language-specific column visibility */
+/* Hide German columns when English is selected */
+.lang-en th:nth-child(1), .lang-en td:nth-child(1),
+.lang-en th:nth-child(7), .lang-en td:nth-child(7) {
+    display: none;
+}
+
+/* Hide English columns when German is selected */
+.lang-de th:nth-child(2), .lang-de td:nth-child(2),
+.lang-de th:nth-child(8), .lang-de td:nth-child(8) {
+    display: none;
+}
+
 
 
 
