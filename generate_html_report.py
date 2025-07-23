@@ -104,9 +104,9 @@ def generate_html_report(df_source, presentation_columns, column_map):
             # The 'Element/Attribute Name' is already formatted with HTML, so don't escape it.
             if col_name != 'Element/Attribute Name':
                 cell_content = html.escape(cell_content)
-            
-            # Wrap the first cell's content to handle the tooltip
-            if col_name == presentation_columns[0]:
+
+            # Wrap the 'Element/Attribute Name' cell's content to handle the tooltip
+            if col_name == 'Element/Attribute Name':
                 body_html += f'<td class="{col_class}" data-col="{html.escape(col_name)}"><div class="tooltip-wrapper">{cell_content}<span class="tooltip-text">{path_tooltip}</span></div></td>'
             else:
                 body_html += f'<td class="{col_class}" data-col="{html.escape(col_name)}">{cell_content}</td>'
@@ -119,19 +119,21 @@ def generate_html_report(df_source, presentation_columns, column_map):
     script_block = """
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                const langToggle = document.getElementById('lang-toggle');
+                const showEnBtn = document.getElementById('show-en-btn');
+                const showDeBtn = document.getElementById('show-de-btn');
+                const showAllBtn = document.getElementById('show-all-btn');
                 const body = document.body;
 
-                langToggle.addEventListener('click', function() {
-                    if (body.classList.contains('show-en')) {
-                        body.classList.remove('show-en');
-                        body.classList.add('show-de');
-                        langToggle.textContent = 'Show English';
-                    } else {
-                        body.classList.remove('show-de');
-                        body.classList.add('show-en');
-                        langToggle.textContent = 'Show German';
-                    }
+                showEnBtn.addEventListener('click', () => {
+                    body.className = 'show-en';
+                });
+
+                showDeBtn.addEventListener('click', () => {
+                    body.className = 'show-de';
+                });
+
+                showAllBtn.addEventListener('click', () => {
+                    body.className = ''; // Remove all classes to show both
                 });
 
                 const colToggles = document.querySelectorAll('.col-toggle');
@@ -162,12 +164,11 @@ def generate_html_report(df_source, presentation_columns, column_map):
         table {{ width: 100%; border-collapse: collapse; font-size: 14px; background-color: white; }}
         th, td {{ padding: 10px 14px; border: 1px solid #dee2e6; text-align: left; vertical-align: top; word-wrap: break-word; }}
         thead tr {{ background-color: #343a40; color: white; }}
-        /* td:nth-child(3) was causing the alignment issue */
         tbody tr:nth-of-type(even) {{ background-color: #f2f2f2; }}
         .show-de .lang-en, .show-en .lang-de {{ display: none; }}
         
         /* Custom Tooltip Styles */
-        td .tooltip-wrapper {{ position: relative; }}
+        td .tooltip-wrapper {{ position: relative; display: inline-block; }}
         td .tooltip-wrapper .tooltip-text {{
             visibility: hidden;
             opacity: 0;
@@ -195,7 +196,11 @@ def generate_html_report(df_source, presentation_columns, column_map):
 <body class="show-en">
     <h1>EPD Documentation Report</h1>
     <div class="controls">
-        <button id="lang-toggle">Show German</button>
+        <div class="lang-buttons">
+            <button id="show-en-btn">Show English</button>
+            <button id="show-de-btn">Show German</button>
+            <button id="show-all-btn">Show Both</button>
+        </div>
         <div class="col-toggles">{checkboxes_html}</div>
     </div>
     {html_table}
@@ -209,6 +214,7 @@ def generate_html_report(df_source, presentation_columns, column_map):
 if __name__ == "__main__":
     PRESENTATION_COLUMNS = [
         'Field Name (en)',
+        'Field Name (de)',
         'Element/Attribute Name',
         'Requ.',
         'Occ.',
@@ -220,7 +226,6 @@ if __name__ == "__main__":
         'EN15804+A2 mapping comment',
         'ISO 22057 GUID',
         'ISO 22057 mapping comment',
-        'Field Name (de)', # Keep for data availability, but hide with CSS
     ]
 
     COLUMN_MAPPING = {

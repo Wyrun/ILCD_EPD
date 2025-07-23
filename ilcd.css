@@ -18,12 +18,16 @@
     display: none;
 }
 
-
-
-
-.tablegrid-all th,
-.tablegrid-all td {
-    border: 1px solid #AB845D;
+/* CSS Reset for table cells to avoid conflicts */
+th, td {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal; /* Allow content to wrap */
+    overflow: visible;
+    width: auto;
+    max-width: none;
 }
 
 .tablegrid-all {
@@ -34,4 +38,3 @@ table.top {
     border: 1px solid #AB845D;
     background-color: #FFFBF3;
 }
-
