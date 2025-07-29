@@ -12,7 +12,7 @@ The primary goal is to transform a complex, bilingual (English and German) EPD s
 -   `epd_documentation_from_xlsx_combined.py`: The main script responsible for the round-trip conversion. It reads the XLSX file, generates a combined AsciiDoc file, converts it back to XLSX, and compares it with the original to ensure data integrity.
 -   `generate_html_report.py`: This script parses the `.adoc` file and generates the final, interactive HTML report.
 -   `generate_csv_from_adoc.py`: An optional script to convert the AsciiDoc file into a CSV file.
--   `epd_documentation_from_xlsx_combined.adoc`: The intermediate AsciiDoc file. It contains all the data from the source XLSX in a structured, plain-text format. This file serves as the single source of truth for the HTML report.
+-   `epd_documentation_from_xlsx_combined.adoc`: The intermediate AsciiDoc file. It contains all the data from the source XLSX in a structured, plain-text format. This will create a seamless process where updating the AsciiDoc source is all that's needed to update the live documentation.
 -   `epd_documentation_report.html`: The final output. An interactive HTML page for browsing the EPD data.
 -   `README.md`: This documentation file.
 
@@ -31,10 +31,32 @@ The workflow consists of two main stages:
 
 ## Key Features of the HTML Report
 
--   **Interactive Language Toggle**: A button allows users to switch between viewing English and German columns.
--   **Column Visibility Control**: Checkboxes let users show or hide specific columns to focus on the information they need.
--   **Hierarchical View**: The `Element/Attribute Name` column is indented to visually represent the data's parent-child relationships.
--   **Path Tooltips**: Hovering over any row displays a custom tooltip showing the full hierarchical path of that data element, providing complete context.
+-   **Interactive Language Toggle**: Buttons allow users to switch between viewing English, German, or both languages.
+-   **Column Visibility Control**: Checkboxes let users show or hide specific data columns to focus on the information they need.
+-   **Hierarchical View**: The `Element/Attribute Name` column is indented with tree lines to visually represent the data's parent-child relationships.
+-   **Path Tooltips**: Hovering over an element's name displays a tooltip showing the full hierarchical path of that data element, providing complete context.
+-   **Advanced Search**: A powerful search bar supports filtering by name, full path, and case-insensitive regular expressions. See details below.
+
+### Search Functionality Explained
+
+The search bar supports three different modes:
+
+1.  **By Element/Attribute Name (Default):**
+    *   Simply type any text into the search bar.
+    *   The table will filter to show only rows where the `Element/Attribute Name` contains your text.
+    *   *Example:* `flow` will find `flowProperties`, `flowCategorization`, etc.
+
+2.  **By Full Hierarchical Path:**
+    *   To search by a node's full path, include a period (`.`) in your search term.
+    *   The search will match against the full path tooltip of each row.
+    *   *Example:* `process.completeness` will find nodes under the `process` section related to completeness.
+
+3.  **By Regular Expression (Regex):**
+    *   The search bar supports case-insensitive JavaScript regular expressions for advanced filtering.
+    *   *Example 1 (Starts with):* `^process` will find all root elements that start with `process`.
+    *   *Example 2 (Ends with):* `Info$` will find all elements ending in `Info`.
+    *   *Example 3 (Exact match):* `^name$` will find elements that are exactly `name`.
+    *   *Example 4 (Complex path):* `process\.name` will find `name` nodes that are direct children of a `process` node (note the double backslash to escape the `.` for a literal match).
 
 ## How to Use
 
