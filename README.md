@@ -2,6 +2,10 @@
 
 This project provides a set of Python scripts to convert EPD (Environmental Product Declaration) data from an XLSX spreadsheet into a structured, bilingual AsciiDoc format and then into a final, interactive HTML report with individual attribute pages.
 
+## Live Documentation
+
+**The interactive documentation is available here: [https://wyrun.github.io/ILCD_EPD/](https://wyrun.github.io/ILCD_EPD/)**
+
 ## Project Goal
 
 The primary goal is to transform a complex, bilingual (English and German) EPD specification from an Excel file into a user-friendly, interactive HTML report. This report allows for easy navigation, language switching, and detailed inspection of the data's hierarchical structure.
@@ -92,11 +96,20 @@ The search bar supports three different modes:
 
 3.  **View the Documentation**: Open `docs/epd_documentation_report.html` or `docs/attribute_pages/index.html` in your web browser.
 
-## GitHub Pages Deployment
+## Automated Deployment with GitHub Actions
 
-This project is designed to be easily deployed using GitHub Pages. The `docs/` directory is the root for the GitHub Pages site.
+This project is configured for fully automated deployment using GitHub Actions and GitHub Pages.
 
-1.  **Push to GitHub**: Make sure your repository is pushed to GitHub.
-2.  **Enable GitHub Pages**: In your repository's settings, go to the "Pages" section.
-3.  **Configure Source**: Select the branch you want to deploy from (e.g., `main`) and set the folder to `/docs`.
-4.  **Access Your Site**: GitHub will provide you with the URL for your live documentation.
+### How It Works
+
+1.  **Push to `main`**: Whenever you push a commit to the `main` branch, it automatically triggers the GitHub Actions workflow defined in `.github/workflows/docs-build.yml`.
+2.  **Automated Build**: The workflow runs on a GitHub server. It checks out your code, installs the Python dependencies, and then runs the scripts (`generate_html_report.py`, `generate_attribute_pages.py`, etc.) to build the latest version of the documentation.
+3.  **Commit and Deploy**: After the files are generated, the workflow automatically commits the updated contents of the `docs/` folder back to your repository. 
+4.  **Live Site Update**: Because your GitHub Pages site is configured to serve from the `docs/` folder, this commit triggers a re-deployment, and your live site is updated within a minute or two.
+
+### Initial Setup
+
+For this automation to work, the following one-time setup is required:
+
+1.  **Repository Settings**: In your repository's **Settings > Actions > General**, the **Workflow permissions** must be set to **Read and write permissions** to allow the Action to push commits back to your repository.
+2.  **GitHub Pages Settings**: In **Settings > Pages**, the source must be set to **Deploy from a branch**, with the branch set to **`main`** and the folder set to **`/docs`**.
