@@ -1,10 +1,19 @@
 import pandas as pd
 import re
 import html
+import os
 
 # --- Constants ---
-ADOC_SOURCE_FILE = 'epd_documentation_from_xlsx_combined.adoc'
-HTML_OUTPUT_FILE = 'epd_documentation_report.html'
+# Define base directories
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+DOCS_DIR = os.path.join(BASE_DIR, 'docs')
+
+# Ensure output directory exists
+os.makedirs(DOCS_DIR, exist_ok=True)
+
+ADOC_SOURCE_FILE = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
+HTML_OUTPUT_FILE = os.path.join(DOCS_DIR, 'epd_documentation_report.html')
 
 # --- Data Loading and Parsing ---
 def parse_asciidoc_table(filename):

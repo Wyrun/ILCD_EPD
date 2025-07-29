@@ -241,7 +241,10 @@ def compare_xlsx_files(file1, file2, log_file):
         element_col_loc = df1.columns.get_loc('Element/Attribute Name')
         df1.insert(element_col_loc + 1, 'Indent', 0) # Default to 0 for comparison base
         # Now, populate it the same way the main script does to ensure a perfect match
-        indent_map = get_indentation_map('EPD_DataSet.html')
+        # Construct the path to the HTML file relative to the script's execution context
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(file1)))
+        html_path = os.path.join(base_dir, 'data', 'EPD_DataSet.html')
+        indent_map = get_indentation_map(html_path)
         df1['Indent'] = df1['Element/Attribute Name'].map(indent_map).fillna(0).astype(int).astype(str)
 
     # Ensure columns are in the same order, which is now guaranteed by the round-trip logic
@@ -282,11 +285,20 @@ def compare_xlsx_files(file1, file2, log_file):
 # --- Main Execution ---
 
 if __name__ == "__main__":
-    xlsx_file = 'EPD_DataSet.xlsx'
-    html_file = 'EPD_DataSet.html'
-    combined_adoc_file = 'epd_documentation_from_xlsx_combined.adoc'
-    roundtrip_xlsx_file = 'roundtrip.xlsx'
-    comparison_log_file = 'comparison_log.txt'
+    # Define base directories
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    DATA_DIR = os.path.join(BASE_DIR, 'data')
+    OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
+
+    # Ensure output directory exists
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    # Define file paths
+    xlsx_file = os.path.join(DATA_DIR, 'EPD_DataSet.xlsx')
+    html_file = os.path.join(DATA_DIR, 'EPD_DataSet.html') # Assuming this will be in data as well
+    combined_adoc_file = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
+    roundtrip_xlsx_file = os.path.join(OUTPUT_DIR, 'roundtrip.xlsx')
+    comparison_log_file = os.path.join(OUTPUT_DIR, 'comparison_log.txt')
 
     # Step 1: Convert XLSX to combined AsciiDoc
     success, columns = convert_xlsx_to_adoc(xlsx_file, html_file, combined_adoc_file)

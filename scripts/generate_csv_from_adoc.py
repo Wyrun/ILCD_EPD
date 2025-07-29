@@ -1,9 +1,17 @@
 import pandas as pd
 import re
+import os
 
 # --- Constants ---
-ADOC_SOURCE_FILE = 'epd_documentation_from_xlsx_combined.adoc'
-CSV_OUTPUT_FILE = 'epd_documentation.csv'
+# Define base directories
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'data')
+
+# Ensure output directory exists
+os.makedirs(DATA_DIR, exist_ok=True)
+
+ADOC_SOURCE_FILE = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
+CSV_OUTPUT_FILE = os.path.join(DATA_DIR, 'epd_documentation.csv')
 
 # --- Data Loading and Parsing ---
 def parse_asciidoc_table(filename):

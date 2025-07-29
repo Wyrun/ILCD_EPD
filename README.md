@@ -1,6 +1,6 @@
 # EPD/ILCD Data Documentation Workflow
 
-This project provides a set of Python scripts to convert EPD (Environmental Product Declaration) data from an XLSX spreadsheet into a structured AsciiDoc format and then into a final, interactive HTML report.
+This project provides a set of Python scripts to convert EPD (Environmental Product Declaration) data from an XLSX spreadsheet into a structured, bilingual AsciiDoc format and then into a final, interactive HTML report with individual attribute pages.
 
 ## Project Goal
 
@@ -8,12 +8,16 @@ The primary goal is to transform a complex, bilingual (English and German) EPD s
 
 ## File Structure
 
--   `ILCD_EPD_Data_Structure.xlsx`: The original source file containing the EPD data definitions in both English and German.
--   `epd_documentation_from_xlsx_combined.py`: The main script responsible for the round-trip conversion. It reads the XLSX file, generates a combined AsciiDoc file, converts it back to XLSX, and compares it with the original to ensure data integrity.
--   `generate_html_report.py`: This script parses the `.adoc` file and generates the final, interactive HTML report.
--   `generate_csv_from_adoc.py`: An optional script to convert the AsciiDoc file into a CSV file.
--   `epd_documentation_from_xlsx_combined.adoc`: The intermediate AsciiDoc file. It contains all the data from the source XLSX in a structured, plain-text format. This will create a seamless process where updating the AsciiDoc source is all that's needed to update the live documentation.
--   `epd_documentation_report.html`: The final output. An interactive HTML page for browsing the EPD data.
+-   `data/`: Contains the primary data files.
+    -   `EPD_DataSet.xlsx`: The original source file.
+    -   `epd_documentation_from_xlsx_combined.adoc`: The generated bilingual AsciiDoc source of truth.
+    -   `epd_documentation.csv`: The generated CSV version of the data.
+-   `docs/`: Contains the generated web content ready for deployment.
+    -   `epd_documentation_report.html`: The main interactive HTML report.
+    -   `attribute_pages/`: Contains individual HTML pages for each attribute.
+-   `scripts/`: Contains all the Python scripts for the workflow.
+-   `output/`: Contains temporary files generated during the workflow, such as `roundtrip.xlsx` and `comparison_log.txt`.
+-   `legacy_scripts/`: Contains older, unused scripts for archival purposes.
 -   `README.md`: This documentation file.
 
 ## Workflow Overview
@@ -60,17 +64,39 @@ The search bar supports three different modes:
 
 ## How to Use
 
-1.  **Ensure all files are in the same directory.**
-2.  **Run the data conversion and validation script** (optional, as the `.adoc` file is already provided):
+1.  **Install Dependencies**: Make sure you have Python and the required libraries installed:
     ```bash
-    python epd_documentation_from_xlsx_combined.py
+    pip install -r requirements.txt
     ```
-3.  **Generate the HTML report**:
-    ```bash
-    python generate_html_report.py
-    ```
-4.  **Open the Report**: Open `epd_documentation_report.html` in a web browser to view the interactive documentation.
-5.  **(Optional) Generate a CSV export**:
-    ```bash
-    python generate_csv_from_adoc.py
-    ```
+2.  **Run the Full Workflow**: To regenerate everything from the source XLSX, you can run the scripts in order. Note that the primary source of truth is now the AsciiDoc file, so this is typically only needed if the `EPD_DataSet.xlsx` file changes.
+
+    -   **Convert XLSX to AsciiDoc (Round-trip validation)**:
+        ```bash
+        python scripts/convert_xlsx_to_adoc.py
+        ```
+
+    -   **Generate the main HTML report**:
+        ```bash
+        python scripts/generate_html_report.py
+        ```
+
+    -   **Generate the individual attribute pages**:
+        ```bash
+        python scripts/generate_attribute_pages.py
+        ```
+
+    -   **(Optional) Generate a CSV export**:
+        ```bash
+        python scripts/generate_csv_from_adoc.py
+        ```
+
+3.  **View the Documentation**: Open `docs/epd_documentation_report.html` or `docs/attribute_pages/index.html` in your web browser.
+
+## GitHub Pages Deployment
+
+This project is designed to be easily deployed using GitHub Pages. The `docs/` directory is the root for the GitHub Pages site.
+
+1.  **Push to GitHub**: Make sure your repository is pushed to GitHub.
+2.  **Enable GitHub Pages**: In your repository's settings, go to the "Pages" section.
+3.  **Configure Source**: Select the branch you want to deploy from (e.g., `main`) and set the folder to `/docs`.
+4.  **Access Your Site**: GitHub will provide you with the URL for your live documentation.
