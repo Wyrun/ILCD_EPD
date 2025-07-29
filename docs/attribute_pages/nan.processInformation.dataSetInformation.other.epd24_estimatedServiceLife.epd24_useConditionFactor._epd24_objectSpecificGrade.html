@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@epd24:objectSpecificGrade - EPD Attribute</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+        }
+        .path {
+            color: #666;
+            font-size: 0.9em;
+            font-family: monospace;
+            background-color: #f1f3f4;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .field {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .field:last-child {
+            border-bottom: none;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        .field-value {
+            color: #555;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .field-value.empty {
+            color: #999;
+            font-style: italic;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .lang-indicator {
+            font-size: 0.8em;
+            color: #666;
+            font-weight: normal;
+        }
+        .controls {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .lang-buttons, .download-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .lang-buttons button, .download-buttons button {
+            padding: 8px 16px;
+            border: 1px solid #007bff;
+            background-color: #fff;
+            color: #007bff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .lang-buttons button:hover, .download-buttons button:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .lang-buttons button.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .download-buttons button {
+            border-color: #28a745;
+            color: #28a745;
+        }
+        .download-buttons button:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .show-en .lang-de, .show-de .lang-en {
+            display: none !important;
+        }
+        .field.lang-en, .field.lang-de {
+            transition: opacity 0.2s;
+        }
+    </style>
+</head>
+<body class="show-both">
+    <a href="javascript:window.close()" class="back-link">← Close Window</a>
+    
+    <div class="controls">
+        <div class="lang-buttons">
+            <button id="show-en-btn">Show English</button>
+            <button id="show-de-btn">Show German</button>
+            <button id="show-both-btn" class="active">Show Both</button>
+        </div>
+        <div class="download-buttons">
+            <button id="download-csv-btn">Download as CSV</button>
+            <button id="download-adoc-btn">Download as AsciiDoc</button>
+        </div>
+    </div>
+    
+    <div class="header">
+        <h1>@epd24:objectSpecificGrade</h1>
+        <div class="path">Path: nan.processInformation.dataSetInformation.other.epd24:estimatedServiceLife.epd24:useConditionFactor.@epd24:objectSpecificGrade</div>
+    </div>
+    
+    <div class="content">
+
+        <div class="field">
+            <div class="field-label">ID new</div>
+            <div class="field-value">new</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">Format version ID - meaning? When issued the first time?</div>
+            <div class="field-value">v1.3</div>
+        </div>
+
+        <div class="field lang-de">
+            <div class="field-label">Field Name <span class="lang-indicator">(German)</span></div>
+            <div class="field-value">Objekt-spezifischer Nutzungsgrad</div>
+        </div>
+
+        <div class="field lang-en">
+            <div class="field-label">Field Name <span class="lang-indicator">(English)</span></div>
+            <div class="field-value">Object specific use condition grade</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">Technically Required</div>
+            <div class="field-value">o</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">Occ.</div>
+            <div class="field-value">[0,1]</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">Datatype</div>
+            <div class="field-value">Restricted xs:int:</div>
+        </div>
+
+        <div class="field lang-de">
+            <div class="field-label">Definition <span class="lang-indicator">(German)</span></div>
+            <div class="field-value">Objekt-spezifischer Nutzungsgrad im Sinne der ISO 15686-8</div>
+        </div>
+
+        <div class="field lang-en">
+            <div class="field-label">IndData Definition - new ones <span class="lang-indicator">(English)</span></div>
+            <div class="field-value">Object-specific in-use condition grade in terms of ISO 15686-8</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">InData compliance CP-2020</div>
+            <div class="field-value">o</div>
+        </div>
+
+    </div>
+    
+    <script>
+        // Language toggle functionality
+        document.getElementById('show-en-btn').addEventListener('click', function() {
+            document.body.className = 'show-en';
+            updateActiveButton('show-en-btn');
+        });
+        
+        document.getElementById('show-de-btn').addEventListener('click', function() {
+            document.body.className = 'show-de';
+            updateActiveButton('show-de-btn');
+        });
+        
+        document.getElementById('show-both-btn').addEventListener('click', function() {
+            document.body.className = 'show-both';
+            updateActiveButton('show-both-btn');
+        });
+        
+        function updateActiveButton(activeId) {
+            document.querySelectorAll('.lang-buttons button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(activeId).classList.add('active');
+        }
+        
+        // Download functionality
+        document.getElementById('download-csv-btn').addEventListener('click', function() {
+            // Create a link to download the CSV file
+            const link = document.createElement('a');
+            link.href = '../../data/epd_documentation.csv';
+            link.download = 'epd_documentation.csv';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+        
+        document.getElementById('download-adoc-btn').addEventListener('click', function() {
+            // Create a link to download the AsciiDoc file
+            const link = document.createElement('a');
+            link.href = '../../data/epd_documentation_from_xlsx_combined.adoc';
+            link.download = 'epd_documentation_from_xlsx_combined.adoc';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+</body>
+</html>
