@@ -16,18 +16,49 @@ document.addEventListener('DOMContentLoaded', function() {
         if (table) table.classList.toggle('table-striped');
     });
 
-    // --- Language Toggling ---
+    // --- Language Toggling with Column Toggle Filtering ---
+    function updateColumnToggles(langClass) {
+        const toggleLabels = document.querySelectorAll('.col-toggle-label');
+        
+        toggleLabels.forEach(label => {
+            if (langClass === 'show-en') {
+                // Show only English and neutral columns
+                if (label.classList.contains('lang-de')) {
+                    label.style.display = 'none';
+                } else {
+                    label.style.display = '';
+                }
+            } else if (langClass === 'show-de') {
+                // Show only German and neutral columns
+                if (label.classList.contains('lang-en')) {
+                    label.style.display = 'none';
+                } else {
+                    label.style.display = '';
+                }
+            } else {
+                // Show all columns (both languages)
+                label.style.display = '';
+            }
+        });
+    }
+
     showEnBtn.addEventListener('click', () => {
         body.className = 'show-en';
+        updateColumnToggles('show-en');
     });
 
     showDeBtn.addEventListener('click', () => {
         body.className = 'show-de';
+        updateColumnToggles('show-de');
     });
 
     showAllBtn.addEventListener('click', () => {
         body.className = ''; // Remove all classes to show both
+        updateColumnToggles('');
     });
+    
+    // Initialize column toggles based on initial state
+    updateColumnToggles('show-en'); // Default state is show-en
 
     // Function to open attribute detail page
     window.openAttributePage = function(attributePath) {
@@ -35,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const sanitizedFilename = attributePath.replace(/[^a-zA-Z0-9._-]/g, '_') + '.html';
         // Construct a relative path that works both locally and on GitHub Pages.
         const relativePath = `attribute_pages/${sanitizedFilename}`;
-        window.open(relativePath, '_blank');
+        window.location.href = relativePath;
     };
 
     searchBar.addEventListener('keyup', () => {

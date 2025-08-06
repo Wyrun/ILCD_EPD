@@ -73,133 +73,10 @@ def generate_attribute_page(row_data, index):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{html.escape(element_name)} - EPD Attribute</title>
-    <style>
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }}
-        .header {{
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }}
-        .header h1 {{
-            color: #2c3e50;
-            margin: 0 0 10px 0;
-            font-size: 2.2em;
-        }}
-        .path {{
-            color: #666;
-            font-size: 0.9em;
-            font-family: monospace;
-            background-color: #f1f3f4;
-            padding: 5px 10px;
-            border-radius: 4px;
-            display: inline-block;
-        }}
-        .content {{
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }}
-        .field {{
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 15px;
-        }}
-        .field:last-child {{
-            border-bottom: none;
-        }}
-        .field-label {{
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-            font-size: 1.1em;
-        }}
-        .field-value {{
-            color: #555;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }}
-        .field-value.empty {{
-            color: #999;
-            font-style: italic;
-        }}
-        .back-link {{
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: 500;
-        }}
-        .back-link:hover {{
-            text-decoration: underline;
-        }}
-        .lang-indicator {{
-            font-size: 0.8em;
-            color: #666;
-            font-weight: normal;
-        }}
-        .controls {{
-            background-color: #fff;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }}
-        .lang-buttons, .download-buttons {{
-            display: flex;
-            gap: 10px;
-        }}
-        .lang-buttons button, .download-buttons button {{
-            padding: 8px 16px;
-            border: 1px solid #007bff;
-            background-color: #fff;
-            color: #007bff;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-        }}
-        .lang-buttons button:hover, .download-buttons button:hover {{
-            background-color: #007bff;
-            color: #fff;
-        }}
-        .lang-buttons button.active {{
-            background-color: #007bff;
-            color: #fff;
-        }}
-        .download-buttons button {{
-            border-color: #28a745;
-            color: #28a745;
-        }}
-        .download-buttons button:hover {{
-            background-color: #28a745;
-            color: #fff;
-        }}
-        .show-en .lang-de, .show-de .lang-en {{
-            display: none !important;
-        }}
-        .field.lang-en, .field.lang-de {{
-            transition: opacity 0.2s;
-        }}
-    </style>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="show-both">
-    <a href="javascript:window.close()" class="back-link">← Close Window</a>
+<body class="attribute-page show-both">
+    <a href="javascript:history.back()" class="back-link">← Back</a>
     
     <div class="controls">
         <div class="lang-buttons">
@@ -250,62 +127,27 @@ def generate_attribute_page(row_data, index):
             clean_field_name = field_name.replace(' (de)', '').strip()
             field_class += ' lang-de'
 
+        # Special formatting for enumeration values
+        if 'Enumeration values' in field_name:
+            # Split by common delimiters and create an unordered list
+            items = re.split(r'\s*[;\n]\s*', field_value_str)
+            items_html = "<ul>" + "".join(f"<li>{html.escape(item.strip())}</li>" for item in items if item.strip()) + "</ul>"
+            field_html = f'<div class="field-value">{items_html}</div>'
+        else:
+            field_html = f'<div class="field-value">{html.escape(field_value_str)}</div>'
+
         # Add the field to the page content
         page_content += f"""
         <div class="{field_class}">
             <div class="field-label">{html.escape(clean_field_name)}{lang_indicator}</div>
-            <div class="field-value">{html.escape(field_value_str)}</div>
+            {field_html}
         </div>
 """
 
     page_content += """
     </div>
     
-    <script>
-        // Language toggle functionality
-        document.getElementById('show-en-btn').addEventListener('click', function() {
-            document.body.className = 'show-en';
-            updateActiveButton('show-en-btn');
-        });
-        
-        document.getElementById('show-de-btn').addEventListener('click', function() {
-            document.body.className = 'show-de';
-            updateActiveButton('show-de-btn');
-        });
-        
-        document.getElementById('show-both-btn').addEventListener('click', function() {
-            document.body.className = 'show-both';
-            updateActiveButton('show-both-btn');
-        });
-        
-        function updateActiveButton(activeId) {
-            document.querySelectorAll('.lang-buttons button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            document.getElementById(activeId).classList.add('active');
-        }
-        
-        // Download functionality
-        document.getElementById('download-csv-btn').addEventListener('click', function() {
-            // Create a link to download the CSV file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation.csv';
-            link.download = 'epd_documentation.csv';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-        
-        document.getElementById('download-adoc-btn').addEventListener('click', function() {
-            // Create a link to download the AsciiDoc file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation_from_xlsx_combined.adoc';
-            link.download = 'epd_documentation_from_xlsx_combined.adoc';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
+    <script src="../js/attribute_script.js"></script>
 </body>
 </html>
 """
@@ -349,88 +191,16 @@ def generate_index_page(pages_info):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPD Attribute Pages - Index</title>
-    <style>
-        body {{
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }}
-        h1 {{
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-        }}
-        .controls {{
-            background-color: #fff;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }}
-        .download-buttons {{
-            display: flex;
-            gap: 10px;
-        }}
-        .download-buttons button {{
-            padding: 10px 20px;
-            border: 1px solid #28a745;
-            background-color: #fff;
-            color: #28a745;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-            font-weight: 500;
-        }}
-        .download-buttons button:hover {{
-            background-color: #28a745;
-            color: #fff;
-        }}
-        .pages-list {{
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }}
-        .page-link {{
-            display: block;
-            padding: 10px 15px;
-            margin: 5px 0;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #2c3e50;
-            transition: background-color 0.2s;
-        }}
-        .page-link:hover {{
-            background-color: #e9ecef;
-            text-decoration: none;
-        }}
-        .path {{
-            font-family: monospace;
-            font-size: 0.9em;
-            color: #666;
-        }}
-    </style>
+    <title>EPD Attribute Pages Index</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="attribute-page">
     <h1>EPD Attribute Pages</h1>
     
     <div class="controls">
         <div class="download-buttons">
-            <button id="download-csv-btn">📊 Download as CSV</button>
-            <button id="download-adoc-btn">📄 Download as AsciiDoc</button>
+            <button id="download-csv-btn">Download as CSV</button>
+            <button id="download-adoc-btn">Download as AsciiDoc</button>
         </div>
     </div>
     
@@ -446,29 +216,7 @@ def generate_index_page(pages_info):
 """
 
     index_content += """    </div>
-    
-    <script>
-        // Download functionality
-        document.getElementById('download-csv-btn').addEventListener('click', function() {
-            // Create a link to download the CSV file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation.csv';
-            link.download = 'epd_documentation.csv';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-        
-        document.getElementById('download-adoc-btn').addEventListener('click', function() {
-            // Create a link to download the AsciiDoc file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation_from_xlsx_combined.adoc';
-            link.download = 'epd_documentation_from_xlsx_combined.adoc';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
+    <script src="../js/attribute_script.js"></script>
 </body>
 </html>
 """

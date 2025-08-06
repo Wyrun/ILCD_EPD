@@ -3,88 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPD Attribute Pages - Index</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .controls {
-            background-color: #fff;
-            padding: 15px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .download-buttons {
-            display: flex;
-            gap: 10px;
-        }
-        .download-buttons button {
-            padding: 10px 20px;
-            border: 1px solid #28a745;
-            background-color: #fff;
-            color: #28a745;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: all 0.2s;
-            font-weight: 500;
-        }
-        .download-buttons button:hover {
-            background-color: #28a745;
-            color: #fff;
-        }
-        .pages-list {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .page-link {
-            display: block;
-            padding: 10px 15px;
-            margin: 5px 0;
-            background-color: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 4px;
-            text-decoration: none;
-            color: #2c3e50;
-            transition: background-color 0.2s;
-        }
-        .page-link:hover {
-            background-color: #e9ecef;
-            text-decoration: none;
-        }
-        .path {
-            font-family: monospace;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    <title>EPD Attribute Pages Index</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="attribute-page">
     <h1>EPD Attribute Pages</h1>
     
     <div class="controls">
         <div class="download-buttons">
-            <button id="download-csv-btn">📊 Download as CSV</button>
-            <button id="download-adoc-btn">📄 Download as AsciiDoc</button>
+            <button id="download-csv-btn">Download as CSV</button>
+            <button id="download-adoc-btn">Download as AsciiDoc</button>
         </div>
     </div>
     
@@ -1399,28 +1327,6 @@
             <div class="path">nan</div>
         </a>
     </div>
-    
-    <script>
-        // Download functionality
-        document.getElementById('download-csv-btn').addEventListener('click', function() {
-            // Create a link to download the CSV file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation.csv';
-            link.download = 'epd_documentation.csv';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-        
-        document.getElementById('download-adoc-btn').addEventListener('click', function() {
-            // Create a link to download the AsciiDoc file
-            const link = document.createElement('a');
-            link.href = '../../data/epd_documentation_from_xlsx_combined.adoc';
-            link.download = 'epd_documentation_from_xlsx_combined.adoc';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
+    <script src="../js/attribute_script.js"></script>
 </body>
 </html>

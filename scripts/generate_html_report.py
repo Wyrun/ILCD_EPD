@@ -84,12 +84,25 @@ def generate_html_report(df_source, presentation_columns, column_map):
         if '(en)' in col_name: return 'lang-en'
         return ''
 
-    # Create Checkboxes HTML
+    # Create Checkboxes HTML with improved logic
+    def should_be_togglable(col_name):
+        # Essential columns that should never be hidden
+        essential_cols = ['Element/Attribute Name']
+        if col_name in essential_cols:
+            return False
+        # Always visible columns (like the English definition) should not be togglable
+        if col_name == 'Original ILCD Format Definition (en)':
+            return False
+        return True
+    
     checkboxes_html = ""
     for col in presentation_columns:
-        if col not in ['Field Name (en)', 'Element/Attribute Name']:
+        if should_be_togglable(col):
+            col_class = get_col_class(col)
+            # Add language-specific classes to the toggle labels for filtering
+            toggle_class = f"col-toggle-label {col_class}".strip()
             checkboxes_html += f'''
-            <label>
+            <label class="{toggle_class}">
                 <input type="checkbox" class="col-toggle" value="{html.escape(col)}" checked>
                 {html.escape(col)}
             </label>'''
