@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Build artifacts
+output/
+docs/
+
+# IDE files
+.vscode/
+.idea/

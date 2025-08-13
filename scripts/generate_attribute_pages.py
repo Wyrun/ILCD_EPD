@@ -127,10 +127,10 @@ def generate_attribute_page(row_data, index):
             clean_field_name = field_name.replace(' (de)', '').strip()
             field_class += ' lang-de'
 
-        # Special formatting for enumeration values
-        if 'Enumeration values' in field_name:
-            # Split by common delimiters and create an unordered list
-            items = re.split(r'\s*[;\n]\s*', field_value_str)
+        # Special formatting for multiline values to render as a list
+        if '\n' in field_value_str:
+            # Split by newlines and create an unordered list
+            items = field_value_str.split('\n')
             items_html = "<ul>" + "".join(f"<li>{html.escape(item.strip())}</li>" for item in items if item.strip()) + "</ul>"
             field_html = f'<div class="field-value">{items_html}</div>'
         else:
