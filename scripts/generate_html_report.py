@@ -234,7 +234,7 @@ def generate_html_report(df_source, presentation_columns, column_map):
 <body class="show-en">
     <h1>EPD Documentation Report</h1>
     <div class="controls">
-        <input type="text" id="search-bar" placeholder="Search by Name, Path (e.g. 'proc.name'), or Regex (e.g. '^process')">
+        <input type="text" id="search-bar" placeholder="Search by Name, Path (e.g. 'proc/name'), or Regex (e.g. '^process')">
         <div class="lang-buttons">
             <button id="show-en-btn">Show English</button>
             <button id="show-de-btn">Show German</button>

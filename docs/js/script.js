@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchBar.addEventListener('keyup', () => {
         const searchTerm = searchBar.value;
-        const isPathSearch = searchTerm.includes('.');
+        const isPathSearch = searchTerm.includes('/');
         let searchRegex;
 
         try {

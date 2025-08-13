@@ -137,7 +137,7 @@ def convert_xlsx_to_adoc(xlsx_path, html_path, output_path):
         for i in range(indent + 1):
             if i in path_stack:
                 current_path.append(path_stack[i])
-        paths.append('.'.join(current_path))
+        paths.append('/'.join(current_path))
     df['Path'] = paths
 
     # Ensure 'Indent' and 'Path' are the last columns for clarity
