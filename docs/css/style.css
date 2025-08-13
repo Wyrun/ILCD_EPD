@@ -225,3 +225,9 @@ td .tooltip-wrapper:hover .tooltip-text {
 .view-attr-btn:hover {
     background-color: #0056b3;
 }
+
+/* Gray styling for identical definitions */
+.gray-definition {
+    color: #888;
+    font-style: italic;
+}

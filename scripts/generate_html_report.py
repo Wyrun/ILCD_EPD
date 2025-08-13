@@ -57,6 +57,8 @@ def parse_asciidoc_table(filename):
     return df
 
 # --- HTML Generation ---
+
+
 def generate_html_report(df_source, presentation_columns, column_map):
     """Generates the final interactive HTML report from the DataFrame."""
     # Create a new DataFrame for presentation, ensuring it's a copy.
@@ -73,6 +75,7 @@ def generate_html_report(df_source, presentation_columns, column_map):
             indentation = df_source['Indent'].apply(lambda x: '&nbsp;&nbsp;&nbsp;&nbsp;' * x) if 'Indent' in df_source.columns else ''
             values = df_source.get(source_col_name, '').astype(str)
             df_presentation[col_name] = indentation + values
+
         # For all other columns, just copy the data.
         else:
             df_presentation[col_name] = df_source.get(source_col_name, '')
@@ -125,11 +128,25 @@ def generate_html_report(df_source, presentation_columns, column_map):
                 i += 1
         return enum_groups
 
-    def format_cell_html(col_name, value_str):
+    def format_cell_html(col_name, value_str, is_definitions_identical=False):
         """Format cell content for regular (non-enum) cells."""
         if value_str is None:
             return ''
-        return html.escape(str(value_str))
+        
+        # Replace '~' in Definition (en) column with the original definition
+        if col_name == 'Definition (en)' and str(value_str).strip() == '~' and original_definition:
+            escaped_value = html.escape(str(original_definition))
+        elif str(value_str).strip() == '~' and original_definition:
+            # Also replace '~' in any column if we have an original definition
+            escaped_value = html.escape(str(original_definition))
+        else:
+            escaped_value = html.escape(str(value_str))
+        
+        # Apply gray styling to Original ILCD Format Definition when identical to Definition
+        if col_name == 'Original ILCD Format Definition (en)' and is_definitions_identical:
+            return f'<span class="gray-definition">{escaped_value}</span>'
+        
+        return escaped_value
 
     # Create Checkboxes HTML with improved logic
     def should_be_togglable(col_name):
@@ -171,6 +188,10 @@ def generate_html_report(df_source, presentation_columns, column_map):
             
         path_tooltip = html.escape(str(df_source.loc[index, 'Path'])) if 'Path' in df_source.columns else ''
         attribute_path = str(df_source.loc[index, 'Path']) if 'Path' in df_source.columns else f'row_{index}'
+        
+        # Check if definitions are identical for this row (for gray styling)
+        # The flag must be read from the original df_source using the current row's index.
+        is_definitions_identical = str(df_source.loc[index].get('_definitions_identical', 'False')) == 'True'
         
         # Check if this row starts an enum group
         enum_group = next((g for g in enum_groups if g[0] == index), None)
@@ -216,8 +237,12 @@ def generate_html_report(df_source, presentation_columns, column_map):
                 body_html += f'</div>'
                 body_html += f'</td>'
             else:
-                formatted = format_cell_html(col, cell_value)
-                body_html += f'<td class="{col_class}" data-col="{html.escape(col)}">{formatted}</td>'
+                cell_class = get_col_class(col)
+                if col == 'Original ILCD Format Definition (en)' and is_definitions_identical:
+                    cell_class += ' gray-definition'
+
+                formatted = format_cell_html(col, cell_value, is_definitions_identical)
+                body_html += f'<td class="{cell_class}" data-col="{html.escape(col)}">{formatted}</td>'
         body_html += "</tr>"
     body_html += "</tbody>"
 

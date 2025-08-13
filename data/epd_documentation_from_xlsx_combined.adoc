@@ -61,6 +61,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | [role="title"]##ISO 21930 required information##
 | [role="title"]##Indent##
 | [role="title"]##Path##
+| [role="title"]##_definitions_identical##
 | ##1.0##
 | ####
 | ####
@@ -93,6 +94,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##0##
 | ##processDataSet##
+| ##False##
 | ##2.0##
 | ####
 | ####
@@ -107,7 +109,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##SchemaVersion##
 | ##ILCD-Formatversion##
 | ##Indicates, which version of the ILCD format is used##
-| ##~##
+| ####
 | ####
 | ##m##
 | ####
@@ -125,6 +127,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##1##
 | ##processDataSet/version##
+| ##False##
 | ##3.0##
 | ####
 | ####
@@ -157,6 +160,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##1##
 | ##processDataSet/epd2:epd-version##
+| ##False##
 | ##4.0##
 | ##Ambigouous fieldname here and 180 / ID A6.1 location --> 'location table'?##
 | ####
@@ -171,7 +175,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##String##
 | ##Referenz auf Dokument mit Ortscodes##
 | ##contains reference to used location table for this dataset##
-| ##~##
+| ####
 | ####
 | ##m##
 | ####
@@ -189,6 +193,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##1##
 | ##processDataSet/locations##
+| ##False##
 | ##5.0##
 | ####
 | ####
@@ -203,7 +208,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##boolean##
 | ##Gibt an, ob dieser Datensatz nur Metadaten enthält (kein Abschnitt Exchanges und keine LCIAResults)##
 | ##Indicates whether this data set contains only meta data (no exchanges section).##
-| ##~##
+| ####
 | ####
 | ##o##
 | ####
@@ -221,6 +226,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##1##
 | ##processDataSet/metaDataOnly##
+| ##False##
 | ##6.0##
 | ####
 | ####
@@ -253,6 +259,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##1##
 | ##processDataSet/processInformation##
+| ##False##
 | ##7.0##
 | ####
 | ####
@@ -285,6 +292,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ####
 | ##2##
 | ##processDataSet/processInformation/dataSetInformation##
+| ##False##
 | ##8.0##
 | ##What shall we do in future with the reference to FAQ?##
 | ####
@@ -299,7 +307,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##UUID##
 | ##UUID des Datensatzes. Zusammen mit der Versionsnummer in "Datensatzversion" wird der Datensatz damit eindeutig identifizert##
 | ##Automatically generated Universally Unique Identifier of this data set. Together with the "Data set version", the UUID uniquely identifies each data set.##
-| ##~##
+| ##Automatically generated universally unique identifier of this data set. Together with the "Data set version", the UUID uniquely identifies each data set. +
+Find further explanations in FAQ.##
 | ##Automatically generated universally unique identifier of this data set. Together with the "Data set version", the UUID uniquely identifies each data set. +
 Find further explanations in FAQ.##
 | ##m##
@@ -318,6 +327,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/UUID##
+| ##True##
 | ##9.0##
 | ##line 9 & 10 redundant? Example? Assumption editors: This is the "heading" of line 10.##
 | ##this was specified before in ToD##
@@ -350,6 +360,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/name##
+| ##False##
 | ##10.0##
 | ##line 9 & 10 redundan example? Assumption editors: This is the "heading" of line 10.##
 | ####
@@ -364,7 +375,7 @@ Find further explanations in FAQ.##
 | ##StringMultiLang##
 | ##Allgemeiner Name des Produkts oder Systems##
 | ##General descriptive name of the process and/or its main good(s) or service(s) and/or it's level of processing.##
-| ##~##
+| ####
 | ####
 | ##o##
 | ####
@@ -382,6 +393,7 @@ Find further explanations in FAQ.##
 | ####
 | ##4##
 | ##processDataSet/processInformation/dataSetInformation/name/baseName##
+| ##False##
 | ##11.0##
 | ##Order: directly after 'name'##
 | ####
@@ -396,7 +408,7 @@ Find further explanations in FAQ.##
 | ##FTMultiLang##
 | ##Synonyme oder alternative Bezeichnungen, durch Semikolon getrennt##
 | ##Synonyms / alternative names / brands of the good, service, or process. Separated by semicolon.##
-| ##~##
+| ####
 | ####
 | ##o##
 | ####
@@ -414,6 +426,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/synonyms##
+| ##False##
 | ##12.0##
 | ##"not used" according to InData Definitio? why is it listed then? Too unspecific. Recommendation: remove##
 | ####
@@ -446,6 +459,7 @@ Find further explanations in FAQ.##
 | ####
 | ##4##
 | ##processDataSet/processInformation/dataSetInformation/synonyms/functionalUnitFlowProperties##
+| ##False##
 | ##13.0##
 | ##ambiguous##
 | ####
@@ -478,6 +492,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/other##
+| ##False##
 | ##14.0##
 | ##heading, level 1 of chapter classification)? +
 example please##
@@ -516,6 +531,7 @@ Cement##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation##
+| ##False##
 | ##15.0##
 | ##heading, level 2 of classification information? +
 Example please##
@@ -531,7 +547,7 @@ Example please##
 | ####
 | ##ein Gliederungssystem mit Gliederungsklassen##
 | ##Optional statistical or other classification of the data set. Typically also used for structuring LCA databases.##
-| ##~##
+| ####
 | ####
 | ##o##
 | ####
@@ -549,6 +565,7 @@ Example please##
 | ####
 | ##4##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification##
+| ##False##
 | ##16.0##
 | ##data in heading classification? +
 example please##
@@ -564,7 +581,7 @@ example please##
 | ##string##
 | ##Name des Gliederungssystems, z.B. "OEKOBAU.DAT"##
 | ##Name of the classification system.##
-| ##~##
+| ####
 | ####
 | ##?##
 | ####
@@ -582,6 +599,7 @@ example please##
 | ####
 | ##5##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/name##
+| ##False##
 | ##17.0##
 | ##data in heading classification? +
 example please##
@@ -597,7 +615,7 @@ example please##
 | ##anyURI##
 | ##URL oder Dateiname der Datei, die alle Klassen dieses Gliederungssystems beschreibt.##
 | ##URL or file name of a file listing all classes of this classification system. [Notes: the referenced file has to be in form of the "ILCDClassification.xml" format. If a classification file is specified, the "class" entry should correspond to the classes defined in the classification file.]##
-| ##~##
+| ####
 | ####
 | ##?##
 | ####
@@ -615,6 +633,7 @@ example please##
 | ####
 | ##5##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/classes##
+| ##False##
 | ##18.0##
 | ##heading, level 3 of classification information? +
 example please##
@@ -630,7 +649,7 @@ example please##
 | ####
 | ##Name der Gliederungsklasse##
 | ##Name of the class.##
-| ##~##
+| ####
 | ####
 | ##?##
 | ####
@@ -648,6 +667,7 @@ example please##
 | ####
 | ##5##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class##
+| ##False##
 | ##19.0##
 | ##data in heading class name? +
 example please##
@@ -663,7 +683,7 @@ example please##
 | ##LevelType##
 | ##Wenn in einem hierarchischen Gliederungssystem mehr als eine Klasse angegeben ist, wird hiermit die Hierarchiestufe angegeben. Die oberste Hierarchiestufe ist 0.##
 | ##If more than one class is specified in a hierachical classification system, the hierarchy level (1,2,...) could be specified with this attribute of class.##
-| ##~##
+| ####
 | ####
 | ##?##
 | ####
@@ -681,6 +701,7 @@ example please##
 | ####
 | ##6##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class/level##
+| ##False##
 | ##20.0##
 | ##data in heading class name? +
 End of chapter "classification information" +
@@ -697,7 +718,7 @@ example please##
 | ##string##
 | ##Eindeutiger Identifizierer für die Klasse. Dieser sollte mit der Angabe im Beschreibungsdokument übereinstimmen und kann eine UUID oder ein beliebiger anderer Bezeichner sein.##
 | ##Unique identifier for the class. [Notes: If such identifiers are also defined in the referenced category file, they should be identical. Identifiers can be UUID's, but also other forms are allowed.]##
-| ##~##
+| ####
 | ####
 | ##?##
 | ####
@@ -715,6 +736,7 @@ example please##
 | ####
 | ##6##
 | ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class/classId##
+| ##False##
 | ##21.0##
 | ##example please##
 | ####
@@ -777,6 +799,7 @@ data.##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/generalComment##
+| ##False##
 | ##22.0##
 | ####
 | ##German name changed - why? (old name added in red)##
@@ -815,6 +838,7 @@ the modular approach##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/referenceToExternalDocumentation##
+| ##False##
 | ##23.0##
 | ##ambigouos field name##
 | ####
@@ -829,7 +853,7 @@ the modular approach##
 | ####
 | ####
 | ##May contain arbitrary content.##
-| ##~##
+| ####
 | ####
 | ##o##
 | ####
@@ -847,6 +871,7 @@ the modular approach##
 | ####
 | ##3##
 | ##processDataSet/processInformation/dataSetInformation/other##
+| ##False##
 | ##24.0##
 | ##heading; provisorial format by Gundi##
 | ####
@@ -879,6 +904,7 @@ the modular approach##
 | ####
 | ##4##
 | ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife##
+| ##False##
 | ##25.0##
 | ####
 | ####
@@ -911,6 +937,7 @@ the modular approach##
 | ####
 | ##5##
 | ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:years##
+| ##False##
 | ##26.0##
 | ##What is the differrence between cell G56 and G27 editors assume: G27 is heading of factor category, object specific ..., reference use ..., and factor (G56)##
 | ####
@@ -943,6 +970,7 @@ the modular approach##
 | ####
 | ##5##
 | ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor##
+| ##False##
 | ##27.0##
 | ####
 | ####
@@ -975,6 +1003,7 @@ the modular approach##
 | ####
 | ##6##
 | ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/epd24:factorCategory##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1007,6 +1036,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1039,6 +1069,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1071,6 +1102,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1103,6 +1135,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1135,6 +1168,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1167,6 +1201,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1199,6 +1234,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1231,6 +1267,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1263,6 +1300,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##28.0##
 | ####
 | ####
@@ -1295,6 +1333,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/epd24:objectSpecificGrade##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1327,6 +1366,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1359,6 +1399,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1391,6 +1432,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1423,6 +1465,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1455,6 +1498,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1487,6 +1531,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1519,6 +1564,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1551,6 +1597,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##29.0##
 | ####
 | ####
@@ -1583,6 +1630,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/epd24:referenceGrade##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1615,6 +1663,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1647,6 +1696,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1679,6 +1729,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1711,6 +1762,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1743,6 +1795,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1775,6 +1828,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1807,6 +1861,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -1839,6 +1894,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##30.0##
 | ##What is the differrence between cell G56 and G27 see B27##
 | ####
@@ -1871,6 +1927,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/epd24:factor##
+| ##False##
 | ##31.0##
 | ####
 | ####
@@ -1903,6 +1960,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:comment##
+| ##False##
 | ##32.0##
 | ####
 | ####
@@ -1935,6 +1993,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:referenceToStandard##
+| ##False##
 | ##33.0##
 | ####
 | ####
@@ -1967,6 +2026,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:referenceToUseConditionsDocumentation##
+| ##False##
 | ##34.0##
 | ####
 | ####
@@ -1999,6 +2059,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:comment##
+| ##False##
 | ##35.0##
 | ##Same hierarchy as Reference Service Life in years? (Provisorial format by Gundi)##
 | ####
@@ -2031,6 +2092,7 @@ the modular approach##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife##
+| ##False##
 | ##36.0##
 | ####
 | ####
@@ -2063,6 +2125,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:years##
+| ##False##
 | ##37.0##
 | ####
 | ####
@@ -2095,6 +2158,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor##
+| ##False##
 | ##38.0##
 | ####
 | ####
@@ -2127,6 +2191,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/epd24:factorCategory##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2159,6 +2224,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2191,6 +2257,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2223,6 +2290,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2255,6 +2323,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2287,6 +2356,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2319,6 +2389,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2351,6 +2422,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2383,6 +2455,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2415,6 +2488,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##39.0##
 | ####
 | ####
@@ -2447,6 +2521,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/epd24:objectSpecificGrade##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2479,6 +2554,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2511,6 +2587,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2543,6 +2620,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2575,6 +2653,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2607,6 +2686,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2639,6 +2719,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2671,6 +2752,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2703,6 +2785,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##40.0##
 | ####
 | ####
@@ -2735,6 +2818,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/epd24:referenceGrade##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2767,6 +2851,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2799,6 +2884,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2831,6 +2917,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2863,6 +2950,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2895,6 +2983,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2927,6 +3016,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2959,6 +3049,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##enumerated list, part of date field##
 | ####
@@ -2991,6 +3082,7 @@ the modular approach##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##41.0##
 | ####
 | ####
@@ -3023,6 +3115,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/epd24:factor##
+| ##False##
 | ##42.0##
 | ####
 | ####
@@ -3055,6 +3148,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:comment##
+| ##False##
 | ##43.0##
 | ####
 | ####
@@ -3087,6 +3181,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:referenceToStandard##
+| ##False##
 | ##44.0##
 | ####
 | ####
@@ -3119,6 +3214,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:referenceToUseConditionsDocumentation##
+| ##False##
 | ##45.0##
 | ####
 | ####
@@ -3151,6 +3247,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:comment##
+| ##False##
 | ##46.0##
 | ##NEW TOPIC (provisorial format by Gundi)##
 | ####
@@ -3183,6 +3280,7 @@ the modular approach##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd24:productIds##
+| ##False##
 | ##47.0##
 | ##o' until information is available in datasets.##
 | ####
@@ -3215,6 +3313,7 @@ the modular approach##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:productIds/epd24:productId##
+| ##False##
 | ##48.0##
 | ##o' until information is available in datasets.##
 | ####
@@ -3247,6 +3346,7 @@ the modular approach##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:productIds/epd24:productId/epd24:type##
+| ##False##
 | ##49.0##
 | ##NEW TOPIC not fitting to the previous one (product identifier)##
 | ##Field name and definitions mixex up compared to the old version##
@@ -3280,6 +3380,7 @@ For further details see FAQ.##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd:safetyMargins##
+| ##False##
 | ##50.0##
 | ####
 | ##Field name and definitions mixex up compared to the old version##
@@ -3312,6 +3413,7 @@ For further details see FAQ.##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd:safetyMargins/epd:margins##
+| ##False##
 | ##51.0##
 | ####
 | ##new ambigouos field name, before: 'description of generic data uncertainty penalties', in core information##
@@ -3345,6 +3447,7 @@ For further details see FAQ.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:safetyMargins/epd:margins/epd:description##
+| ##False##
 | ##52.0##
 | ####
 | ####
@@ -3381,6 +3484,7 @@ the declared modules in accordance with the project report.##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios##
+| ##True##
 | ##53.0##
 | ####
 | ####
@@ -3413,6 +3517,7 @@ the declared modules in accordance with the project report.##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario##
+| ##True##
 | ##54.0##
 | ##Why are parts of the old definition missing in the new defintion?##
 | ####
@@ -3445,6 +3550,7 @@ the declared modules in accordance with the project report.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/epd:name##
+| ##True##
 | ##55.0##
 | ##Why are parts of the old definition missing in the new defintion?##
 | ####
@@ -3479,6 +3585,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/epd:default##
+| ##False##
 | ##56.0##
 | ####
 | ####
@@ -3511,6 +3618,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/epd:group##
+| ##True##
 | ##57.0##
 | ##Why are parts of the old definition missing in the new defintion?##
 | ####
@@ -3543,6 +3651,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/epd:description##
+| ##True##
 | ##58.0##
 | ##Carmela Start##
 | ####
@@ -3575,6 +3684,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd:modules##
+| ##False##
 | ##59.0##
 | ####
 | ####
@@ -3607,6 +3717,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd:modules/epd:module##
+| ##True##
 | ##60.0##
 | ####
 | ####
@@ -3639,6 +3750,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:modules/epd:module/epd:name##
+| ##True##
 | ##61.0##
 | ####
 | ####
@@ -3671,6 +3783,7 @@ one scenario of the group has to be announced as default scenario.##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd:modules/epd:module/epd:productsystem-id##
+| ##True##
 | ##62.0##
 | ##NEW TOPIC (provisorial format by Gundi) +
 before placed in core information##
@@ -3711,6 +3824,7 @@ Total 100%##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration##
+| ##False##
 | ##63.0##
 | ##Heading, level 2 in "Content declaration"?##
 | ####
@@ -3743,6 +3857,7 @@ Total 100%##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component##
+| ##False##
 | ##64.0##
 | ##ADD  "(Component)" in the name +
 NOTE: repetition in Indata definition##
@@ -3776,6 +3891,7 @@ NOTE: repetition in Indata definition##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name##
+| ##False##
 | ##65.0##
 | ##Heading, level 3 in "Content declaration"? +
 ADD  "(Component)" in the name +
@@ -3810,6 +3926,7 @@ NOTE: repetition in Indata definition##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc##
+| ##False##
 | ##66.0##
 | ##ADD  "( mass percentage of component)" in the name. What is meant by “discrete value”?##
 | ####
@@ -3842,6 +3959,7 @@ NOTE: repetition in Indata definition##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:value##
+| ##False##
 | ##67.0##
 | ##ADD  "( mass percentage of component)" in the name. What is meant by “discrete value”?##
 | ####
@@ -3874,6 +3992,7 @@ NOTE: repetition in Indata definition##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:lowerValue##
+| ##False##
 | ##68.0##
 | ##ADD  "( mass percentage of component)" in the name. What is meant by “discrete value”?##
 | ####
@@ -3906,6 +4025,7 @@ NOTE: repetition in Indata definition##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:upperValue##
+| ##False##
 | ##69.0##
 | ##Heading, level 3 in "Content declaration"? +
 ADD  "(Component)" in the name##
@@ -3939,6 +4059,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass##
+| ##False##
 | ##70.0##
 | ##ADD  "(Mass of component)" in the name##
 | ####
@@ -3971,6 +4092,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:value##
+| ##False##
 | ##71.0##
 | ##ADD  "(Mass of component)" in the name##
 | ####
@@ -4003,6 +4125,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:lowerValue##
+| ##False##
 | ##72.0##
 | ##ADD  "(Mass of component)" in the name##
 | ####
@@ -4035,6 +4158,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:upperValue##
+| ##False##
 | ##73.0##
 | ##The definition is missing: Comment to Component##
 | ####
@@ -4067,6 +4191,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:comment##
+| ##False##
 | ##74.0##
 | ##Heading, level 2 in "Content declaration"?##
 | ####
@@ -4099,6 +4224,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:material_\|_epd2:substance##
+| ##False##
 | ##75.0##
 | ##ADD  "(Material \| Substance)" in the name##
 | ####
@@ -4131,6 +4257,7 @@ ADD  "(Component)" in the name##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name##
+| ##False##
 | ##76.0##
 | ##Heading, level 3 in "Content declaration"? +
 ADD  "(Material \| Substance)" in the name##
@@ -4164,6 +4291,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc##
+| ##False##
 | ##77.0##
 | ##ADD  "(Mass percentage of Material \| Substance)" in the name##
 | ####
@@ -4196,6 +4324,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:value##
+| ##False##
 | ##78.0##
 | ##ADD  "(Mass percentage of Material \| Substance)" in the name##
 | ####
@@ -4228,6 +4357,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:lowerValue##
+| ##False##
 | ##79.0##
 | ##ADD  "(Mass percentage of Material \| Substance)" in the name##
 | ####
@@ -4260,6 +4390,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/epd2:upperValue##
+| ##False##
 | ##80.0##
 | ##Heading, level 3 in "Content declaration"? +
 ADD  "(Material \| Substance)" in the name##
@@ -4293,6 +4424,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass##
+| ##False##
 | ##81.0##
 | ##ADD  "(Mass of Material \| Substance)" in the name##
 | ####
@@ -4325,6 +4457,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:value##
+| ##False##
 | ##82.0##
 | ##ADD  "(Mass of Material \| Substance)" in the name##
 | ####
@@ -4357,6 +4490,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:lowerValue##
+| ##False##
 | ##83.0##
 | ##ADD  "(Mass of Material \| Substance)" in the name##
 | ####
@@ -4389,6 +4523,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##8##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/epd2:upperValue##
+| ##False##
 | ##84.0##
 | ##ADD  "(Material \| Substance)" in the name##
 | ####
@@ -4421,6 +4556,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:CASNumber##
+| ##False##
 | ##85.0##
 | ##ADD  "(Material \| Substance)" in the name##
 | ####
@@ -4453,6 +4589,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:ECNumber##
+| ##False##
 | ##86.0##
 | ##ADD  "(Material \| Substance)" in the name##
 | ####
@@ -4485,6 +4622,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:hazardCode##
+| ##False##
 | ##87.0##
 | ####
 | ####
@@ -4517,6 +4655,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:renewable##
+| ##False##
 | ##88.0##
 | ####
 | ####
@@ -4549,6 +4688,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:recycled##
+| ##False##
 | ##89.0##
 | ####
 | ####
@@ -4581,6 +4721,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:recyclable##
+| ##False##
 | ##90.0##
 | ##ADD  “Material for packging" in the name##
 | ####
@@ -4613,6 +4754,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:packaging##
+| ##False##
 | ##91.0##
 | ####
 | ####
@@ -4645,6 +4787,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:comment##
+| ##False##
 | ##92.0##
 | ####
 | ####
@@ -4677,6 +4820,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd24:SVHC##
+| ##False##
 | ##93.0##
 | ##Please clearify the meaning of this property##
 | ####
@@ -4709,6 +4853,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##4##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData##
+| ##False##
 | ##94.0##
 | ##Please clearify the meaning of this property##
 | ####
@@ -4741,6 +4886,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData##
+| ##False##
 | ##95.0##
 | ##Please clearify the meaning of this property##
 | ####
@@ -4773,6 +4919,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/epd24:scenario##
+| ##False##
 | ##96.0##
 | ##heading##
 | ####
@@ -4805,6 +4952,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/epd24:soilAndWaterImpacts##
+| ##False##
 | ##97.0##
 | ####
 | ####
@@ -4837,6 +4985,7 @@ ADD  "(Material \| Substance)" in the name##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/epd24:soilAndWaterImpacts/epd24:soilAndWaterImpactsDescription##
+| ##False##
 | ##98.0##
 | ##heading (provisorial format by Gundi)##
 | ####
@@ -4873,6 +5022,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##5##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData##
+| ##False##
 | ##99.0##
 | ####
 | ####
@@ -4905,6 +5055,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:scenario##
+| ##False##
 | ##100.0##
 | ##heading, level 2 in EoL scenario data##
 | ####
@@ -4937,6 +5088,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection##
+| ##False##
 | ##101.0##
 | ####
 | ####
@@ -4969,6 +5121,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection/epd24:separate##
+| ##False##
 | ##102.0##
 | ####
 | ####
@@ -5001,6 +5154,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection/epd24:withMixedWaste##
+| ##False##
 | ##103.0##
 | ##heading, level 2 in EoL scenario data##
 | ####
@@ -5033,6 +5187,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery##
+| ##False##
 | ##104.0##
 | ####
 | ####
@@ -5065,6 +5220,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/epd24:reuse##
+| ##False##
 | ##105.0##
 | ####
 | ####
@@ -5097,6 +5253,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/epd24:recycling##
+| ##False##
 | ##106.0##
 | ####
 | ####
@@ -5129,6 +5286,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/epd24:energyRecovery##
+| ##False##
 | ##107.0##
 | ####
 | ####
@@ -5161,6 +5319,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##6##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:disposal##
+| ##False##
 | ##108.0##
 | ##unfortunate: choice of wording "Recovery for final deposition"##
 | ####
@@ -5193,6 +5352,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##7##
 | ##nan/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:disposal/epd24:finalDeposition##
+| ##False##
 | ##109.0##
 | ####
 | ####
@@ -5225,6 +5385,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##2##
 | ##nan/processInformation/quantitativeReference##
+| ##False##
 | ##110.0##
 | ####
 | ####
@@ -5257,6 +5418,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##4##
 | ##nan/processInformation/quantitativeReference/other/type##
+| ##False##
 | ####
 | ####
 | ####
@@ -5289,6 +5451,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ####
 | ####
@@ -5321,6 +5484,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ####
 | ####
@@ -5353,6 +5517,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ####
 | ####
@@ -5385,6 +5550,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##111.0##
 | ####
 | ####
@@ -5399,7 +5565,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##Int6##
 | ##Verweis auf den Referenzfluß des Datensatzes (interne ID des entsprechenden Outputs im Abschnitt "Exchanges")##
 | ##One or more of the Inputs or Outputs in case "Type of quantitative reference" is of type "Reference flow(s)". (Data set internal reference.)##
-| ##~##
+| ##Link to reference flow of data set; the reference flow is the output that represents the product. Therefore for each EPD (process) data set, at least one reference flow data set has to be given that represents the product. The amount of the exchange with the reference product, together with the reference flow property of the reference product, indicates the declared unit (or functional unit) as stated in +
+the EPD.##
 | ##Link to reference flow of data set; the reference flow is the output that represents the product. Therefore for each EPD (process) data set, at least one reference flow data set has to be given that represents the product. The amount of the exchange with the reference product, together with the reference flow property of the reference product, indicates the declared unit (or functional unit) as stated in +
 the EPD.##
 | ##m##
@@ -5418,6 +5585,7 @@ the EPD.##
 | ####
 | ##3##
 | ##nan/processInformation/quantitativeReference/referenceToReferenceFlow##
+| ##True##
 | ##112.0##
 | ####
 | ####
@@ -5451,6 +5619,7 @@ In this case, nevertheless a reference flow has to be specified which declares t
 | ####
 | ##3##
 | ##nan/processInformation/quantitativeReference/functionalUnitOrOther##
+| ##False##
 | ##113.0##
 | ####
 | ####
@@ -5483,6 +5652,7 @@ In this case, nevertheless a reference flow has to be specified which declares t
 | ####
 | ##3##
 | ##nan/processInformation/quantitativeReference/other##
+| ##False##
 | ##114.0##
 | ####
 | ####
@@ -5515,6 +5685,7 @@ In this case, nevertheless a reference flow has to be specified which declares t
 | ####
 | ##2##
 | ##nan/processInformation/time##
+| ##False##
 | ##115.0##
 | ####
 | ####
@@ -5547,6 +5718,7 @@ In this case, nevertheless a reference flow has to be specified which declares t
 | ####
 | ##3##
 | ##nan/processInformation/time/referenceYear##
+| ##False##
 | ##116.0##
 | ####
 | ####
@@ -5579,6 +5751,7 @@ In this case, nevertheless a reference flow has to be specified which declares t
 | ####
 | ##3##
 | ##nan/processInformation/time/dataSetValidUntil##
+| ##False##
 | ##117.0##
 | ####
 | ####
@@ -5612,6 +5785,7 @@ usability within sub-time spans (e.g. summer/winter).##
 | ####
 | ##3##
 | ##nan/processInformation/time/timeRepresentativenessDescription##
+| ##False##
 | ##118.0##
 | ####
 | ####
@@ -5644,6 +5818,7 @@ usability within sub-time spans (e.g. summer/winter).##
 | ####
 | ##3##
 | ##nan/processInformation/time/other##
+| ##False##
 | ##119.0##
 | ####
 | ####
@@ -5676,6 +5851,7 @@ usability within sub-time spans (e.g. summer/winter).##
 | ####
 | ##4##
 | ##nan/processInformation/time/other/epd2:publicationDateOfEPD##
+| ##True##
 | ##120.0##
 | ####
 | ####
@@ -5708,6 +5884,7 @@ usability within sub-time spans (e.g. summer/winter).##
 | ####
 | ##4##
 | ##nan/processInformation/time/other/epd2:expirationDateOfEPD##
+| ##False##
 | ##121.0##
 | ####
 | ####
@@ -5740,6 +5917,7 @@ usability within sub-time spans (e.g. summer/winter).##
 | ####
 | ##2##
 | ##nan/processInformation/geography##
+| ##False##
 | ##122.0##
 | ##heading, level 2 in geographical ... +
 Defintion on this or on the sub-level?##
@@ -5755,7 +5933,7 @@ Defintion on this or on the sub-level?##
 | ####
 | ####
 | ##Location, country or region the data set represents. [Note 1: This field does not refer to e.g. the country in which a specific site is located that is represented by this data set but to the actually represented country, region, or site. Note 2: Entry can be of type "two-letter ISO 3166 country code" for countries, "seven-letter regional codes" for regions or continents, or "market areas and market organisations", as predefined for the ILCD. Also a name for e.g. a specific plant etc. can be given here (e.g. "FR, Lyon, XY Company, Z Site"; user defined). Note 3: The fact whether the entry refers to production or to consumption / supply has to be stated in the name-field "Mix and location types" e.g. as "Production mix".]##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -5773,6 +5951,7 @@ Defintion on this or on the sub-level?##
 | ####
 | ##3##
 | ##nan/processInformation/geography/locationOfOperationSupplyOrProduction##
+| ##False##
 | ##123.0##
 | ##only data in heading location##
 | ####
@@ -5806,6 +5985,7 @@ ISO 3166 country code or regional code##
 | ####
 | ##4##
 | ##nan/processInformation/geography/locationOfOperationSupplyOrProduction/location##
+| ##False##
 | ##124.0##
 | ####
 | ####
@@ -5839,6 +6019,7 @@ were considered for modelling .##
 | ####
 | ##4##
 | ##nan/processInformation/geography/locationOfOperationSupplyOrProduction/descriptionOfRestrictions##
+| ##False##
 | ##125.0##
 | ##part of geographical representativeness?##
 | ####
@@ -5871,6 +6052,7 @@ were considered for modelling .##
 | ####
 | ##3##
 | ##nan/processInformation/geography/other##
+| ##False##
 | ##126.0##
 | ####
 | ####
@@ -5903,6 +6085,7 @@ were considered for modelling .##
 | ####
 | ##2##
 | ##nan/processInformation/technology##
+| ##False##
 | ##127.0##
 | ####
 | ####
@@ -5950,6 +6133,7 @@ materials if reasonable; +
 | ####
 | ##3##
 | ##nan/processInformation/technology/technologyDescriptionAndIncludedProcesses##
+| ##False##
 | ##128.0##
 | ####
 | ####
@@ -5984,6 +6168,7 @@ Find further explanations and examples in FAQ.##
 | ####
 | ##3##
 | ##nan/processInformation/technology/technologicalApplicability##
+| ##False##
 | ##129.0##
 | ####
 | ####
@@ -6018,6 +6203,7 @@ cement.jpg##
 | ####
 | ##3##
 | ##nan/processInformation/technology/referenceToTechnologyPictogramme##
+| ##False##
 | ##130.0##
 | ####
 | ####
@@ -6032,7 +6218,7 @@ cement.jpg##
 | ##GlobalReferenceType##
 | ##"Source"-Datensätze des/der Flußdiagramm(e) bzw. Abbildung(en) für eine anschauliche Erläuterung und Dokumentations des Datensatzes##
 | ##"Source data set" of the flow diagramm(s) and/or photo(s) of the good, service, technology, plant etc represented by this data set. For clearer illustration and documentation of data set.##
-| ##~##
+| ##"Source data set" of the flow diagramm(s) and/or photo(s) of the good, service, technology, plant etc represented by this data set. For clearer illustration and documentation of data set.##
 | ##"Source data set" of the flow diagramm(s) and/or photo(s) of the good, service, technology, plant etc represented by this data set. For clearer illustration and documentation of data set.##
 | ##m##
 | ##EN 15804+A2: chapter 7.1 c +
@@ -6057,6 +6243,7 @@ gl.jpg##
 | ####
 | ##3##
 | ##nan/processInformation/technology/referenceToTechnologyFlowDiagrammOrPicture##
+| ##True##
 | ##131.0##
 | ####
 | ####
@@ -6089,6 +6276,7 @@ gl.jpg##
 | ####
 | ##3##
 | ##nan/processInformation/technology/other##
+| ##False##
 | ##132.0##
 | ####
 | ####
@@ -6121,6 +6309,7 @@ gl.jpg##
 | ####
 | ##1##
 | ##nan/modellingAndValidation##
+| ##False##
 | ##133.0##
 | ####
 | ####
@@ -6153,6 +6342,7 @@ gl.jpg##
 | ####
 | ##2##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation##
+| ##False##
 | ##134.0##
 | ####
 | ####
@@ -6185,6 +6375,7 @@ gl.jpg##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/typeOfDataSet##
+| ##False##
 | ##135.0##
 | ####
 | ####
@@ -6222,6 +6413,7 @@ PCR name  and PCR version (MM YYYY)##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/referenceToLCAMethodDetails##
+| ##False##
 | ##136.0##
 | ##Other content, no definition. Eco-Platform / ÖKOBAUDAT conformity: rule for electricity mix?##
 | ####
@@ -6292,6 +6484,7 @@ If electricity accounts for more than 30 % of the total energy use in stage A1-A
 | ####
 | ##3##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other##
+| ##False##
 | ##137.0##
 | ##Suggestion add Amendement A2 for generic##
 | ##No change detected (O-P)##
@@ -6335,6 +6528,7 @@ worst-case product);##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd:subType##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6367,6 +6561,7 @@ worst-case product);##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6399,6 +6594,7 @@ worst-case product);##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6431,6 +6627,7 @@ worst-case product);##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6463,6 +6660,7 @@ worst-case product);##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##138.0##
 | ##Confusing chapter. Information has not added value (EPDs are already PCR Compliance). Suggestion remove. Add comment line if u have deviation from PCR instead.##
 | ####
@@ -6495,6 +6693,7 @@ worst-case product);##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance##
+| ##False##
 | ##139.0##
 | ##see 201##
 | ####
@@ -6527,6 +6726,7 @@ worst-case product);##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/epd24:allocation##
+| ##False##
 | ##140.0##
 | ##see 201##
 | ####
@@ -6561,6 +6761,7 @@ Cut-off by classification or Cut-off, EN 15804+A2##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/epd24:cutOffRules##
+| ##False##
 | ##141.0##
 | ##see 201##
 | ####
@@ -6597,6 +6798,7 @@ Rules.##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/epd24:upstreamDataDeviatingFromAllocationPrinciples##
+| ##False##
 | ##142.0##
 | ##heading (provisorial format by Gundi)##
 | ####
@@ -6630,6 +6832,7 @@ not applicable for generic data##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability##
+| ##False##
 | ##143.0##
 | ##Heading, level 2 in variability?##
 | ####
@@ -6662,6 +6865,7 @@ not applicable for generic data##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability##
+| ##False##
 | ##144.0##
 | ##ambiguous .--> add (manufacturer)##
 | ####
@@ -6694,6 +6898,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/epd24:type##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6726,6 +6931,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6758,6 +6964,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##145.0##
 | ##ambiguous .--> add (manufacturer)##
 | ####
@@ -6790,6 +6997,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/epd24:variation##
+| ##False##
 | ##146.0##
 | ##ambiguous .--> add (manufacturer)##
 | ####
@@ -6822,6 +7030,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/epd24:variationRange##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6854,6 +7063,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6886,6 +7096,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6918,6 +7129,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6950,6 +7162,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -6982,6 +7195,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -7014,6 +7228,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -7046,6 +7261,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##147.0##
 | ##Heading, level 2 in variability?##
 | ####
@@ -7078,6 +7294,7 @@ not applicable for generic data##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability##
+| ##False##
 | ##148.0##
 | ##ambiguous .--> add (product)##
 | ####
@@ -7110,6 +7327,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/epd24:type##
+| ##False##
 | ##149.0##
 | ##part of data field##
 | ####
@@ -7142,6 +7360,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##150.0##
 | ##ambiguous .--> add (product)##
 | ####
@@ -7174,6 +7393,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/epd24:variation##
+| ##False##
 | ##151.0##
 | ##ambiguous .--> add (product)##
 | ####
@@ -7206,6 +7426,7 @@ not applicable for generic data##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/epd24:variationRange##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7238,6 +7459,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7270,6 +7492,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7302,6 +7525,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7334,6 +7558,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7366,6 +7591,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7398,6 +7624,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -7430,6 +7657,7 @@ not applicable for generic data##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##152.0##
 | ##ambiguous .--> add (product)##
 | ####
@@ -7462,6 +7690,7 @@ not applicable for generic data##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:variabilityDescription##
+| ##False##
 | ##153.0##
 | ####
 | ##The original ILCD definition is not listed in the table of definitions in the ÖBD##
@@ -7494,6 +7723,7 @@ not applicable for generic data##
 | ####
 | ##2##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness##
+| ##False##
 | ##154.0##
 | ####
 | ##before in chapter 'Validation B3' - no change##
@@ -7527,6 +7757,7 @@ met.##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataHandlingPrinciples##
+| ##False##
 | ##155.0##
 | ####
 | ####
@@ -7585,6 +7816,7 @@ evidence)##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataSource##
+| ##False##
 | ##156.0##
 | ####
 | ##none##
@@ -7625,6 +7857,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ####
 | ##3##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/useAdviceForDataSet##
+| ##False##
 | ##157.0##
 | ####
 | ####
@@ -7657,6 +7890,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ####
 | ##3##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other##
+| ##False##
 | ##158.0##
 | ##NEW topic heading (provisorial format by Gundi)##
 | ####
@@ -7695,6 +7929,7 @@ average of several manufacturers.##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers##
+| ##False##
 | ##159.0##
 | ##heading, level 2##
 | ####
@@ -7727,6 +7962,7 @@ average of several manufacturers.##
 | ####
 | ##5##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer##
+| ##False##
 | ##160.0##
 | ####
 | ####
@@ -7759,6 +7995,7 @@ average of several manufacturers.##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:contact##
+| ##True##
 | ##161.0##
 | ##heading, level 2##
 | ####
@@ -7797,6 +8034,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##6##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites##
+| ##False##
 | ##162.0##
 | ##heading, level 3##
 | ####
@@ -7829,6 +8067,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##7##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site##
+| ##True##
 | ##163.0##
 | ##field in manufacturing site?##
 | ####
@@ -7861,6 +8100,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##8##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:name##
+| ##True##
 | ##164.0##
 | ##field in manufacturing site?##
 | ####
@@ -7893,6 +8133,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##8##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:facilityIdentifier##
+| ##True##
 | ##165.0##
 | ##field in manufacturing site?##
 | ####
@@ -7925,6 +8166,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##8##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:olc##
+| ##False##
 | ##166.0##
 | ##field in manufacturing site?##
 | ####
@@ -7957,6 +8199,7 @@ is produced, [Name and location of production site(s).]##
 | ####
 | ##8##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:geoCode##
+| ##True##
 | ##167.0##
 | ##field in manufacturing site? +
 end of manufacturing site##
@@ -7990,6 +8233,7 @@ end of manufacturing site##
 | ####
 | ##8##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:streetAddress##
+| ##False##
 | ##168.0##
 | ##NEW TOPIC! Wrong place##
 | ##none##
@@ -8022,6 +8266,7 @@ end of manufacturing site##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd2:referenceToOriginalEPD##
+| ##False##
 | ##169.0##
 | ####
 | ##none##
@@ -8054,6 +8299,7 @@ end of manufacturing site##
 | ####
 | ##2##
 | ##nan/modellingAndValidation/validation##
+| ##False##
 | ##170.0##
 | ##heading##
 | ####
@@ -8086,6 +8332,7 @@ end of manufacturing site##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/validation/review##
+| ##False##
 | ##171.0##
 | ####
 | ##none##
@@ -8100,7 +8347,11 @@ end of manufacturing site##
 | ##TypeOfReviewValues##
 | ##Art der Prüfung##
 | ##Type of review that has been performed regarding independency and type of review process.##
-| ##~##
+| ##Possibilities for type of review: +
+- 'no verification / critical review' = not relevant for InData compliant data +
+- 'internal verification / critical review (intra-company)' = only possibly relevant for generic data +
+- 'dependent external verification / critical review (external reviewer is not verifiably independent from LCA expert or owner of enterprise)' = not relevant for InData compliant data +
+- 'independent external verification / critical review (external reviewer who is verifiably independent from LCA expert or owner of enterprise)' = (choose this for verified external third party verification according to EN 15804)##
 | ##Possibilities for type of review: +
 - 'no verification / critical review' = not relevant for InData compliant data +
 - 'internal verification / critical review (intra-company)' = only possibly relevant for generic data +
@@ -8127,6 +8378,7 @@ Find further explanations in FAQ.##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/validation/review/type##
+| ##True##
 | ####
 | ##part of data field##
 | ####
@@ -8159,6 +8411,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -8191,6 +8444,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -8223,6 +8477,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -8255,6 +8510,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -8287,6 +8543,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -8319,6 +8576,7 @@ Find further explanations in FAQ.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##172.0##
 | ##field in heading "review"?##
 | ##none##
@@ -8351,6 +8609,7 @@ Find further explanations in FAQ.##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/validation/review/reviewDetails##
+| ##False##
 | ##173.0##
 | ##field in heading "review"?##
 | ##ÖKOBAUDAT/Ecoplatform Conformity added##
@@ -8387,6 +8646,7 @@ Type of review##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/validation/review/referenceToNameOfReviewerAndInstitution##
+| ##True##
 | ##174.0##
 | ##field in heading "review"?##
 | ##none##
@@ -8419,6 +8679,7 @@ Type of review##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/validation/review/referenceToCompleteReviewReport##
+| ##True##
 | ##175.0##
 | ##field in heading "review"?##
 | ####
@@ -8451,6 +8712,7 @@ Type of review##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/validation/other##
+| ##False##
 | ##176.0##
 | ####
 | ####
@@ -8483,6 +8745,7 @@ Type of review##
 | ####
 | ##2##
 | ##nan/modellingAndValidation/complianceDeclarations##
+| ##False##
 | ##177.0##
 | ####
 | ####
@@ -8497,7 +8760,7 @@ Type of review##
 | ####
 | ##eine Konformitätsdeklaration##
 | ##one compliance declaration##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -8515,6 +8778,7 @@ Type of review##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/complianceDeclarations/compliance##
+| ##False##
 | ##178.0##
 | ####
 | ##ÖKOBAUDAT/Ecoplatform Conformity added##
@@ -8529,7 +8793,7 @@ Type of review##
 | ##GlobalReferenceType##
 | ##"Source"-Datensatz des Konformitätssystems##
 | ##"Source data set" of the "Compliance system" that is declared to be met by the data set.##
-| ##~##
+| ##Standard(s) and/or compliance system(s) that are declared to be met by the data set (e.g. EN 15804, EN 16485). The appropriate PCR shall be referred to in the data field 'LCA methodology report'.##
 | ##Standard(s) and/or compliance system(s) that are declared to be met by the data set (e.g. EN 15804, EN 16485). The appropriate PCR shall be referred to in the data field 'LCA methodology report'.##
 | ##m##
 | ##EN 15804+A2: table 2 line 1##
@@ -8548,6 +8812,7 @@ InData-CPEN2019##
 | ####
 | ##4##
 | ##nan/modellingAndValidation/complianceDeclarations/compliance/referenceToComplianceSystem##
+| ##True##
 | ##179.0##
 | ####
 | ####
@@ -8580,6 +8845,7 @@ InData-CPEN2019##
 | ####
 | ##3##
 | ##nan/modellingAndValidation/complianceDeclarations/other##
+| ##False##
 | ##180.0##
 | ##editors checked until this chapter, Alberto will check before Norway##
 | ####
@@ -8594,7 +8860,7 @@ InData-CPEN2019##
 | ####
 | ##Informationen zu Datensatzmanagement und -administration##
 | ##Information on data set management and administration.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -8612,6 +8878,7 @@ InData-CPEN2019##
 | ####
 | ##1##
 | ##nan/administrativeInformation##
+| ##False##
 | ##181.0##
 | ####
 | ####
@@ -8644,6 +8911,7 @@ InData-CPEN2019##
 | ####
 | ##2##
 | ##nan/administrativeInformation/commissionerAndGoal##
+| ##False##
 | ##182.0##
 | ####
 | ####
@@ -8658,7 +8926,7 @@ InData-CPEN2019##
 | ##GlobalReferenceType##
 | ##[needs translation]##
 | ##"Contact data set" of the commissioner / financing party of the data collection / compilation and of the data set modelling. For groups of commissioners, each single organisation should be named. For data set updates and for direct use of data from formerly commissioned studies, also the original commissioner should be named.##
-| ##~##
+| ##"Contact data set" of the commissioner / financing party of the data collection / compilation and of the data set modelling. For groups of commissioners, each single organisation should be named. For data set updates and for direct use of data from formerly commissioned studies, also the original commissioner should be named.##
 | ##"Contact data set" of the commissioner / financing party of the data collection / compilation and of the data set modelling. For groups of commissioners, each single organisation should be named. For data set updates and for direct use of data from formerly commissioned studies, also the original commissioner should be named.##
 | ##o##
 | ##EN 15804+A2: chapter 7.1 a##
@@ -8676,6 +8944,7 @@ InData-CPEN2019##
 | ####
 | ##3##
 | ##nan/administrativeInformation/commissionerAndGoal/referenceToCommissioner##
+| ##True##
 | ##183.0##
 | ####
 | ####
@@ -8709,6 +8978,7 @@ specifically for a tunnel project in Northern Norway.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/commissionerAndGoal/project##
+| ##False##
 | ##184.0##
 | ####
 | ####
@@ -8723,7 +8993,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##FTMultiLang##
 | ##[needs translation]##
 | ##Documentation of the intended application(s) of data collection and data set modelling. This indicates / includes information on the level of detail, the specifidity, and the quality ambition in the effort.##
-| ##~##
+| ##Documentation of the intended application(s) of data collection and data set modelling. This indicates / includes information on the level of detail, the +
+specificity, and the quality requirement in the effort.##
 | ##Documentation of the intended application(s) of data collection and data set modelling. This indicates / includes information on the level of detail, the +
 specificity, and the quality requirement in the effort.##
 | ##o##
@@ -8742,6 +9013,7 @@ specificity, and the quality requirement in the effort.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/commissionerAndGoal/intendedApplications##
+| ##True##
 | ##185.0##
 | ####
 | ####
@@ -8774,6 +9046,7 @@ specificity, and the quality requirement in the effort.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/commissionerAndGoal/other##
+| ##False##
 | ##186.0##
 | ##heading (same name as property below##
 | ####
@@ -8788,7 +9061,7 @@ specificity, and the quality requirement in the effort.##
 | ####
 | ####
 | ##Expert(s), that compiled and modelled the data set as well as internal administrative information linked to the data generation activity.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -8806,6 +9079,7 @@ specificity, and the quality requirement in the effort.##
 | ####
 | ##2##
 | ##nan/administrativeInformation/dataGenerator##
+| ##False##
 | ##187.0##
 | ####
 | ####
@@ -8820,7 +9094,8 @@ specificity, and the quality requirement in the effort.##
 | ##GlobalReferenceType##
 | ##[needs translation]##
 | ##"Contact data set" of the person(s), working group(s), organisation(s) or database network, that generated the data set, i.e. being responsible for its correctness regarding methods, inventory, and documentative information.##
-| ##~##
+| ##"Contact data set" of the person(s), working group(s), organisation(s) or database network, that generated the data set, i.e. being responsible for its +
+correctness regarding methods, inventory, and documentative information.##
 | ##"Contact data set" of the person(s), working group(s), organisation(s) or database network, that generated the data set, i.e. being responsible for its +
 correctness regarding methods, inventory, and documentative information.##
 | ##m##
@@ -8839,6 +9114,7 @@ correctness regarding methods, inventory, and documentative information.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/dataGenerator/referenceToPersonOrEntityGeneratingTheDataSet##
+| ##True##
 | ##188.0##
 | ####
 | ####
@@ -8871,6 +9147,7 @@ correctness regarding methods, inventory, and documentative information.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/dataGenerator/other##
+| ##False##
 | ##189.0##
 | ####
 | ####
@@ -8903,6 +9180,7 @@ correctness regarding methods, inventory, and documentative information.##
 | ####
 | ##2##
 | ##nan/administrativeInformation/dataEntryBy##
+| ##False##
 | ##190.0##
 | ####
 | ####
@@ -8917,7 +9195,8 @@ correctness regarding methods, inventory, and documentative information.##
 | ##dateTime##
 | ##Zeitstempel der letzten Änderung des Datensatzes##
 | ##Date and time stamp of data set generation, typically an automated entry ("last saved").##
-| ##~##
+| ##Date and time stamp of data set generation; no input to be given; is +
+automatically produced##
 | ##Date and time stamp of data set generation; no input to be given; is +
 automatically produced##
 | ##m##
@@ -8937,6 +9216,7 @@ automatically produced##
 | ####
 | ##3##
 | ##nan/administrativeInformation/dataEntryBy/timeStamp##
+| ##True##
 | ##191.0##
 | ####
 | ####
@@ -8951,7 +9231,7 @@ automatically produced##
 | ##GlobalReferenceType##
 | ##"Source"-Datensatz der verwendeten ILCD-Formatversion##
 | ##"Source data set" of the used version of the ILCD format. If additional data format fields have been integrated into the data set file, using the "namespace" option, the used format namespace(s) are to be given. This is the case if the data sets carries additional information as specified by other, particular LCA formats, e.g. of other database networks or LCA softwares.##
-| ##~##
+| ##"Source data sets" of the used version of the ILCD format and EPD extensions. Will usually be filled in automatically by the software tool##
 | ##"Source data sets" of the used version of the ILCD format and EPD extensions. Will usually be filled in automatically by the software tool##
 | ##m##
 | ####
@@ -8970,6 +9250,7 @@ EPD Data Format Extensions##
 | ####
 | ##3##
 | ##nan/administrativeInformation/dataEntryBy/referenceToDataSetFormat##
+| ##True##
 | ##192.0##
 | ####
 | ####
@@ -8984,7 +9265,7 @@ EPD Data Format Extensions##
 | ####
 | ####
 | ####
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -9002,6 +9283,7 @@ EPD Data Format Extensions##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##193.0##
 | ####
 | ####
@@ -9034,6 +9316,7 @@ EPD Data Format Extensions##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##194.0##
 | ####
 | ####
@@ -9066,6 +9349,7 @@ EPD Data Format Extensions##
 | ####
 | ##3##
 | ##nan/administrativeInformation/dataEntryBy/other##
+| ##False##
 | ##195.0##
 | ####
 | ####
@@ -9098,6 +9382,7 @@ EPD Data Format Extensions##
 | ####
 | ##2##
 | ##nan/administrativeInformation/publicationAndOwnership##
+| ##False##
 | ##196.0##
 | ####
 | ####
@@ -9112,7 +9397,8 @@ EPD Data Format Extensions##
 | ##Version##
 | ##Versionsnummer des Datensatzes##
 | ##Version number of data set. First two digits refer to major updates, the second two digits to minor revisions and error corrections etc. The third three digits are intended for automatic and internal counting of versions during data set development. Together with the data set's UUID, the "Data set version" uniquely identifies each data set.##
-| ##~##
+| ##Version number of data set; is automatically generated. First two digits refer to major updates, the second two digits to minor revisions and error corrections etc. The last three digits are intended for automatic and internal counting of versions during data set development. Together with the data set's UUID, the "Data set version" uniquely identifies each data set. +
+Find further explanations in FAQ.##
 | ##Version number of data set; is automatically generated. First two digits refer to major updates, the second two digits to minor revisions and error corrections etc. The last three digits are intended for automatic and internal counting of versions during data set development. Together with the data set's UUID, the "Data set version" uniquely identifies each data set. +
 Find further explanations in FAQ.##
 | ##m##
@@ -9131,6 +9417,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/dataSetVersion##
+| ##True##
 | ##197.0##
 | ####
 | ####
@@ -9145,7 +9432,8 @@ Find further explanations in FAQ.##
 | ##GlobalReferenceType##
 | ####
 | ##Last preceding data set, which was replaced by this version. Either a URI of that data set (i.e. an internet address) or its UUID plus version number is given (or both).##
-| ##~##
+| ##UUID and version number of last preceding data set, which was replaced by this +
+version. In addition, the URL of that data set (i.e. an internet address) can be given.##
 | ##UUID and version number of last preceding data set, which was replaced by this +
 version. In addition, the URL of that data set (i.e. an internet address) can be given.##
 | ##m##
@@ -9165,6 +9453,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/referenceToPrecedingDataSetVersion##
+| ##True##
 | ##198.0##
 | ####
 | ####
@@ -9179,7 +9468,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##anyURI##
 | ##URI zum Original dieses Datensatzes##
 | ##URI (i.e. an internet address) of the original of this data set. [Note: This equally globally unique identifier supports users and software tools to identify and retrieve the original version of a data set via the internet or to check for available updates. The URI must not represent an existing WWW address, but it should be unique and point to the data access point, e.g. by combining the data owner's www path with the data set's UUID, e.g. http://www.mycompany.com/lca/processes/50f12420-8855-12db-b606-0900210c9a66.]##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -9197,6 +9486,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/permanentDataSetURI##
+| ##False##
 | ##199.0##
 | ####
 | ####
@@ -9211,7 +9501,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##dateTime##
 | ##Zeitpunkt der letzten Änderung des Datensatzes; typischerweise manuell gesetzt##
 | ##Date when the data set was revised for the last time, typically manually set.##
-| ##~##
+| ##Date when the data set was revised for the last time; typically manually set##
 | ##Date when the data set was revised for the last time; typically manually set##
 | ##o##
 | ####
@@ -9229,6 +9519,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/dateOfLastRevision##
+| ##True##
 | ##200.0##
 | ####
 | ####
@@ -9243,7 +9534,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##GlobalReferenceType##
 | ##Kontaktdaten des Herausgebers des Datensatzes (z.B. EPD-Programmbetreiber)##
 | ##"Contact data set" of the authority that has registered this data set.##
-| ##~##
+| ##"Contact data set" of the authority that has registered this data set (e.g. Program +
+Operator)##
 | ##"Contact data set" of the authority that has registered this data set (e.g. Program +
 Operator)##
 | ##m##
@@ -9262,6 +9554,7 @@ Operator)##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/referenceToRegistrationAuthority##
+| ##True##
 | ##201.0##
 | ####
 | ####
@@ -9297,6 +9590,7 @@ programme operator level).##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/registrationNumber##
+| ##False##
 | ##202.0##
 | ####
 | ####
@@ -9311,7 +9605,7 @@ programme operator level).##
 | ##GlobalReferenceType##
 | ##"Contact"-Datensatz zum Eigentümer des Datensatzes##
 | ##"Contact data set" of the person or entity who owns this data set. (Note: this is not necessarily the publisher of the data set.)##
-| ##~##
+| ##"Contact data set" of the person or entity who owns this data set. Note: this is usually not the publisher of the data set.##
 | ##"Contact data set" of the person or entity who owns this data set. Note: this is usually not the publisher of the data set.##
 | ##m##
 | ####
@@ -9329,6 +9623,7 @@ programme operator level).##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/referenceToOwnershipOfDataSet##
+| ##True##
 | ##203.0##
 | ####
 | ####
@@ -9343,7 +9638,8 @@ programme operator level).##
 | ##boolean##
 | ##[translation needed]##
 | ##Indicates whether or not a copyright on the data set exists. Decided upon by the "Owner of data set". [Note: See also field "Access and use restrictions".]##
-| ##~##
+| ##Indicates whether or not a copyright on the data set exists. Decided upon by the "Owner of data set"; usually "yes". +
+Find further explanations in FAQ.##
 | ##Indicates whether or not a copyright on the data set exists. Decided upon by the "Owner of data set"; usually "yes". +
 Find further explanations in FAQ.##
 | ##m##
@@ -9362,6 +9658,7 @@ Find further explanations in FAQ.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/copyright##
+| ##True##
 | ##204.0##
 | ####
 | ####
@@ -9376,7 +9673,11 @@ Find further explanations in FAQ.##
 | ##LicenseTypeValues##
 | ##[translation needed]##
 | ##Type of license that applies to the access and use of this data set.##
-| ##~##
+| ##Type of license that applies to the access and use of this data set: +
+Free of charge for all users and uses +
+Free of charge for some user types or use types Free of charge for members only +
+License fee +
+Other##
 | ##Type of license that applies to the access and use of this data set: +
 Free of charge for all users and uses +
 Free of charge for some user types or use types Free of charge for members only +
@@ -9398,6 +9699,7 @@ Other##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/licenseType##
+| ##True##
 | ####
 | ##part of data field##
 | ####
@@ -9430,6 +9732,7 @@ Other##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -9462,6 +9765,7 @@ Other##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -9494,6 +9798,7 @@ Other##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -9526,6 +9831,7 @@ Other##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of data field##
 | ####
@@ -9558,6 +9864,7 @@ Other##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##205.0##
 | ####
 | ####
@@ -9572,7 +9879,8 @@ Other##
 | ##FTMultiLang##
 | ##[translation needed]##
 | ##Access restrictions / use conditions for this data set as free text or referring to e.g. license conditions. In case of no restrictions "None" is entered.##
-| ##~##
+| ##Access restrictions / use conditions for this data set as free text or referring to +
+e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##Access restrictions / use conditions for this data set as free text or referring to +
 e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##m##
@@ -9591,6 +9899,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/accessRestrictions##
+| ##True##
 | ##206.0##
 | ####
 | ####
@@ -9623,6 +9932,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/administrativeInformation/publicationAndOwnership/other##
+| ##False##
 | ##207.0##
 | ####
 | ####
@@ -9655,6 +9965,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##4##
 | ##nan/administrativeInformation/publicationAndOwnership/other/referenceToPublisher##
+| ##False##
 | ##208.0##
 | ####
 | ####
@@ -9687,6 +9998,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##1##
 | ##nan/exchanges##
+| ##False##
 | ##209.0##
 | ####
 | ####
@@ -9719,6 +10031,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##2##
 | ##nan/exchanges/exchange##
+| ##False##
 | ##210.0##
 | ####
 | ####
@@ -9733,7 +10046,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##Int6##
 | ##Automatisch vergebener interner Identifizierer, wird von "Quantitative Referenz" verwendet, um den Referenzfluß anzugeben##
 | ##Automated entry: internal ID, used in the "Quantitative reference" section to identify the "Reference flow(s)" in case the quantitative reference of this Process data set is of this type.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -9751,6 +10064,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/dataSetInternalID##
+| ##False##
 | ##211.0##
 | ####
 | ####
@@ -9765,7 +10079,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##GlobalReferenceType##
 | ##Referenz zum Flußdatensatz.##
 | ##"Flow data set" of this Input or Output.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -9783,6 +10097,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/referenceToFlowDataSet##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -9815,6 +10130,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/functionType##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -9847,6 +10163,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -9879,6 +10196,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -9911,6 +10229,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##212.0##
 | ####
 | ####
@@ -9925,7 +10244,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##ExchangeDirectionValues##
 | ##Richtung des Flusses (Input oder Output)##
 | ##Direction of Input or Output flow.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -9943,6 +10262,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/exchangeDirection##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -9975,6 +10295,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ####
 | ##part of date field##
 | ####
@@ -10007,6 +10328,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##213.0##
 | ####
 | ####
@@ -10039,6 +10361,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/meanAmount##
+| ##False##
 | ##214.0##
 | ####
 | ####
@@ -10053,7 +10376,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ##StringMultiLang##
 | ##Allgemeine Erläuterungen##
 | ##General comment on this specific Input or Output, e.g. commenting on the data sources used and their specific representatuveness etc., on the status of "finalisation" of an entry as workflow information, etc.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -10071,6 +10394,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/generalComment##
+| ##False##
 | ##215.0##
 | ####
 | ####
@@ -10103,6 +10427,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##3##
 | ##nan/exchanges/exchange/other##
+| ##False##
 | ##216.0##
 | ####
 | ####
@@ -10135,6 +10460,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##217.0##
 | ##Why marked in yellow?##
 | ####
@@ -10167,6 +10493,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##4##
 | ##nan/exchanges/exchange/other/epd:amount##
+| ##False##
 | ##218.0##
 | ####
 | ####
@@ -10199,6 +10526,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##5##
 | ##nan/exchanges/exchange/other/epd:amount/epd:module##
+| ##False##
 | ##219.0##
 | ####
 | ####
@@ -10231,6 +10559,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##5##
 | ##nan/exchanges/exchange/other/epd:amount/epd:scenario##
+| ##True##
 | ##220.0##
 | ####
 | ####
@@ -10263,6 +10592,7 @@ e.g. license conditions. In case of no restrictions "None" is entered.##
 | ####
 | ##4##
 | ##nan/exchanges/exchange/other/epd:referenceToUnitGroupDataSet##
+| ##False##
 | ##221.0##
 | ####
 | ####
@@ -10296,6 +10626,7 @@ table for the list).##
 | ####
 | ##1##
 | ##nan/LCIAResults##
+| ##False##
 | ##222.0##
 | ####
 | ####
@@ -10310,7 +10641,7 @@ table for the list).##
 | ####
 | ##Einzelnes Wirkbilanz-Ergebnis##
 | ##Single LCIA result##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -10328,6 +10659,7 @@ table for the list).##
 | ####
 | ##2##
 | ##nan/LCIAResults/LCIAResult##
+| ##False##
 | ##223.0##
 | ##Why marked in yellow?##
 | ####
@@ -10342,7 +10674,7 @@ table for the list).##
 | ##GlobalReferenceType##
 | ##Verweis auf die LCIA-Methode##
 | ##"LCIA method data set" applied to calculate the LCIA results.##
-| ##~##
+| ##Reference to the LCIA method dataset describing the indicator.##
 | ##Reference to the LCIA method dataset describing the indicator.##
 | ##m##
 | ####
@@ -10360,6 +10692,7 @@ table for the list).##
 | ####
 | ##3##
 | ##nan/LCIAResults/LCIAResult/referenceToLCIAMethodDataSet##
+| ##True##
 | ##224.0##
 | ####
 | ####
@@ -10374,7 +10707,7 @@ table for the list).##
 | ##StringMultiLang##
 | ##Allgemeine Erläuterungen##
 | ##General comment on this specific LCIA result, e.g. commenting on the correspondence of the inputs and outputs with the applied LCIA method etc.##
-| ##~##
+| ####
 | ####
 | ####
 | ####
@@ -10392,6 +10725,7 @@ table for the list).##
 | ####
 | ##3##
 | ##nan/LCIAResults/LCIAResult/generalComment##
+| ##False##
 | ##225.0##
 | ####
 | ####
@@ -10424,6 +10758,7 @@ table for the list).##
 | ####
 | ##3##
 | ##nan/LCIAResults/LCIAResult/other##
+| ##False##
 | ##226.0##
 | ##Why marked in yellow?##
 | ####
@@ -10456,6 +10791,7 @@ table for the list).##
 | ####
 | ##4##
 | ##nan/LCIAResults/LCIAResult/other/epd:amount##
+| ##False##
 | ##227.0##
 | ####
 | ####
@@ -10491,6 +10827,7 @@ LCIA - waste categories +##
 | ####
 | ##5##
 | ##nan/LCIAResults/LCIAResult/other/epd:amount/epd:module##
+| ##False##
 | ##228.0##
 | ####
 | ####
@@ -10523,6 +10860,7 @@ LCIA - waste categories +##
 | ####
 | ##5##
 | ##nan/LCIAResults/LCIAResult/other/epd:amount/epd:scenario##
+| ##True##
 | ##229.0##
 | ####
 | ####
@@ -10558,6 +10896,7 @@ LCIA - waste categories +##
 | ####
 | ##4##
 | ##nan/LCIAResults/LCIAResult/other/epd:referenceToUnitGroupDataSet##
+| ##False##
 | ##230.0##
 | ##heading? (provisorial format by Gundi)##
 | ####
@@ -10590,6 +10929,7 @@ LCIA - waste categories +##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##231.0##
 | ####
 | ####
@@ -10631,6 +10971,7 @@ The following material properties are currently supported: +
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##232.0##
 | ##Sub-Heading of product flow properties##
 | ####
@@ -10663,6 +11004,7 @@ The following material properties are currently supported: +
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##233.0##
 | ####
 | ####
@@ -10696,6 +11038,7 @@ specify -1000##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##234.0##
 | ####
 | ####
@@ -10730,6 +11073,7 @@ specify -1000##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##235.0##
 | ####
 | ####
@@ -10762,6 +11106,7 @@ specify -1000##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 | ##236.0##
 | ##? No idea wha this shall become?##
 | ####
@@ -10794,4 +11139,5 @@ specify -1000##
 | ####
 | ##0##
 | ##nan##
+| ##False##
 |===
