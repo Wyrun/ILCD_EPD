@@ -4,9 +4,14 @@ __pycache__/
 
 # Build artifacts
 output/
-docs/
-!docs/js/
-!docs/css/
+# Do NOT ignore docs entirely; we need to publish generated site
+# Allow HTML and assets to be committed
+# If you want to exclude other heavy artifacts under docs/, list them explicitly instead.
+# Keep allowing JS/CSS, and include HTML pages and attribute pages.
+!docs/
+# If you ever need to ignore specific subpaths inside docs, add patterns below.
+# For example:
+# docs/tmp/
 
 # IDE files
 .vscode/
