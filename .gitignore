@@ -16,3 +16,6 @@ output/
 # IDE files
 .vscode/
 .idea/
+
+todo.md
+what_we_learned.md

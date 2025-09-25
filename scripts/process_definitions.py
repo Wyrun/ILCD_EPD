@@ -139,8 +139,8 @@ def write_asciidoc_table(df, filename):
 def main():
     """Main function to process definitions."""
     COLUMN_MAPPING = {
-        'Definition (en)': 'IndData Definition (en)\u00a0- new ones',
-        'Original ILCD Format Definition (en)': 'InData / ÖKOBAUDAT Definition and explanation (EN)\u00a0- old ones'
+        'Definition (en)': 'InData Definition (en)',
+        'Original ILCD Format Definition (en)': 'Original ILCD Format Definition (en)'
     }
 
     try:

@@ -293,8 +293,8 @@ if __name__ == "__main__":
     # Ensure output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # Define file paths
-    xlsx_file = os.path.join(DATA_DIR, 'EPD_DataSet.xlsx')
+    # Define file paths - updated for new XLSX file
+    xlsx_file = os.path.join(DATA_DIR, 'ILCD_Format_Documentation_v1.3_reformatted_final_2025-09-12.xlsx')
     html_file = os.path.join(DATA_DIR, 'EPD_DataSet.html') # Assuming this will be in data as well
     combined_adoc_file = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
     roundtrip_xlsx_file = os.path.join(OUTPUT_DIR, 'roundtrip.xlsx')
