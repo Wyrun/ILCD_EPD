@@ -27,11 +27,9 @@ This document is generated from the EPD_DataSet.xlsx file.
 
 
 .EPD Data Structure
-[cols="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1", options="header"]
+[cols="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1", options="header"]
 |===
 | [role="title"]##order##
-| [role="title"]##Questions / Comments of editors##
-| [role="title"]##Changes observed by editors##
 | [role="title"]##ID previous##
 | [role="title"]##ID new##
 | [role="title"]##Format version ID (when introduced)##
@@ -46,15 +44,14 @@ This document is generated from the EPD_DataSet.xlsx file.
 | [role="title"]##InData Definition (en)##
 | [role="title"]##Further explanations (EN)##
 | [role="title"]##InData compliance CP-2020##
-| [role="title"]##ECO Platform conformity##
-| [role="title"]##ÖKOBAUDAT conformity##
-| [role="title"]##Deviation to ILCD format definition (see FAQ)##
+| [role="title"]##Deviation to ILCD format definition##
 | [role="title"]##Extension of ILCD format##
 | [role="title"]##InData Compliance Construction Products CPEN2020##
 | [role="title"]##eDoc ID##
 | [role="title"]##Example of expected information in the field##
 | [role="title"]##EN15804+A2 mapping (chapter number)##
 | [role="title"]##EN15804+A2 required information##
+| [role="title"]##ECO Platform conformity##
 | [role="title"]##ISO 22057 mapping (GUID)##
 | [role="title"]##ISO 22057 required information##
 | [role="title"]##ISO 21930 mapping##
@@ -62,10 +59,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | [role="title"]##Indent##
 | [role="title"]##Path##
 
-| ##1.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##1##
+| ##new##
 | ##A##
 | ##v1.0##
 | ##Prozessdatensatz##
@@ -82,9 +77,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -95,9 +89,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##0##
 | ##processDataSet##
 
-| ##2.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##2##
 | ##new##
 | ##A.1.1##
 | ##v1.0##
@@ -115,9 +107,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-a##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -128,9 +119,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processDataSet/@version##
 
-| ##3.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##3##
 | ##new##
 | ##A.1.2##
 | ##v1.2##
@@ -157,13 +146,10 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processDataSet/@epd2:epd-version##
 
-| ##4.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##4##
 | ##new##
 | ##A.1.3##
 | ##v1.0##
@@ -181,9 +167,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-b##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -194,9 +179,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##1##
 | ##processDataSet/@locations##
 
-| ##5.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##5##
 | ##new##
 | ##A.1.4##
 | ##v1.0##
@@ -214,9 +197,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-c##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -227,9 +209,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processDataSet/@locations/@metaDataOnly##
 
-| ##6.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##6##
 | ##A##
 | ##B##
 | ##v1.0##
@@ -247,9 +227,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -260,9 +239,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##0##
 | ##processInformation##
 
-| ##7.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##7##
 | ##A1##
 | ##B.1##
 | ##v1.0##
@@ -280,9 +257,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -293,9 +269,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##1##
 | ##processInformation/dataSetInformation##
 
-| ##8.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##8##
 | ##A1.1##
 | ##B.1.1##
 | ##v1.0##
@@ -312,8 +286,6 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##m##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##For further details see FAQ.##
 | ##1-1-2-1##
 | ##fe8fd0db-94d7-44a1-ba14- c32d43b1b3a3##
@@ -323,12 +295,11 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/dataSetInformation/UUID##
 
-| ##9.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##9##
 | ##new##
 | ##B.1.2##
 | ##v1.0##
@@ -343,8 +314,6 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##General descriptive and specifying name of the product or system.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 c##
-| ##EN 15804+A2: chapter 7.1 c##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -352,6 +321,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##Cement (CEM II 32.5)##
 | ##7.1 c##
 | ##Identification of the construction product name##
+| ##EN 15804+A2: chapter 7.1 c##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -359,9 +329,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processInformation/dataSetInformation/name##
 
-| ##10.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##10##
 | ##A1.2##
 | ##B.1.2.1##
 | ##v1.0##
@@ -379,9 +347,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-2-1##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -392,9 +359,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processInformation/dataSetInformation/baseName##
 
-| ##12.0##
-| ##"not used" according to InData Definition? why is it listed then? Too unspecific. Recommendation: remove##
-| ##{nbsp}##
+| ##11##
 | ##new##
 | ##B.1.2.2##
 | ##v1.0##
@@ -406,11 +371,9 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##StringMultiLang##
 | ##Further, quantitative specifying information on the good, service or process in technical term(s): qualifying constituent(s)-content and / or energy-content per unit etc. as appropriate. Separated by commata. (Note: non-qualifying flow properties, CAS No, Synonyms, Chemical formulas etc. are documented exclusively in the "Flow data set".)##
 | ##(nicht verwendet)##
-| ##(not used)##
-| ##{nbsp}##
+| ##~##
+| ##(not needed)##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -422,12 +385,11 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/dataSetInformation/functionalUnitFlowProperties##
 
-| ##13.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##12##
 | ##new##
 | ##B.1.2.3##
 | ##v1.0##
@@ -445,9 +407,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -458,9 +419,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processInformation/dataSetInformation/other##
 
-| ##11.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##13##
 | ##new##
 | ##B.1.3##
 | ##v1.0##
@@ -478,9 +437,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-6##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -491,9 +449,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##2##
 | ##processInformation/dataSetInformation/synonyms##
 
-| ##14.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##14##
 | ##A1.3##
 | ##B.1.4##
 | ##v1.0##
@@ -510,8 +466,6 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##m##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##For InData compliance: this can be any classification system, it has to be provided in English. +
 For further details see FAQ.##
 | ##1-1-2-7##
@@ -524,12 +478,11 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/dataSetInformation/classificationInformation##
 
-| ##15.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##15##
 | ##A1.3##
 | ##B.1.4.1##
 | ##v1.0##
@@ -547,9 +500,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -560,9 +512,7 @@ Cement##
 | ##2##
 | ##processInformation/dataSetInformation/classification##
 
-| ##16.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##16##
 | ##new##
 | ##B.1.4.1.1##
 | ##v1.0##
@@ -580,9 +530,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2-a##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -593,9 +542,7 @@ Cement##
 | ##3##
 | ##processInformation/dataSetInformation/classification/@name##
 
-| ##17.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##17##
 | ##new##
 | ##B.1.4.1.2##
 | ##v1.0##
@@ -613,9 +560,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2-b##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -626,9 +572,7 @@ Cement##
 | ##3##
 | ##processInformation/dataSetInformation/classification/@classes##
 
-| ##18.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##18##
 | ##new##
 | ##B.1.4.1.3##
 | ##v1.0##
@@ -646,9 +590,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2-1##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -659,9 +602,7 @@ Cement##
 | ##3##
 | ##processInformation/dataSetInformation/classification/class##
 
-| ##19.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##19##
 | ##new##
 | ##B.1.4.1.3.1##
 | ##v1.0##
@@ -679,9 +620,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2-1-a##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -692,9 +632,7 @@ Cement##
 | ##3##
 | ##processInformation/dataSetInformation/classification/@level##
 
-| ##20.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##20##
 | ##new##
 | ##B.1.4.1.3.2##
 | ##v1.0##
@@ -712,9 +650,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-2-7-2-1-b##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -725,9 +662,7 @@ Cement##
 | ##3##
 | ##processInformation/dataSetInformation/classification/@classId##
 
-| ##21.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##21##
 | ##A1.4##
 | ##B.1.5##
 | ##v1.0##
@@ -742,36 +677,6 @@ Cement##
 | ##If relevant: General information about the data set, including e.g. general quality statements (internal, not reviewed) as well as information sources used. Note: Please fill in only central aspects ("synopsis of dataset") and avoid overlapping entries with "Advice on data set use".##
 | ##{nbsp}##
 | ##o##
-| ##Data quality information shall be provided in a prominent +
-section of the EPD reporting data quality according +
-to EN 15941. This text shall be in line with the information +
-on data quality reported in the Project Report +
-and shall be a reasonable summary of it. +
- +
-Any use of relevant data assessed for either time, geography +
-or technology according to 7.1 and EN 15804+A2, +
-6.3.8.3 to be: +
-- poor or very poor data +
-- fair data that has more than 30 % for any core indicator has been noted in the EPD. +
- +
-The EPD specifies which table from EN 15804+A2, Annex +
-E has been used to assess the data quality of relevant +
-data.##
-| ##Data quality information shall be provided in a prominent +
-section of the EPD reporting data quality according +
-to EN 15941. This text shall be in line with the information +
-on data quality reported in the Project Report +
-and shall be a reasonable summary of it. +
- +
-Any use of relevant data assessed for either time, geography +
-or technology according to 7.1 and EN 15804+A2, +
-6.3.8.3 to be: +
-- poor or very poor data +
-- fair data that has more than 30 % for any core indicator has been noted in the EPD. +
- +
-The EPD specifies which table from EN 15804+A2, Annex +
-E has been used to assess the data quality of relevant +
-data.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -779,6 +684,21 @@ data.##
 | ##The data set covers…..##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##Data quality information shall be provided in a prominent +
+section of the EPD reporting data quality according +
+to EN 15941. This text shall be in line with the information +
+on data quality reported in the Project Report +
+and shall be a reasonable summary of it. +
+ +
+Any use of relevant data assessed for either time, geography +
+or technology according to 7.1 and EN 15804+A2, +
+6.3.8.3 to be: +
+- poor or very poor data +
+- fair data that has more than 30 % for any core indicator has been noted in the EPD. +
+ +
+The EPD specifies which table from EN 15804+A2, Annex +
+E has been used to assess the data quality of relevant +
+data.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -786,9 +706,7 @@ data.##
 | ##2##
 | ##processInformation/dataSetInformation/generalComment##
 
-| ##22.0##
-| ##Definition was not reasonable (saftey declarations in this place?); replaced by text in explanation ##
-| ##{nbsp}##
+| ##22##
 | ##A1.5##
 | ##B.1.6##
 | ##v1.0##
@@ -800,17 +718,9 @@ data.##
 | ##GlobalReferenceType##
 | ##"Source data set(s)" of detailed LCA study on the process or product represented by this data set, as well as documents / files with overarching documentative information on technology, geographical and / or time aspects etc. (e.g. basic engineering studies, process simulation results, patents, plant documentation, model behind the parameterisation of the "Mathematical model" section, etc.) (Note: can indirectly reference to digital file.)##
 | ##Hier können relevante Dokumente wie z.B. Sicherheitsdatenblätter, Hintergrundbericht, erläuterndes Material o.ä. angehängt werden##
-| ##Project report according to EN 15804 can be attached.##
+| ##Project report according to EN 15804  or any other product documentation as the safety data sheet may be attached.##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: chapter 7.1 l +
- +
-EPD contains a (simple) flow diagram in accordance with +
-the modular approach##
-| ##EN 15804+A2: chapter 7.1 l +
- +
-EPD contains a (simple) flow diagram in accordance with +
-the modular approach##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -818,6 +728,10 @@ the modular approach##
 | ##{nbsp}##
 | ##chapter 7.1 l##
 | ##Information on where explanatory material can be obtained.##
+| ##EN 15804+A2: chapter 7.1 l +
+ +
+EPD contains a (simple) flow diagram in accordance with +
+the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -825,9 +739,7 @@ the modular approach##
 | ##2##
 | ##processInformation/dataSetInformation/referenceToExternalDocumentation##
 
-| ##23.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##23##
 | ##new##
 | ##B.1.7##
 | ##v1.0##
@@ -845,9 +757,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -858,9 +769,7 @@ the modular approach##
 | ##2##
 | ##processInformation/dataSetInformation/other##
 
-| ##24.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##24##
 | ##new##
 | ##B.2##
 | ##v1.3##
@@ -880,9 +789,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##7.3.3.2 'Reference Service Life (RSL)'##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -891,9 +799,7 @@ the modular approach##
 | ##1##
 | ##processInformation/epd24:referenceServiceLife##
 
-| ##25.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##25##
 | ##new##
 | ##B.2.1##
 | ##v1.3##
@@ -920,13 +826,10 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/@epd24:years##
 
-| ##26.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##26##
 | ##new##
 | ##B.2.2##
 | ##v1.3##
@@ -953,13 +856,10 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/epd24:useConditionFactor##
 
-| ##27.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##27##
 | ##new##
 | ##B.2.2.1##
 | ##v1.3##
@@ -993,13 +893,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/@epd24:factorCategory##
 
-| ##28.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##28##
 | ##new##
 | ##B.2.2.2##
 | ##v1.3##
@@ -1032,13 +929,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/@epd24:objectSpecificGrade##
 
-| ##29.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##29##
 | ##new##
 | ##B.2.2.3##
 | ##v1.3##
@@ -1071,13 +965,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/@epd24:referenceGrade##
 
-| ##30.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##30##
 | ##new##
 | ##B.2.2.4##
 | ##v1.3##
@@ -1104,13 +995,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/@epd24:factor##
 
-| ##31.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##31##
 | ##new##
 | ##B.2.2.5##
 | ##v1.3##
@@ -1137,13 +1025,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/epd24:comment##
 
-| ##32.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##32##
 | ##new##
 | ##B.2.3##
 | ##v1.3##
@@ -1170,13 +1055,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/epd24:referenceToStandard##
 
-| ##33.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##33##
 | ##new##
 | ##B.2.4##
 | ##v1.3##
@@ -1203,13 +1085,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/epd24:referenceToUseConditionsDocumentation##
 
-| ##34.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##34##
 | ##new##
 | ##B.2.5##
 | ##v1.3##
@@ -1236,13 +1115,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:referenceServiceLife/epd24:comment##
 
-| ##35.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##35##
 | ##new##
 | ##B.3##
 | ##v1.3##
@@ -1266,16 +1142,13 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##'Estimated Service Life (ESL)'##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1##
 | ##processInformation/epd24:estimatedServiceLife##
 
-| ##36.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##36##
 | ##new##
 | ##B.3.1##
 | ##v1.3##
@@ -1302,13 +1175,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/@epd24:years##
 
-| ##37.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##37##
 | ##new##
 | ##B.3.2##
 | ##v1.3##
@@ -1335,13 +1205,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/epd24:useConditionFactor##
 
-| ##38.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##38##
 | ##new##
 | ##B.3.2.1##
 | ##v1.3##
@@ -1375,13 +1242,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/@epd24:factorCategory##
 
-| ##39.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##39##
 | ##new##
 | ##B.3.2.2##
 | ##v1.3##
@@ -1414,13 +1278,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/@epd24:objectSpecificGrade##
 
-| ##40.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##40##
 | ##new##
 | ##B.3.2.3##
 | ##v1.3##
@@ -1453,13 +1314,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/@epd24:referenceGrade##
 
-| ##41.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##41##
 | ##new##
 | ##B.3.2.3.1##
 | ##v1.3##
@@ -1486,13 +1344,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/@epd24:factor##
 
-| ##42.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##42##
 | ##new##
 | ##B.3.2.3.2##
 | ##v1.3##
@@ -1519,13 +1374,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/epd24:comment##
 
-| ##43.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##43##
 | ##new##
 | ##B.3.2.4##
 | ##v1.3##
@@ -1552,13 +1404,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/epd24:referenceToStandard##
 
-| ##44.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##44##
 | ##new##
 | ##B.3.2.5##
 | ##v1.3##
@@ -1585,13 +1434,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/epd24:referenceToUseConditionsDocumentation##
 
-| ##45.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##45##
 | ##new##
 | ##B.3.2.6##
 | ##v1.3##
@@ -1618,13 +1464,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:estimatedServiceLife/epd24:comment##
 
-| ##46.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##46##
 | ##new##
 | ##B.4##
 | ##v1.3##
@@ -1651,13 +1494,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##1##
 | ##processInformation/epd24:productIds##
 
-| ##47.0##
-| ##o' until information is available in datasets.##
-| ##{nbsp}##
+| ##47##
 | ##new##
 | ##B.4.1##
 | ##v1.3##
@@ -1684,13 +1524,10 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:productIds/epd24:productId##
 
-| ##48.0##
-| ##o' until information is available in datasets.##
-| ##{nbsp}##
+| ##48##
 | ##new##
 | ##B.4.1.1##
 | ##v1.3##
@@ -1717,21 +1554,16 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:productIds/@epd24:type##
 
-| ##{nbsp}##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier) +
-##
-| ##{nbsp}##
+| ##49##
 | ##A1.6##
-| ##B.4.2##
+| ##B.5##
 | ##v1.1##
 | ##Sicherheitszuschläge##
 | ##Generic data uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:safetyMargins##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}epd:safetyMargins##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1740,8 +1572,6 @@ topic "uncertainty penalities' does not fit to the previous one (product identif
 | ##Documentation of uncertainty margins that have been included in the results##
 | ##The amount (in percent) of any included uncertainty penalties. Find further explanations in FAQ.##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##x##
 | ##Mandatory for generic data in ÖKOBAUDAT For InData compliance: This concept is used for generic data (at the moment only relevant in  ÖKOBAUDAT). +
@@ -1754,16 +1584,13 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:productIds/epd:safetyMargins##
+| ##{nbsp}##
+| ##1##
+| ##processInformation/epd:safetyMargins##
 
-| ##{nbsp}##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier) +
-##
-| ##{nbsp}##
+| ##50##
 | ##A1.6##
-| ##B.4.2.1##
+| ##B.5.1##
 | ##v1.1##
 | ##Sicherheitszuschläge##
 | ##Uncertainty penalties##
@@ -1777,9 +1604,8 @@ topic "uncertainty penalities' does not fit to the previous one (product identif
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
+| ##x##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##o##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1790,15 +1616,11 @@ topic "uncertainty penalities' does not fit to the previous one (product identif
 | ##{nbsp}##
 | ##{nbsp}##
 | ##2##
-| ##processInformation/epd24:productIds/epd:margins##
+| ##processInformation/epd:safetyMargins/epd:margins##
 
-| ##{nbsp}##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier) +
-##
-| ##{nbsp}##
+| ##51##
 | ##A1.7##
-| ##B.4.2.2##
+| ##B.5.2##
 | ##v1.1##
 | ##Beschreibung##
 | ##Description of generic data uncertainty penalties##
@@ -1812,8 +1634,6 @@ topic "uncertainty penalities' does not fit to the previous one (product identif
 | ##Find further explanations in FAQ.##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
 | ##Mandatory for generic data in ÖKOBAUDAT For InData compliance: This concept is used for generic data (at the moment only relevant in  ÖKOBAUDAT). +
 For further details see FAQ.##
@@ -1825,14 +1645,13 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
-| ##processInformation/epd24:productIds/epd:description##
+| ##processInformation/epd:safetyMargins/epd:description##
 
-| ##49.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##52##
 | ##A2##
-| ##B.5##
+| ##B.6##
 | ##v1.1##
 | ##Szenarien##
 | ##Scenarios##
@@ -1845,12 +1664,6 @@ For further details see FAQ.##
 | ##Declaration of scenarios. Multiple independent groups of scenarios can be declared, using the optional group identifier for differentiation. Within each group, one scenario can be marked as the default one.##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##Mandatory for all declared modules beyond A3: declaration +
-of the assumptions pertaining to the scenarios of +
-the declared modules in accordance with the project report.##
-| ##Mandatory for all declared modules beyond A3: declaration +
-of the assumptions pertaining to the scenarios of +
-the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -1858,6 +1671,9 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##T10-T12 & T14##
 | ##scenario description##
+| ##Mandatory for all declared modules beyond A3: declaration +
+of the assumptions pertaining to the scenarios of +
+the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1865,11 +1681,9 @@ the declared modules in accordance with the project report.##
 | ##1##
 | ##processInformation/epd:scenarios##
 
-| ##50.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##53##
 | ##A2.1##
-| ##B.5.1##
+| ##B.6.1##
 | ##v1.1##
 | ##Szenario##
 | ##Scenario##
@@ -1882,8 +1696,6 @@ the declared modules in accordance with the project report.##
 | ##One scenario##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: tables T10-T12 & T14##
-| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -1891,6 +1703,7 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##T10-T12 & T14##
 | ##scenario description##
+| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1898,11 +1711,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:scenarios/epd:scenario##
 
-| ##51.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##54##
 | ##A2.2##
-| ##B.5.1.1##
+| ##B.6.1.1##
 | ##v1.1##
 | ##Name##
 | ##Name##
@@ -1915,8 +1726,6 @@ the declared modules in accordance with the project report.##
 | ##Name of the scenario; mandatory as soon as any scenario is declared.##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: tables T10-T12 & T14##
-| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -1924,6 +1733,7 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##T10-T12 & T14##
 | ##scenario description##
+| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1931,11 +1741,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:scenarios/@epd:name##
 
-| ##52.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##55##
 | ##A2.3##
-| ##B.5.1.2##
+| ##B.6.1.2##
 | ##v1.1##
 | ##Standardszenario##
 | ##Default##
@@ -1949,9 +1757,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1964,11 +1771,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:scenarios/@epd:default##
 
-| ##53.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##56##
 | ##A2.4##
-| ##B.5.1.3##
+| ##B.6.1.3##
 | ##v1.1##
 | ##Gruppe##
 | ##Group##
@@ -1982,9 +1787,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -1997,11 +1801,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:scenarios/@epd:group##
 
-| ##54.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##57##
 | ##A2.5##
-| ##B.5.1.4##
+| ##B.6.1.4##
 | ##v1.1##
 | ##Beschreibung##
 | ##Description##
@@ -2014,8 +1816,6 @@ the declared modules in accordance with the project report.##
 | ##Description of the scenario; mandatory as soon as any scenario is declared. Link to detailed description in EPD-document can be given.##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: tables T10-T12 & T14##
-| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -2023,6 +1823,7 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##T10-T12 & T14##
 | ##scenario description##
+| ##EN 15804+A2: tables T10-T12 & T14##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2030,11 +1831,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:scenarios/epd:description##
 
-| ##55.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##58##
 | ##A3##
-| ##B.6##
+| ##B.7##
 | ##v1.1##
 | ##Module##
 | ##Modules##
@@ -2048,9 +1847,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2063,11 +1861,9 @@ the declared modules in accordance with the project report.##
 | ##1##
 | ##processInformation/epd:modules##
 
-| ##56.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##59##
 | ##A3.1##
-| ##B.6.1##
+| ##B.7.1##
 | ##v1.1##
 | ##Modul##
 | ##Module##
@@ -2081,9 +1877,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##m##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2096,11 +1891,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:modules/epd:module##
 
-| ##57.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##60##
 | ##A3.2##
-| ##B.6.1.1##
+| ##B.7.1.1##
 | ##v1.1##
 | ##Name##
 | ##Name##
@@ -2114,9 +1907,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2129,11 +1921,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:modules/@epd:name##
 
-| ##58.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##61##
 | ##A3.3##
-| ##B.6.1.2##
+| ##B.7.1.2##
 | ##v1.1##
 | ##Produktsystem-ID##
 | ##Product system ID##
@@ -2147,9 +1937,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2162,11 +1951,9 @@ the declared modules in accordance with the project report.##
 | ##2##
 | ##processInformation/epd:modules/@epd:productsystem-id##
 
-| ##59.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##62##
 | ##A1.8##
-| ##B.7##
+| ##B.8##
 | ##v1.2##
 | ##Inhaltsangabe##
 | ##Content Declaration##
@@ -2186,8 +1973,6 @@ Glass fibre reinforcement  0.2%  +
 Div additives (total) 4.7% +
 Total 100%##
 | ##{nbsp}##
-| ##EN 15804+A2: chapter 7.1 d##
-| ##EN 15804+A2: chapter 7.1 d##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -2195,6 +1980,7 @@ Total 100%##
 | ##{nbsp}##
 | ##7.1 d##
 | ##Description of main product components and/or substances (to help understand the product composition in its delivery state and ensure safety and efficiency during installation, use, disposal)##
+| ##EN 15804+A2: chapter 7.1 d##
 | ##0w$1F7Vk17L8tW8yV$3Vu3##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2202,11 +1988,9 @@ Total 100%##
 | ##1##
 | ##processInformation/epd2:contentDeclaration##
 
-| ##60.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##63##
 | ##new##
-| ##B.7.1##
+| ##B.8.1##
 | ##v1.2##
 | ##Komponente##
 | ##Component##
@@ -2231,15 +2015,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:component##
 
-| ##61.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##64##
 | ##new##
-| ##B.7.1.1##
+| ##B.8.1.1##
 | ##v1.2##
 | ##Name##
 | ##Name##
@@ -2264,15 +2045,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:name##
 
-| ##62.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##65##
 | ##new##
-| ##B.7.1.2##
+| ##B.8.1.2##
 | ##v1.2##
 | ##Massenanteil in %##
 | ##Mass percentage##
@@ -2297,15 +2075,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:weightPerc##
 
-| ##63.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##66##
 | ##new##
-| ##B.7.1.2.1##
+| ##B.8.1.2.1##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
@@ -2330,15 +2105,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:value##
 
-| ##64.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##67##
 | ##new##
-| ##B.7.1.2.2##
+| ##B.8.1.2.2##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
@@ -2363,15 +2135,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
 
-| ##65.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##68##
 | ##new##
-| ##B.7.1.2.3##
+| ##B.8.1.2.3##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
@@ -2396,15 +2165,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
 
-| ##66.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##69##
 | ##new##
-| ##B.7.1.3##
+| ##B.8.1.3##
 | ##v1.2##
 | ##Masse in kg##
 | ##Mass in kg##
@@ -2429,15 +2195,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:mass##
 
-| ##67.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##70##
 | ##new##
-| ##B.7.1.3.1##
+| ##B.8.1.3.1##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
@@ -2462,15 +2225,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:value##
 
-| ##68.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##71##
 | ##new##
-| ##B.7.1.3.2##
+| ##B.8.1.3.2##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
@@ -2495,15 +2255,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
 
-| ##69.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##72##
 | ##new##
-| ##B.7.1.3.3##
+| ##B.8.1.3.3##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
@@ -2528,15 +2285,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
 
-| ##70.0##
-| ##Definition added.##
-| ##{nbsp}##
+| ##73##
 | ##new##
-| ##B.7.1.4##
+| ##B.8.1.4##
 | ##v1.2##
 | ##Bemerkungen##
 | ##Comment##
@@ -2557,7 +2311,6 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##1WhfJiAl51kfx6zvSBVYib##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -2565,11 +2318,9 @@ Total 100%##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:comment##
 
-| ##71.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##74##
 | ##new##
-| ##B.7.2##
+| ##B.8.2##
 | ##v1.2##
 | ##Material \| Substanz##
 | ##Material \| Substance##
@@ -2594,15 +2345,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:material_\|_epd2:substance##
 
-| ##72.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##75##
 | ##new##
-| ##B.7.2.1##
+| ##B.8.2.1##
 | ##v1.2##
 | ##Name##
 | ##Name##
@@ -2627,15 +2375,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:name##
 
-| ##73.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##76##
 | ##new##
-| ##B.7.2.2##
+| ##B.8.2.2##
 | ##v1.2##
 | ##Massenanteil in %##
 | ##Mass percentage##
@@ -2660,15 +2405,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:weightPerc##
 
-| ##74.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##77##
 | ##new##
-| ##B.7.2.2.1##
+| ##B.8.2.2.1##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
@@ -2693,15 +2435,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:value##
 
-| ##75.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##78##
 | ##new##
-| ##B.7.2.2.2##
+| ##B.8.2.2.2##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
@@ -2726,15 +2465,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
 
-| ##76.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##79##
 | ##new##
-| ##B.7.2.2.3##
+| ##B.8.2.2.3##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
@@ -2759,15 +2495,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
 
-| ##77.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##80##
 | ##new##
-| ##B.7.2.3##
+| ##B.8.2.3##
 | ##v1.2##
 | ##Masse in kg##
 | ##Mass in kg##
@@ -2792,15 +2525,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:mass##
 
-| ##78.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##81##
 | ##new##
-| ##B.7.2.3.1##
+| ##B.8.2.3.1##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
@@ -2825,15 +2555,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:value##
 
-| ##79.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##82##
 | ##new##
-| ##B.7.2.3.2##
+| ##B.8.2.3.2##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
@@ -2858,15 +2585,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
 
-| ##80.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##83##
 | ##new##
-| ##B.7.2.3.3##
+| ##B.8.2.3.3##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
@@ -2891,15 +2615,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
 
-| ##81.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##84##
 | ##new##
-| ##B.7.2.4##
+| ##B.8.2.4##
 | ##v1.2##
 | ##CAS-Nummer##
 | ##CAS number##
@@ -2924,15 +2645,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:CASNumber##
 
-| ##82.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##85##
 | ##new##
-| ##B.7.2.5##
+| ##B.8.2.5##
 | ##v1.2##
 | ##EC-Nummer##
 | ##EC number##
@@ -2957,15 +2675,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:ECNumber##
 
-| ##83.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##86##
 | ##new##
-| ##B.7.2.6##
+| ##B.8.2.6##
 | ##v1.2##
 | ##Gefahrencode##
 | ##Hazard code##
@@ -2990,15 +2705,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:hazardCode##
 
-| ##84.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##87##
 | ##new##
-| ##B.7.2.7##
+| ##B.8.2.7##
 | ##v1.2##
 | ##Anteil erneuerbarer Ressourcen##
 | ##Percentage of renewable resources##
@@ -3023,15 +2735,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:renewable##
 
-| ##85.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##88##
 | ##new##
-| ##B.7.2.8##
+| ##B.8.2.8##
 | ##v1.2##
 | ##Anteil recycelter Materialien##
 | ##Percentage of recycled materials##
@@ -3056,15 +2765,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:recycled##
 
-| ##86.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##89##
 | ##new##
-| ##B.7.2.9##
+| ##B.8.2.9##
 | ##v1.2##
 | ##Anteil recycelbarer Materialien##
 | ##Percentage of potentially recyclable materials##
@@ -3089,15 +2795,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:recyclable##
 
-| ##87.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##90##
 | ##new##
-| ##B.7.2.10##
+| ##B.8.2.10##
 | ##v1.2##
 | ##Verpackung##
 | ##Packaging##
@@ -3122,15 +2825,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/@epd2:packaging##
 
-| ##88.0##
-| ##Definition added.##
-| ##{nbsp}##
+| ##91##
 | ##new##
-| ##B.7.2.11##
+| ##B.8.2.11##
 | ##v1.2##
 | ##Bemerkungen##
 | ##Comment##
@@ -3140,10 +2840,9 @@ Total 100%##
 | ##FTMultiLang##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##Comments on content declarationof material/substance##
+| ##Comments on content declaration of material/substance##
 | ##{nbsp}##
 | ##o##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3159,11 +2858,9 @@ Total 100%##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd2:comment##
 
-| ##89.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##92##
 | ##new##
-| ##B.7.3##
+| ##B.8.3##
 | ##v1.3##
 | ##Enthält SVHC##
 | ##Contains SVHC##
@@ -3188,15 +2885,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd2:contentDeclaration/epd24:SVHC##
 
-| ##90.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##93##
 | ##new##
-| ##B.8##
+| ##B.9##
 | ##v1.3##
 | ##Quantitative Angaben zu Szenarien##
 | ##Quantitative scenario data##
@@ -3221,15 +2915,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##1##
 | ##processInformation/epd24:scenarioData##
 
-| ##91.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##94##
 | ##new##
-| ##B.8.1##
+| ##B.9.1##
 | ##v1.3##
 | ##Angaben zu Use-Stage-Szenarien##
 | ##Use stage scenario data##
@@ -3254,15 +2945,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:scenarioData/epd24:useStageScenarioData##
 
-| ##92.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##95##
 | ##new##
-| ##B.8.1.1##
+| ##B.9.1.1##
 | ##v1.3##
 | ##Szenario-Name##
 | ##scenario name##
@@ -3287,16 +2975,12 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:scenarioData/@epd24:scenario##
 
-| ##93.0##
-| ##Additional information according to EN 15804 (not a scenario) +
-##
-| ##{nbsp}##
+| ##96##
 | ##new##
-| ##B.8.1.2##
+| ##B.9.1.2##
 | ##v1.3##
 | ##Wirkungen auf Boden und Wasser##
 | ##Impacts on soil and water##
@@ -3314,10 +2998,9 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##7.4.2 ##
 | ##Soil and water##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3325,11 +3008,9 @@ Total 100%##
 | ##1##
 | ##processInformation/epd24:soilAndWaterImpacts##
 
-| ##94.0##
-| ##We assume that there is a template for the quantitative data input?##
-| ##{nbsp}##
+| ##97##
 | ##new##
-| ##B.8.1.2.1##
+| ##B.9.1.2.1##
 | ##v1.3##
 | ##Beschreibung der Wirkungen auf Boden und Wasser##
 | ##Description of impacts on soil and water##
@@ -3339,10 +3020,9 @@ Total 100%##
 | ##FTMultiLang##
 | ##{nbsp}##
 | ##Beschreibung der Wirkungen auf Boden und Wasser währende der Nutzungsphase##
-| ##Description of impacts on soil and water during the use stage##
+| ##Description of impacts on soil and water during the use stagee according to EN 15804, 7.4.2 ##
 | ##{nbsp}##
 | ##m##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3358,11 +3038,9 @@ Total 100%##
 | ##2##
 | ##processInformation/epd24:soilAndWaterImpacts/epd24:soilAndWaterImpactsDescription##
 
-| ##95.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##98##
 | ##new##
-| ##B.8.2##
+| ##B.9.2##
 | ##v1.3##
 | ##Angaben zu EoL-Szenarien##
 | ##EoL scenario data##
@@ -3375,12 +3053,6 @@ Total 100%##
 | ##End of Life scenario data##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: section 7.3.4 End-of-life (T8) +
- +
-Geographical area, i.e. market range, where the product end-of-life is assumed##
-| ##EN 15804+A2: section 7.3.4 End-of-life (T8) +
- +
-Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3388,6 +3060,9 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##T8##
 | ##EoL output flows##
+| ##EN 15804+A2: section 7.3.4 End-of-life (T8) +
+ +
+Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3395,11 +3070,9 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##1##
 | ##processInformation/epd24:eolScenarioData##
 
-| ##96.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##99##
 | ##new##
-| ##B.8.2.1##
+| ##B.9.2.1##
 | ##v1.3##
 | ##Szenario-Name##
 | ##scenario name##
@@ -3424,15 +3097,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:scenario##
 
-| ##97.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##100##
 | ##new##
-| ##B.8.2.2##
+| ##B.9.2.2##
 | ##v1.3##
 | ##Sammlung##
 | ##Collection##
@@ -3457,15 +3127,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/epd24:collection##
 
-| ##98.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##101##
 | ##new##
-| ##B.8.2.2.1##
+| ##B.9.2.2.1##
 | ##v1.3##
 | ##getrennt##
 | ##separate##
@@ -3490,15 +3157,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:separate##
 
-| ##99.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##102##
 | ##new##
-| ##B.8.2.2.2##
+| ##B.9.2.2.2##
 | ##v1.3##
 | ##als gemischter Abfall##
 | ##with mixed waste##
@@ -3523,15 +3187,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:withMixedWaste##
 
-| ##100.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##103##
 | ##new##
-| ##B.8.2.3##
+| ##B.9.2.3##
 | ##v1.3##
 | ##Rückholung##
 | ##Recovery##
@@ -3556,15 +3217,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/epd24:recovery##
 
-| ##101.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##104##
 | ##new##
-| ##B.8.2.3.1##
+| ##B.9.2.3.1##
 | ##v1.3##
 | ##zur Wiederverwendung##
 | ##for re-use##
@@ -3589,15 +3247,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:reuse##
 
-| ##102.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##105##
 | ##new##
-| ##B.8.2.3.2##
+| ##B.9.2.3.2##
 | ##v1.3##
 | ##zum Recycling##
 | ##for recycling##
@@ -3622,15 +3277,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:recycling##
 
-| ##103.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##106##
 | ##new##
-| ##B.8.2.3.3##
+| ##B.9.2.3.3##
 | ##v1.3##
 | ##zur Energierückgewinnung##
 | ##for energy recovery##
@@ -3655,15 +3307,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:energyRecovery##
 
-| ##104.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##107##
 | ##new##
-| ##B.8.2.4##
+| ##B.9.2.4##
 | ##v1.3##
 | ##Beseitigung##
 | ##Disposal##
@@ -3688,15 +3337,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/epd24:disposal##
 
-| ##105.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##108##
 | ##new##
-| ##B.8.2.4.1##
+| ##B.9.2.4.1##
 | ##v1.3##
 | ##zur Deponierung##
 | ##for final deposition##
@@ -3721,15 +3367,12 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/epd24:eolScenarioData/@epd24:finalDeposition##
 
-| ##106.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##109##
 | ##A4##
-| ##B.9##
+| ##B.10##
 | ##v1.0##
 | ##Quantitative Referenz##
 | ##Quantitative reference##
@@ -3745,9 +3388,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2004-01-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3758,11 +3400,9 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##1##
 | ##processInformation/quantitativeReference##
 
-| ##107.0##
-| ##Please check: The table passed contained definitions in column 'data types'. We deleted those.##
-| ##{nbsp}##
+| ##110##
 | ##new##
-| ##B.9.1##
+| ##B.10.1##
 | ##v1.0##
 | ##Art der quantitativen Referenz##
 | ##Type of quantitative reference##
@@ -3770,7 +3410,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##r##
 | ##{nbsp}##
 | ##TypeOfQuantitativeReferenceValues +
-Reference flow(s) +
+Reference flow(s)  +
 Functional unit +
 Other parameter +
 Production period##
@@ -3782,9 +3422,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-4-15##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3795,11 +3434,9 @@ Production period##
 | ##2##
 | ##processInformation/quantitativeReference/@type##
 
-| ##108.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##111##
 | ##A4.1##
-| ##B.9.2##
+| ##B.10.2##
 | ##v1.0##
 | ##Referenzfluß##
 | ##Reference flow(s)##
@@ -3812,8 +3449,6 @@ Production period##
 | ##~##
 | ##Link to reference flow of data set; the reference flow is the output that represents the product. Therefore for each EPD (process) data set, at least one reference flow data set has to be given that represents the product. The amount of the exchange with the reference product, together with the reference flow property of the reference product, indicates the declared unit (or functional unit) as stated in the EPD.##
 | ##m##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##minor##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -3825,14 +3460,13 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/quantitativeReference/referenceToReferenceFlow##
 
-| ##109.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##112##
 | ##A4.2##
-| ##B.9.3##
+| ##B.10.3##
 | ##v1.0##
 | ##Funktionelle Einheit##
 | ##Functional unit, Production period, or Other parameter##
@@ -3848,8 +3482,6 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-4-17##
 | ##{nbsp}##
 | ##7.1 b##
@@ -3858,177 +3490,11 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/quantitativeReference/functionalUnitOrOther##
 
-| ##110.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##new##
-| ##B.9.4##
-| ##v1.0##
-| ##Anderer Inhalt##
-| ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
-| ##o##
-| ##[0,1]##
-| ##{nbsp}##
-| ##May contain arbitrary content.##
-| ##{nbsp}##
-| ##~##
-| ##{nbsp}##
-| ##o##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##processInformation/quantitativeReference/other##
-
-| ##111.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##A5##
-| ##B.10##
-| ##v1.0##
-| ##Zeitliche Repräsentativität##
-| ##Time representativeness##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}time##
-| ##r##
-| ##[0,1]##
-| ##{nbsp}##
-| ##Provides information about the time representativeness of the data set.##
-| ##Informationen zur zeitlichen Repräsentativität des Datensatzes##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2006-01-01 00:00:00##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##1##
-| ##processInformation/time##
-
-| ##112.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##A5.1##
-| ##B.10.1##
-| ##v1.0##
-| ##Referenzjahr##
-| ##Reference year##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceYear##
-| ##r##
-| ##[0,1]##
-| ##Year##
-| ##Start year of the time period for which the data set is valid (until year of "Data set valid until:"). For data sets that combine data from different years, the most representative year is given regarding the overall environmental impact. In that case, the reference year is derived by expert judgement.##
-| ##Das erste Jahr der Gültigkeits des Datensatzes.##
-| ##Start year of the time period for which the data set is valid (until year of "Data set valid until")##
-| ##{nbsp}##
-| ##m##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##1-1-6-18##
-| ##2015##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##3HRWYEBbbDzhUdMvoAK5Sx##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##processInformation/time/referenceYear##
-
-| ##113.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##A5.2##
-| ##B.10.2##
-| ##v1.0##
-| ##Gültig bis##
-| ##Data set valid until:##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetValidUntil##
-| ##r##
-| ##[0,1]##
-| ##Year##
-| ##End year of the time period for which the data set is still valid / sufficiently representative. This date also determines when a data set revision / remodelling is required or recommended due to expected relevant changes in environmentally or technically relevant inventory values, including in the background system.##
-| ##Ende des Zeitabschnitts, bis zu dem der Datensatz gültig ist.##
-| ##~##
-| ##{nbsp}##
-| ##m##
-| ##date of expiry##
-| ##date of expiry##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##1-1-6-19##
-| ##2018##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0pb8bLdMf3SB$4iV$cRvsI##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##processInformation/time/dataSetValidUntil##
-
-| ##114.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##A5.3##
-| ##B.10.3##
-| ##v1.0##
-| ##Erläuterungen zur zeitlichen Repräsentativität##
-| ##Time representativeness description##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeRepresentativenessDescription##
-| ##r##
-| ##[0,1]##
-| ##FTMultiLang##
-| ##Description of the valid time span of the data set including information on limited usability within sub-time spans (e.g. summer/winter).##
-| ##Beschreibung der gültigen Betrachtungszeit für den Datensatz einschließlich Information über allfällige zeitliche Begrenzungen (z.B. Sommer/Winter)##
-| ##Description of the valid time span of the data set including information on limited usability within sub-time spans (e.g. summer/winter).##
-| ##{nbsp}##
-| ##o##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##1-1-6-20##
-| ##annual average##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##processInformation/time/timeRepresentativenessDescription##
-
-| ##115.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##113##
 | ##new##
 | ##B.10.4##
 | ##v1.0##
@@ -4046,6 +3512,154 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##0##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##2##
+| ##processInformation/quantitativeReference/other##
+
+| ##114##
+| ##A5##
+| ##B.11##
+| ##v1.0##
+| ##Zeitliche Repräsentativität##
+| ##Time representativeness##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}time##
+| ##r##
+| ##[0,1]##
+| ##{nbsp}##
+| ##Provides information about the time representativeness of the data set.##
+| ##Informationen zur zeitlichen Repräsentativität des Datensatzes##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##2006-01-01 00:00:00##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##1##
+| ##processInformation/time##
+
+| ##115##
+| ##A5.1##
+| ##B.11.1##
+| ##v1.0##
+| ##Referenzjahr##
+| ##Reference year##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceYear##
+| ##r##
+| ##[0,1]##
+| ##Year##
+| ##Start year of the time period for which the data set is valid (until year of "Data set valid until:"). For data sets that combine data from different years, the most representative year is given regarding the overall environmental impact. In that case, the reference year is derived by expert judgement.##
+| ##Das erste Jahr der Gültigkeits des Datensatzes.##
+| ##Start year of the time period for which the data set is valid (until year of "Data set valid until")##
+| ##{nbsp}##
+| ##m##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##1-1-6-18##
+| ##2015##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##3HRWYEBbbDzhUdMvoAK5Sx##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##2##
+| ##processInformation/time/referenceYear##
+
+| ##116##
+| ##A5.2##
+| ##B.11.2##
+| ##v1.0##
+| ##Gültig bis##
+| ##Data set valid until:##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetValidUntil##
+| ##r##
+| ##[0,1]##
+| ##Year##
+| ##End year of the time period for which the data set is still valid / sufficiently representative. This date also determines when a data set revision / remodelling is required or recommended due to expected relevant changes in environmentally or technically relevant inventory values, including in the background system.##
+| ##Ende des Zeitabschnitts, bis zu dem der Datensatz gültig ist.##
+| ##~##
+| ##{nbsp}##
+| ##m##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##1-1-6-19##
+| ##2018##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##date of expiry##
+| ##0pb8bLdMf3SB$4iV$cRvsI##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##2##
+| ##processInformation/time/dataSetValidUntil##
+
+| ##117##
+| ##A5.3##
+| ##B.11.3##
+| ##v1.0##
+| ##Erläuterungen zur zeitlichen Repräsentativität##
+| ##Time representativeness description##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeRepresentativenessDescription##
+| ##r##
+| ##[0,1]##
+| ##FTMultiLang##
+| ##Description of the valid time span of the data set including information on limited usability within sub-time spans (e.g. summer/winter).##
+| ##Beschreibung der gültigen Betrachtungszeit für den Datensatz einschließlich Information über allfällige zeitliche Begrenzungen (z.B. Sommer/Winter)##
+| ##Description of the valid time span of the data set including information on limited usability within sub-time spans (e.g. summer/winter).##
+| ##{nbsp}##
+| ##o##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##1-1-6-20##
+| ##annual average##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##2##
+| ##processInformation/time/timeRepresentativenessDescription##
+
+| ##118##
+| ##new##
+| ##B.11.4##
+| ##v1.0##
+| ##Anderer Inhalt##
+| ##Other content##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##o##
+| ##[0,1]##
+| ##{nbsp}##
+| ##May contain arbitrary content.##
+| ##{nbsp}##
+| ##~##
+| ##{nbsp}##
+| ##o##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##0##
@@ -4056,14 +3670,13 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/time/other##
 
-| ##116.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##119##
 | ##C3.5##
-| ##B.10.5##
+| ##B.11.5##
 | ##v1.2##
 | ##Veröffentlichungsdatum der EPD##
 | ##Publication date of EPD##
@@ -4076,8 +3689,6 @@ Production period##
 | ##Exact date of publication of the EPD in the form "YYYY-MM-DD".##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 f##
-| ##EN 15804+A2: chapter 7.1 f##
 | ##{nbsp}##
 | ##x##
 | ##not applicable for generic data##
@@ -4085,6 +3696,7 @@ Production period##
 | ##{nbsp}##
 | ##7.1 f##
 | ##Date of publication and start of the 5-year validity period##
+| ##EN 15804+A2: chapter 7.1 f##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4092,11 +3704,9 @@ Production period##
 | ##3##
 | ##processInformation/time/other/epd2:publicationDateOfEPD##
 
-| ##117.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##120##
 | ##new##
-| ##B.10.6##
+| ##B.11.6##
 | ##v1.3##
 | ##Ablaufdatum der EPD##
 | ##Expiration date of EPD##
@@ -4121,15 +3731,12 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##processInformation/time/epd2:expirationDateOfEPD##
 
-| ##118.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##121##
 | ##A6##
-| ##B.11##
+| ##B.12##
 | ##v1.0##
 | ##Geographische Repräsentativität##
 | ##Geographical representativeness##
@@ -4145,9 +3752,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2008-01-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4158,11 +3764,9 @@ Production period##
 | ##1##
 | ##processInformation/geography##
 
-| ##119.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##122##
 | ##new##
-| ##B.11.1##
+| ##B.12.1##
 | ##v1.0##
 | ##Ort##
 | ##Location##
@@ -4178,9 +3782,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-1-8-21##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4191,11 +3794,9 @@ Production period##
 | ##2##
 | ##processInformation/geography/locationOfOperationSupplyOrProduction##
 
-| ##120.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##123##
 | ##A6.1##
-| ##B.11.1.1##
+| ##B.12.1.1##
 | ##v1.0##
 | ##Ort##
 | ##Location##
@@ -4208,8 +3809,6 @@ Production period##
 | ##Region, for which the data set is representative / relevant. ISO 3166 country code or regional code##
 | ##{nbsp}##
 | ##m##
-| ##Geographical area, i.e. market range, where it may be applied ##
-| ##Geographical area, i.e. market range, where it may be applied ##
 | ##minor##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4217,6 +3816,7 @@ Production period##
 | ##DE##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##Geographical area, i.e. market range, where it may be applied ##
 | ##2hrADMu992yvf9m9RB5ukI##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4224,11 +3824,9 @@ Production period##
 | ##2##
 | ##processInformation/geography/@location##
 
-| ##121.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##124##
 | ##A6.2##
-| ##B.11.2##
+| ##B.12.2##
 | ##v1.0##
 | ##Erläuterungen zur geographischen Repräsentativität##
 | ##Geographical representativeness description##
@@ -4241,14 +3839,13 @@ Production period##
 | ##Explanations about additional aspects of the location if relevant##
 | ##{nbsp}##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##minor##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1-1-8-24##
 | ##Imports statistics for Germany +
 were considered for modelling .##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1$A6fmHiDFvx_yaQsLwfZ3##
@@ -4258,11 +3855,9 @@ were considered for modelling .##
 | ##2##
 | ##processInformation/geography/descriptionOfRestrictions##
 
-| ##122.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##125##
 | ##new##
-| ##B.11.3##
+| ##B.12.3##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
@@ -4278,9 +3873,8 @@ were considered for modelling .##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4291,11 +3885,9 @@ were considered for modelling .##
 | ##2##
 | ##processInformation/geography/other##
 
-| ##123.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##126##
 | ##A7##
-| ##B.12##
+| ##B.13##
 | ##v1.0##
 | ##Technische Repräsentativität##
 | ##Technological representativeness##
@@ -4311,9 +3903,8 @@ were considered for modelling .##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2010-01-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4324,11 +3915,9 @@ were considered for modelling .##
 | ##1##
 | ##processInformation/technology##
 
-| ##124.0##
-| ##Red text: Changes in definition by editors (as in old table).##
-| ##{nbsp}##
+| ##127##
 | ##A7.1##
-| ##B.12.1##
+| ##B.13.1##
 | ##v1.0##
 | ##Technische Beschreibung inklusive der Hintergrundsysteme##
 | ##Technology description including background system##
@@ -4338,15 +3927,15 @@ were considered for modelling .##
 | ##FTMultiLang##
 | ##Description of the technological characteristics including operating conditions of the process or product system. For the latter this includes the relevant upstream and downstream processes included in the data set. Professional terminology should be used.##
 | ##Beschreibung der wesentlichen technischen Eigenschaften des Produkts bzw. Prozesses (inkl. Nutzungsbedingungen). Falls wesentlich für techn. Repräsentativität, sind auch die relevanten vor- und nachgelagerten Prozesse ("Hintergrundsysteme"), die im Datensatz enthalten sind, zu beschreiben. Hinweis auf ausführliche Beschreibung im EPD-Dokument, falls vorhanden, kann angeführt werden. Alternativ kann auch ein Verweis auf "Anwendungshinweis für Datensatz" und "Technisches Anwendungsgebiet des Produkts oder Prozesses" gemacht werden. Bitte keine allgemeinen Ausführungen zu den Systemgrenzen gemäß EN 15804.##
-| ##Description of the technological characteristics including operating conditions of the product system or process. If relevant for the technological representativeness this comprises the relevant upstream and downstream processes ("background system") included in the data set.  Link to detailed description in EPD-document or to flow diagramm can be given, if available. Alternatively a link to 'Use advice for data set' or 'technical purpose of product or process' can be given. Note 1: The feasible application of the product in the building or of the material  in a process or product respectively is described in the field ‘technical purpose of product or process’ (8); a reference to the corresponding section of the EPD can be given. Note 2: No general descriptions of the system boundaries according to EN 15804.##
-| ##Find further explanations and examples in FAQ.##
+| ##Description of the technological characteristics of the product across all life cycle stages. The information should focus on those technical aspects that are important for users to decide whether a dataset is suitable for representing a particular product in the building life cycle assessment. Link to detailed description in EPD-document or to flow diagram can be given, if available. +
+The following information should be provided: +
+• Brief description of the product +
+• Identification of the main product components and materials +
+• (Brief) technical description of relevant processes during the manufacturing, construction, use, and disposal phases of the product.##
+| ##Note 1: The feasible application of the product in the building or of the material in the process or in the product is described in the field "technical purpose of application of  product or process". +
+Note 2: The description should not be textbook-like, but should address the specifics of the declared product. +
+Note 3: General statements on the system boundaries according to EN 15804 can be found in the standard and are not desired here.##
 | ##m##
-| ##Description of the system boundary (can be simplified, +
-as a picture or in wording), including the assignment of +
-the analysed processes to the life cycle modules##
-| ##Description of the system boundary (can be simplified, +
-as a picture or in wording), including the assignment of +
-the analysed processes to the life cycle modules##
 | ##minor##
 | ##{nbsp}##
 | ##Give concentrated infomation about main technological aspects, to make the user understand the background of the LCA information in the data set. E.g. +
@@ -4362,6 +3951,9 @@ materials if reasonable; +
 | ##The products considered are Portland slag cement according to DIN EN 197-1. The product consists of Portland cement clinker and blastfurnace slag as well as sulfate carriers. The blastfurnace content is between 21 and 35 M .-%.##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##Description of the system boundary (can be simplified, +
+as a picture or in wording), including the assignment of +
+the analysed processes to the life cycle modules##
 | ##1TCAtFQ$r2LAk3oxaknGa3##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4369,11 +3961,9 @@ materials if reasonable; +
 | ##2##
 | ##processInformation/technology/technologyDescriptionAndIncludedProcesses##
 
-| ##125.0##
-| ##Proposed text in 'InData Definition' was replaced by proposed text in 'Further explanation'.##
-| ##{nbsp}##
+| ##128##
 | ##A7.2##
-| ##B.12.2##
+| ##B.13.2##
 | ##v1.0##
 | ##Technisches Anwendungsgebiet##
 | ##Technical purpose of product or process##
@@ -4383,13 +3973,15 @@ materials if reasonable; +
 | ##FTMultiLang##
 | ##Description of the intended / possible applications of the good, service, or process. E.g. for which type of products the material, represented by this data set, is used. Examples: "This high purity chemical is used for analytical laboratories only." or "This technical quality bulk chemical is used for large scale synthesis in chemical industry.". Or: "This truck is used only for long-distance transport of liquid bulk chemicals".##
 | ##Kurze Beschreibung der beabsichtigten bzw. möglichen Anwendung des Produkts, der Dienstleistung oder des Prozesses. Beispiele "Die hochreine Chemikalie wird ausschließlich von analytischen Laboratorien genutzt." Oder: "Diese Chemikalie in technischer Massenqualität wird für großmaßstäbliche Synthesen in der chemischen Industrie genutzt". Oder: "Dieser LKW wird nur für Langstreckentransporte von flüssigen Massenchemikalien genutzt."##
-| ##Brief description of the intended use / possible applications of the good, service, or process, e.g. for which type of products the material, represented by this data set, is used. For construction products the feasible applications in the building shall be given. +
-Note: This corresponds to EN 15804, section 7.1 b) ‘description of the construction product’s use […]’. +
-Find further explanations and examples in FAQ.##
-| ##{nbsp}##
+| ##Brief description of the intended use / possible applications of the good, service, or process, e.g. for which type of products the material, represented by this data set, is used. For construction products the feasible applications in the building shall be given.##
+| ##The following shall be specified: +
+a) Typical intended use and, if applicable, restrictions for use in the construction work: e.g., outdoor/indoor use +
+b) Technical specifications for the area of ​​application, e.g., service class for flooring, and a link to the relevant product standards +
+ +
+Note 1: Content from the EPD according to EN 15804, 7.1 b) "Description of the application of the construction product […]" may be entered here. +
+Note 2: A reference to  relevant product standards, such as harmonized standards, may be provided. +
+Noe 3: For other related product groups such as upstream products (e.g., plasticizers) or building-related processes (e.g., excavation), other specifications of the technical purpose will be appropriate.##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 b##
-| ##EN 15804+A2: chapter 7.1 b##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4397,6 +3989,7 @@ Find further explanations and examples in FAQ.##
 | ##CEM II/B-S 32,5 R can be used for all exposure classes according to DIN EN 206-1/DIN 1045-2.##
 | ##7.1 b##
 | ##Description of the application of the construction product##
+| ##EN 15804+A2: chapter 7.1 b##
 | ##3LtH3zTkTAtvN_Dc64HOcJ##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4404,11 +3997,9 @@ Find further explanations and examples in FAQ.##
 | ##2##
 | ##processInformation/technology/technologicalApplicability##
 
-| ##126.0##
-| ##Red text: Changes in definition by editors (as in old table). Recommendation: Why not stick to original ILCD defintion##
-| ##{nbsp}##
+| ##129##
 | ##A7.3##
-| ##B.12.3##
+| ##B.13.3##
 | ##v1.0##
 | ##Piktogramm##
 | ##Pictogramme of technology##
@@ -4418,11 +4009,9 @@ Find further explanations and examples in FAQ.##
 | ##GlobalReferenceType##
 | ##"Source data set" of the pictogramme of the good, service, technogy, plant etc. represented by this data set. For use in graphical user interfaces of LCA software.##
 | ##"Source"-Datensatz mit Piktogramm des Produkts, der Dienstleistung, des Prozesses etc.##
-| ##"Source data set" of the pictogramme of the good, service, technogy, plant etc. represented by this data set.##
+| ##~##
 | ##{nbsp}##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4435,14 +4024,13 @@ cement.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##processInformation/technology/referenceToTechnologyPictogramme##
 
-| ##127.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##130##
 | ##A7.4##
-| ##B.12.4##
+| ##B.13.4##
 | ##v1.0##
 | ##Flußdiagramm(e) oder Abbildung(en)##
 | ##Flow diagramm(s) or picture(s)##
@@ -4455,14 +4043,6 @@ cement.jpg##
 | ##~##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 c +
- +
-EPD contains a (simple) flow diagram in accordance with +
-the modular approach##
-| ##EN 15804+A2: chapter 7.1 c +
- +
-EPD contains a (simple) flow diagram in accordance with +
-the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4471,6 +4051,10 @@ the modular approach##
 gl.jpg##
 | ##7.1 c##
 | ##Simple visual representation of the product##
+| ##EN 15804+A2: chapter 7.1 c +
+ +
+EPD contains a (simple) flow diagram in accordance with +
+the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4478,11 +4062,9 @@ gl.jpg##
 | ##2##
 | ##processInformation/technology/referenceToTechnologyFlowDiagrammOrPicture##
 
-| ##128.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##131##
 | ##new##
-| ##B.12.5##
+| ##B.13.5##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
@@ -4498,9 +4080,8 @@ gl.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4511,9 +4092,7 @@ gl.jpg##
 | ##2##
 | ##processInformation/technology/other##
 
-| ##129.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##132##
 | ##B##
 | ##C##
 | ##v1.0##
@@ -4531,9 +4110,8 @@ gl.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2025-03-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4544,9 +4122,7 @@ gl.jpg##
 | ##0##
 | ##modellingAndValidation##
 
-| ##130.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##133##
 | ##new##
 | ##C.1##
 | ##v1.0##
@@ -4564,9 +4140,8 @@ gl.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2014-03-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4577,9 +4152,7 @@ gl.jpg##
 | ##1##
 | ##modellingAndValidation/LCIMethodAndAllocation##
 
-| ##131.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##134##
 | ##new##
 | ##C.1.1##
 | ##v1.0##
@@ -4597,9 +4170,8 @@ gl.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-3-14-40##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4610,9 +4182,7 @@ gl.jpg##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/typeOfDataSet##
 
-| ##132.0##
-| ##{nbsp}##
-| ##changes in the definition ok (requirements replaced by statements); additional definitions shifted to explanation##
+| ##135##
 | ##B1.1##
 | ##C.1.2##
 | ##v1.0##
@@ -4628,12 +4198,6 @@ gl.jpg##
 | ##Reference to the General Programme Instructions may be added if deemed necessary. +
 For generic data an equivalent document shall be attached, e.g. project report, general description of LCA methodology.##
 | ##m##
-| ##EN 15804+A2: table 2, line 1 +
- +
-PCR name  and PCR version (MM YYYY)##
-| ##EN 15804+A2: table 2, line 1 +
- +
-PCR name  and PCR version (MM YYYY)##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4641,6 +4205,9 @@ PCR name  and PCR version (MM YYYY)##
 | ##PCR_cement.pdf##
 | ##T2 L1##
 | ##PCR reference##
+| ##EN 15804+A2: table 2, line 1 +
+ +
+PCR name  and PCR version (MM YYYY)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4648,9 +4215,7 @@ PCR name  and PCR version (MM YYYY)##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/referenceToLCAMethodDetails##
 
-| ##133.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##136##
 | ##B1.5##
 | ##C.1.3##
 | ##v1.0##
@@ -4665,46 +4230,6 @@ PCR name  and PCR version (MM YYYY)##
 | ##~##
 | ##{nbsp}##
 | ##o##
-| ##Electricity mix (market-based approach or location-based +
-approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based.   +
- +
-Electricity mix (market-based approach or location-based +
-approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based. +
- +
-A statement which version of Characterisation factors was used   +
- +
-Indication of the key assumptions and estimates for interpretation which are not depicted elsewhere in the EPD +
- +
-Use of BMB +
- +
-Approach Power Mix: Reporting done as required in EN 15941. Market-based approach or location-based approach to be specified for any results provided. +
- +
-The use of any contractual instruments (e.g. GO or tracked flows (e.g. electricity, biogas, other renewable energy)) that are used to model renewable energy in the EPD; +
-Any use of on-site generation or directly connected energy supply that is used to model renewable energy in the EPD; +
- +
-The approach to the modelling of electricity, gas and other energy (i.e. residual mix or consumption mix) for foreground data, background data, upstream and downstream processes.  minimum: residual mix, consumption mix and any modelled mix.  +
- +
-If electricity accounts for more than 30 % of the total energy use in stage A1-A3, provide in the EPD the GWP-total of the electricity in kg CO2e/kWh used in foreground processes and any other processes in the direct control of the manufacturer. ##
-| ##Electricity mix (market-based approach or location-based +
-approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based.   +
- +
-Electricity mix (market-based approach or location-based +
-approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based. +
- +
-A statement which version of Characterisation factors was used   +
- +
-Indication of the key assumptions and estimates for interpretation which are not depicted elsewhere in the EPD +
- +
-Use of BMB +
- +
-Approach Power Mix: Reporting done as required in EN 15941. Market-based approach or location-based approach to be specified for any results provided. +
- +
-The use of any contractual instruments (e.g. GO or tracked flows (e.g. electricity, biogas, other renewable energy)) that are used to model renewable energy in the EPD; +
-Any use of on-site generation or directly connected energy supply that is used to model renewable energy in the EPD; +
- +
-The approach to the modelling of electricity, gas and other energy (i.e. residual mix or consumption mix) for foreground data, background data, upstream and downstream processes.  minimum: residual mix, consumption mix and any modelled mix.  +
- +
-If electricity accounts for more than 30 % of the total energy use in stage A1-A3, provide in the EPD the GWP-total of the electricity in kg CO2e/kWh used in foreground processes and any other processes in the direct control of the manufacturer. ##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4712,6 +4237,26 @@ If electricity accounts for more than 30 % of the total energy use in stage A1-A
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##Electricity mix (market-based approach or location-based +
+approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based.   +
+ +
+Electricity mix (market-based approach or location-based +
+approach used for main results as per the PCR)  (basically if both sets of results are digitised, then each will need to say whether they are market based or location based. +
+ +
+A statement which version of Characterisation factors was used   +
+ +
+Indication of the key assumptions and estimates for interpretation which are not depicted elsewhere in the EPD +
+ +
+Use of BMB +
+ +
+Approach Power Mix: Reporting done as required in EN 15941. Market-based approach or location-based approach to be specified for any results provided. +
+ +
+The use of any contractual instruments (e.g. GO or tracked flows (e.g. electricity, biogas, other renewable energy)) that are used to model renewable energy in the EPD; +
+Any use of on-site generation or directly connected energy supply that is used to model renewable energy in the EPD; +
+ +
+The approach to the modelling of electricity, gas and other energy (i.e. residual mix or consumption mix) for foreground data, background data, upstream and downstream processes.  minimum: residual mix, consumption mix and any modelled mix.  +
+ +
+If electricity accounts for more than 30 % of the total energy use in stage A1-A3, provide in the EPD the GWP-total of the electricity in kg CO2e/kWh used in foreground processes and any other processes in the direct control of the manufacturer. ##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4719,9 +4264,7 @@ If electricity accounts for more than 30 % of the total energy use in stage A1-A
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/other##
 
-| ##134.0##
-| ##Please check: Englisch and German terms in Datatype##
-| ##No change detected (O-P) ##
+| ##137##
 | ##B1.2##
 | ##C.1.4##
 | ##v1.1##
@@ -4745,14 +4288,6 @@ template dataset / Musterdatensatz##
 - generic dataset: generic data acc. to EN 15804 and data based on other non-industry data sources (e.g. literature, expert knowledge)##
 | ##{nbsp}##
 | ##m##
-| ##For EPDs of product group: a statement that the EPD +
-covers a product group and a description of the type +
-of such EPD (e.g., average, representative product or +
-worst-case product);##
-| ##For EPDs of product group: a statement that the EPD +
-covers a product group and a description of the type +
-of such EPD (e.g., average, representative product or +
-worst-case product);##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -4760,6 +4295,10 @@ worst-case product);##
 | ##generic dataset##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##For EPDs of product group: a statement that the EPD +
+covers a product group and a description of the type +
+of such EPD (e.g., average, representative product or +
+worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4767,9 +4306,7 @@ worst-case product);##
 | ##3##
 | ##modellingAndValidation/LCIMethodAndAllocation/other/epd:subType##
 
-| ##135.0##
-| ##Pseudquantification (nformation has no added value, EPDs have to be PCR compliant); suggestion remove; alternative property could be a description of the (authorised) deviations from PCR rules. If properties nevertheless remains: definition added byeditors##
-| ##{nbsp}##
+| ##138##
 | ##new##
 | ##C.1.5##
 | ##v1.3##
@@ -4796,13 +4333,10 @@ worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/epd24:pcrCompliance##
 
-| ##136.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##139##
 | ##new##
 | ##C.1.5.1##
 | ##v1.3##
@@ -4829,13 +4363,10 @@ worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:allocation##
 
-| ##137.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##140##
 | ##new##
 | ##C.1.5.2##
 | ##v1.3##
@@ -4850,17 +4381,15 @@ worst-case product);##
 | ##Cut-off rules compliant with standard PCR##
 | ##{nbsp}##
 | ##o##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
 | ##A statement, if ecoinvent is used, of the LCA-method +
 Cut-off by classification or Cut-off, EN 15804+A2##
-| ##A statement, if ecoinvent is used, of the LCA-method +
-Cut-off by classification or Cut-off, EN 15804+A2##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4868,9 +4397,7 @@ Cut-off by classification or Cut-off, EN 15804+A2##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:cutOffRules##
 
-| ##138.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##141##
 | ##new##
 | ##C.1.5.3##
 | ##v1.3##
@@ -4885,19 +4412,16 @@ Cut-off by classification or Cut-off, EN 15804+A2##
 | ##Use of upstream data which does not respect the allocation principles of the core PCR##
 | ##{nbsp}##
 | ##o##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##{nbsp}##
 | ##Justification if any background data does not follow the +
 recommendations of Table 3 of the LCA Calculation +
 Rules.##
-| ##Justification if any background data does not follow the +
-recommendations of Table 3 of the LCA Calculation +
-Rules.##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4905,9 +4429,7 @@ Rules.##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:upstreamDataDeviatingFromAllocationPrinciples##
 
-| ##139.0##
-| ##EN 15941 added in definition; explanation deleted (EPD document shall be attached - covered by another property)##
-| ##{nbsp}##
+| ##142##
 | ##new##
 | ##C.1.6##
 | ##v1.3##
@@ -4922,8 +4444,6 @@ Rules.##
 | ##Information on the range/variability of the LCIA results according to EN 15941, e.g. if the results are averages across different products or production sites.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 i##
-| ##EN 15804+A2: chapter 7.1 i##
 | ##{nbsp}##
 | ##x##
 | ##Previously defined under "Data sources" +
@@ -4932,6 +4452,7 @@ not applicable for generic data##
 | ##{nbsp}##
 | ##7.1 i##
 | ##If an EPD declares an average environmental quality for multiple products: this must be explained##
+| ##EN 15804+A2: chapter 7.1 i##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -4939,9 +4460,7 @@ not applicable for generic data##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/epd24:variability##
 
-| ##140.0##
-| ##Further eplanation added ##
-| ##HF: compared with rule in EN 15804 and changed therefore 'm' to 'o'##
+| ##143##
 | ##new##
 | ##C.1.6.1##
 | ##v1.3##
@@ -4968,13 +4487,10 @@ not applicable for generic data##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/epd24:manufacturerVariability##
 
-| ##141.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##144##
 | ##new##
 | ##C.1.6.1.1##
 | ##v1.3##
@@ -5003,13 +4519,10 @@ Multiple manufacturers##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:type##
 
-| ##142.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##145##
 | ##new##
 | ##C.1.6.1.2##
 | ##v1.3##
@@ -5036,13 +4549,10 @@ Multiple manufacturers##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variation##
 
-| ##143.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##146##
 | ##new##
 | ##C.1.6.1.3##
 | ##v1.3##
@@ -5074,13 +4584,10 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variationRange##
 
-| ##144.0##
-| ##Further eplanation added ##
-| ##HF: compared with rule in EN 15804 and changed therefore 'm' to 'o'##
+| ##147##
 | ##new##
 | ##C.1.6.2##
 | ##v1.3##
@@ -5107,13 +4614,10 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/epd24:productVariability##
 
-| ##145.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##148##
 | ##new##
 | ##C.1.6.2.1##
 | ##v1.3##
@@ -5141,13 +4645,10 @@ Range of products where variability is described##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:type##
 
-| ##146.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##149##
 | ##new##
 | ##C.1.6.2.2##
 | ##v1.3##
@@ -5174,13 +4675,10 @@ Range of products where variability is described##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variation##
 
-| ##147.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##150##
 | ##new##
 | ##C.1.6.2.3##
 | ##v1.3##
@@ -5212,13 +4710,10 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variationRange##
 
-| ##148.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##151##
 | ##new##
 | ##C.1.6.3##
 | ##v1.3##
@@ -5245,117 +4740,10 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/LCIMethodAndAllocation/epd24:variabilityDescription##
 
-| ##49.0##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier)##
-| ##{nbsp}##
-| ##A1.6##
-| ##C.1.7##
-| ##v1.1##
-| ##Sicherheitszuschläge##
-| ##Generic data uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:safetyMargins##
-| ##o##
-| ##[0,1]##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Ausweis enthaltener Sicherheitszuschläge##
-| ##Documentation of uncertainty margins that have been included in the results##
-| ##Find further explanations in FAQ.##
-| ##o##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##x##
-| ##Mandatory for generic data in ÖKOBAUDAT For InData compliance: This concept is used for generic data (at the moment only relevant in  ÖKOBAUDAT). +
-For further details see FAQ.##
-| ##{nbsp}##
-| ##0.2##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd:safetyMargins##
-
-| ##50.0##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier)##
-| ##{nbsp}##
-| ##A1.6##
-| ##C.1.7.1##
-| ##v1.1##
-| ##Sicherheitszuschläge##
-| ##Uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:margins##
-| ##o##
-| ##[0,1]##
-| ##Percentage##
-| ##{nbsp}##
-| ##Die Höhe der enthaltenen Zuschläge in Prozent##
-| ##The amount (in percent) of the included uncertainty margins##
-| ##Find further explanations in FAQ.##
-| ##o##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd:margins##
-
-| ##51.0##
-| ##shifted from B.4.2 to C.1.7 +
-topic "uncertainty penalities' does not fit to the previous one (product identifier)##
-| ##{nbsp}##
-| ##A1.7##
-| ##C.1.7.2##
-| ##v1.1##
-| ##Beschreibung##
-| ##Description of generic data uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:description##
-| ##o##
-| ##[0,1]##
-| ##FTMultiLang##
-| ##{nbsp}##
-| ##Begründung und Regeln für die Sicherheitszuschläge##
-| ##Reasons and rules for choice of uncertainty penalties##
-| ##Find further explanations in FAQ.##
-| ##o##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##x##
-| ##Mandatory for generic data in ÖKOBAUDAT For InData compliance: This concept is used for generic data (at the moment only relevant in  ÖKOBAUDAT). +
-For further details see FAQ.##
-| ##{nbsp}##
-| ##Product system mapped completely except for the following processes / flows….##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd:description##
-
-| ##149.0##
-| ##{nbsp}##
-| ##The original ILCD definition is not listed in the table of definitions in the ÖBD##
+| ##152##
 | ##B2##
 | ##C.2##
 | ##v1.0##
@@ -5373,9 +4761,8 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2016-03-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5386,10 +4773,7 @@ For further details see FAQ.##
 | ##1##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness##
 
-| ##150.0##
-| ##Meaningless propsal for InData Defintion deleted; reference to EN 15941 added in 'explanation'##
-| ##before in chapter 'Validation B3' +
-change in definition 'repaired'##
+| ##153##
 | ##B3.5##
 | ##C.2.1##
 | ##v1.2##
@@ -5402,10 +4786,8 @@ change in definition 'repaired'##
 | ##"Source data set"(s) of the source(s) in which the data completeness, selection, combination, treatment, and extrapolations principles' details are described##
 | ##Dokument(e) können als Quelle(n) angehängt werden.##
 | ##~##
-| ##Information should be given according to EN 15941.##
+| ##Document or link can be attached (source data set). Information should be given according to EN 15941.##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##mandatory for generic data##
@@ -5417,12 +4799,11 @@ change in definition 'repaired'##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataHandlingPrinciples##
 
-| ##151.0##
-| ##{nbsp}##
-| ##Definition has been altered##
+| ##154##
 | ##B2.1##
 | ##C.2.2##
 | ##v1.0##
@@ -5437,6 +4818,15 @@ change in definition 'repaired'##
 | ##Here, the respective "Source" data sets representing the background data used (like GaBi or ecoinvent) can be referenced.##
 | ##{nbsp}##
 | ##m##
+| ##semantic##
+| ##{nbsp}##
+| ##{nbsp}##
+| ##1-3-16-55##
+| ##GaBi Version 6.5 - 2015 +
+- Environmental data from the cement industry, 2009 +
+- Ecological Assessment of Construction Products and Buildings, 2000 ….##
+| ##{nbsp}##
+| ##{nbsp}##
 | ##A statement of the applied background database(s) +
 and software, and both its versions [Source of background data used, name and dated version] +
  +
@@ -5449,26 +4839,6 @@ mentioned. +
 Full indication of all referenced sources (excluding +
 standards already quoted in full and standards concerning +
 evidence)##
-| ##A statement of the applied background database(s) and software, and both its versions [Source of background data used, name and dated version] +
- +
-Indication of the age of background data used (e.g. last +
-update or version of the database) +
- +
-If any specific EPD are used in modelling, this should be +
-mentioned. +
- +
-Full indication of all referenced sources (excluding +
-standards already quoted in full and standards concerning +
-evidence)##
-| ##semantic##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##1-3-16-55##
-| ##GaBi Version 6.5 - 2015 +
-- Environmental data from the cement industry, 2009 +
-- Ecological Assessment of Construction Products and Buildings, 2000 ….##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0VfG_WGD1F0P4HN2kIu3nk##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5476,9 +4846,7 @@ evidence)##
 | ##2##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataSource##
 
-| ##152.0##
-| ##Old text in explanation deleted (no longer relevant)##
-| ##{nbsp}##
+| ##155##
 | ##B2.2##
 | ##C.2.3##
 | ##v1.0##
@@ -5493,8 +4861,6 @@ evidence)##
 | ##Specific methodological advice for use of the data set as application options (e.g. data set shall be used for LCA of buildings) or restrictions (e.g. data set shall not be used for products produced in 'wet process'). A link to appropriate combinable datasets can be given.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 h & 7.2 a##
-| ##EN 15804+A2: chapter 7.1 h & 7.2 a##
 | ##minor##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5509,6 +4875,7 @@ d) From cradle to gate (A1-A3). +
 e) From cradle to gate with options (A1-A3 and additional modules; the additional modules may include A4 and A5).all declared modules are also refernced further below in LCIA section +
  +
 Statement that EPDs of construction products might not be comparable unless they comply with this standard##
+| ##EN 15804+A2: chapter 7.1 h & 7.2 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5516,9 +4883,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##2##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/useAdviceForDataSet##
 
-| ##153.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##156##
 | ##new##
 | ##C.2.4##
 | ##v1.0##
@@ -5536,9 +4901,8 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5549,10 +4913,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##2##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other##
 
-| ##154.0##
-| ##Shifted from C.3.2 to C.2.5 +
-Title corrected (as in old version)##
-| ##{nbsp}##
+| ##157##
 | ##B2.3##
 | ##C.2.5##
 | ##v1.2##
@@ -5575,7 +4936,6 @@ Title corrected (as in old version)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##3n5P8a1SLD18_Oiz0PDiiu##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5583,9 +4943,7 @@ Title corrected (as in old version)##
 | ##2##
 | ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/epd2:referenceToOriginalEPD##
 
-| ##155.0##
-| ##Please check hierarchy by editors compared to original table##
-| ##{nbsp}##
+| ##158##
 | ##new##
 | ##C.3##
 | ##v1.3##
@@ -5600,14 +4958,6 @@ Title corrected (as in old version)##
 | ##List of manufacturers producing the modelled product(s).##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##EN 15804+A2: chapter 7.1 a +
- +
-Names of manufacturer(s) when the EPD declares an +
-average of several manufacturers.##
-| ##EN 15804+A2: chapter 7.1 a +
- +
-Names of manufacturer(s) when the EPD declares an +
-average of several manufacturers.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5615,6 +4965,10 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a +
+ +
+Names of manufacturer(s) when the EPD declares an +
+average of several manufacturers.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5622,9 +4976,7 @@ average of several manufacturers.##
 | ##1##
 | ##modellingAndValidation/epd24:manufacturers##
 
-| ##156.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##159##
 | ##new##
 | ##C.3.1##
 | ##v1.3##
@@ -5639,8 +4991,6 @@ average of several manufacturers.##
 | ##Manufacturer of the described product(s)##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5648,6 +4998,7 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5655,9 +5006,7 @@ average of several manufacturers.##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:manufacturer##
 
-| ##157.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##160##
 | ##new##
 | ##C.3.1.1##
 | ##v1.3##
@@ -5672,8 +5021,6 @@ average of several manufacturers.##
 | ##Reference to the contact dataset of the manufacturer##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5681,6 +5028,7 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5688,9 +5036,7 @@ average of several manufacturers.##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:contact##
 
-| ##158.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##161##
 | ##new##
 | ##C.3.1.2##
 | ##v1.3##
@@ -5705,14 +5051,6 @@ average of several manufacturers.##
 | ##List of the manufacturing sites of this manufacturer for the described product(s)##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a +
- +
-Geographical area, i.e. market range, where the product +
-is produced, [Name and location of production site(s).]##
-| ##EN 15804+A2: chapter 7.1 a +
- +
-Geographical area, i.e. market range, where the product +
-is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5720,6 +5058,10 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a +
+ +
+Geographical area, i.e. market range, where the product +
+is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5727,9 +5069,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:sites##
 
-| ##159.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##162##
 | ##new##
 | ##C.3.1.2.1##
 | ##v1.3##
@@ -5744,8 +5084,6 @@ is produced, [Name and location of production site(s).]##
 | ##Manufacturing site of this manufacturer for the described product(s)##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5753,6 +5091,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5760,9 +5099,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:site##
 
-| ##160.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##163##
 | ##new##
 | ##C.3.1.2.2##
 | ##v1.3##
@@ -5777,8 +5114,6 @@ is produced, [Name and location of production site(s).]##
 | ##Name of the manufacturing site##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5786,6 +5121,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5793,9 +5129,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:name##
 
-| ##161.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##164##
 | ##new##
 | ##C.3.1.2.3##
 | ##v1.3##
@@ -5810,8 +5144,6 @@ is produced, [Name and location of production site(s).]##
 | ##Facility identifier of the manufacturing site##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5819,6 +5151,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5826,9 +5159,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:facilityIdentifier##
 
-| ##162.0##
-| ##{nbsp}##
-| ##links ##
+| ##165##
 | ##new##
 | ##C.3.1.2.4##
 | ##v1.3##
@@ -5843,8 +5174,6 @@ is produced, [Name and location of production site(s).]##
 | ##Code to identify the manufacturing site's location w.r.t the pluscode/open location code system.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5852,6 +5181,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5859,9 +5189,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:olc##
 
-| ##163.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##166##
 | ##new##
 | ##C.3.1.2.5##
 | ##v1.3##
@@ -5876,8 +5204,6 @@ is produced, [Name and location of production site(s).]##
 | ##2-letter code that identifies the country or region of the manufacturing site (cf. ISO 3166 alpha-2)##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5885,6 +5211,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5892,9 +5219,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:geoCode##
 
-| ##164.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##167##
 | ##new##
 | ##C.3.1.2.6##
 | ##v1.3##
@@ -5909,8 +5234,6 @@ is produced, [Name and location of production site(s).]##
 | ##Street adress of the manufactoring site##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5918,6 +5241,7 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5925,43 +5249,7 @@ is produced, [Name and location of production site(s).]##
 | ##2##
 | ##modellingAndValidation/epd24:manufacturers/epd24:streetAddress##
 
-| ##{nbsp}##
-| ##Shifted from C.3.2 to C.2.5 +
-Title corrected (as in old version)##
-| ##{nbsp}##
-| ##B2.3##
-| ##{nbsp}##
-| ##v1.2##
-| ##Verweis auf die originale EPD##
-| ##Reference to original EPD##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:referenceToOriginalEPD##
-| ##r##
-| ##[0,n]##
-| ##GlobalReferenceType##
-| ##{nbsp}##
-| ##Hier können die zum Datensatz zugehörigen EPD-Dokumente als Quellen angehängt werden.##
-| ##Here, one or mutliple "Source" data sets representing the EPD document can be attached.##
-| ##A "Source data set" set representing the EPD document shall be attached.##
-| ##m##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##3n5P8a1SLD18_Oiz0PDiiu##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd2:referenceToOriginalEPD##
-
-| ##165.0##
-| ##{nbsp}##
-| ##none##
+| ##168##
 | ##B3##
 | ##C.4##
 | ##v1.0##
@@ -5976,8 +5264,6 @@ Title corrected (as in old version)##
 | ##~##
 | ##Information on verification according to ISO 14025 and EN 15804##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -5989,12 +5275,11 @@ Title corrected (as in old version)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##1##
 | ##modellingAndValidation/validation##
 
-| ##166.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##169##
 | ##new##
 | ##C.4.1##
 | ##v1.0##
@@ -6012,9 +5297,8 @@ Title corrected (as in old version)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2021-03-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6025,9 +5309,7 @@ Title corrected (as in old version)##
 | ##2##
 | ##modellingAndValidation/validation/review##
 
-| ##167.0##
-| ##{nbsp}##
-| ##none##
+| ##170##
 | ##B3.1##
 | ##C.4.1.1##
 | ##v1.0##
@@ -6052,8 +5334,6 @@ Not reviewedThe data set was not / not yet reviewed.##
 - 'dependent external verification / critical review (external reviewer is not verifiably independent from LCA expert or owner of enterprise)' = not relevant for InData compliant data +
 - 'independent external verification / critical review (external reviewer who is verifiably independent from LCA expert or owner of enterprise)' = (choose this for verified external third party verification according to EN 15804)##
 | ##m##
-| ##EN 15804+A2: table 2 line 2##
-| ##EN 15804+A2: table 2 line 2##
 | ##minor##
 | ##{nbsp}##
 | ##For InData Compliance only the following option is accepted +
@@ -6066,6 +5346,7 @@ Find further explanations in FAQ.##
 | ##independent external verification##
 | ##T2L2##
 | ##Type of review##
+| ##EN 15804+A2: table 2 line 2##
 | ##1xYmWRQzX2P9KClp9DAa1E##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6073,9 +5354,7 @@ Find further explanations in FAQ.##
 | ##2##
 | ##modellingAndValidation/validation/@type##
 
-| ##168.0##
-| ##{nbsp}##
-| ##none##
+| ##171##
 | ##B3.2##
 | ##C.4.1.2##
 | ##v1.0##
@@ -6090,8 +5369,6 @@ Find further explanations in FAQ.##
 | ##Compilation of review results (verification or critical review) if of general interest##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: table 5##
-| ##EN 15804+A2: table 5##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6099,6 +5376,7 @@ Find further explanations in FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##EN 15804+A2: table 5##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6106,9 +5384,7 @@ Find further explanations in FAQ.##
 | ##2##
 | ##modellingAndValidation/validation/reviewDetails##
 
-| ##169.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##172##
 | ##B3.3##
 | ##C.4.1.3##
 | ##v1.0##
@@ -6123,8 +5399,6 @@ Find further explanations in FAQ.##
 | ##"Contact data set" of reviewer(s) and reviewing institution(s)##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: chapter 7.1 e & table 2 line 2##
-| ##EN 15804+A2: chapter 7.1 e & table 2 line 2##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6136,6 +5410,7 @@ forum / GaBi user community##
 | ##Name of the program, address of the program operator, and, where available and relevant, the logo and web address +
  +
 Type of review##
+| ##EN 15804+A2: chapter 7.1 e & table 2 line 2##
 | ##1VuTNpq795DfPt7dqfztsB (verifier) 3GsHjd29n0RANH_H9Y6vct (verifier's organisation)##
 | ##The name of the reviewer is stated in the referenced contact dataset under [name], their organisation in a nested contact under [name] dataset referenced therein under [referenceToContact]             ##
 | ##{nbsp}##
@@ -6143,9 +5418,7 @@ Type of review##
 | ##2##
 | ##modellingAndValidation/validation/referenceToNameOfReviewerAndInstitution##
 
-| ##170.0##
-| ##{nbsp}##
-| ##none##
+| ##173##
 | ##B3.4##
 | ##C.4.1.4##
 | ##v1.0##
@@ -6163,9 +5436,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-3-20-89##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6176,9 +5448,7 @@ Type of review##
 | ##2##
 | ##modellingAndValidation/validation/referenceToCompleteReviewReport##
 
-| ##171.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##174##
 | ##new##
 | ##C.4.2##
 | ##v1.0##
@@ -6196,9 +5466,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6209,9 +5478,7 @@ Type of review##
 | ##2##
 | ##modellingAndValidation/validation/other##
 
-| ##172.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##175##
 | ##B4##
 | ##C.5##
 | ##v1.0##
@@ -6229,9 +5496,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2022-03-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6242,9 +5508,7 @@ Type of review##
 | ##1##
 | ##modellingAndValidation/complianceDeclarations##
 
-| ##173.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##176##
 | ##new##
 | ##B.5.1##
 | ##v1.0##
@@ -6262,9 +5526,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-3-22-1##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6275,9 +5538,7 @@ Type of review##
 | ##2##
 | ##modellingAndValidation/complianceDeclarations/compliance##
 
-| ##174.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##177##
 | ##B4.1##
 | ##B.5.1.1##
 | ##v1.0##
@@ -6292,8 +5553,6 @@ Type of review##
 | ##Standard(s) and/or compliance system(s) that are declared to be met by the data set (e.g. EN 15804, EN 16485). The appropriate PCR shall be referred to in the data field 'LCA methodology report'.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: table 2 line 1##
-| ##EN 15804+A2: table 2 line 1##
 | ##minor##
 | ##{nbsp}##
 | ##For construction products data must be in conformity with EN 15804-A2, hence EN 15804-A2 must be referenced.##
@@ -6302,6 +5561,7 @@ Type of review##
 InData-CPEN2019##
 | ##T2 L1##
 | ##PCR reference##
+| ##EN 15804+A2: table 2 line 1##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6309,9 +5569,7 @@ InData-CPEN2019##
 | ##2##
 | ##modellingAndValidation/complianceDeclarations/referenceToComplianceSystem##
 
-| ##175.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##178##
 | ##new##
 | ##B.5.2##
 | ##v1.0##
@@ -6329,9 +5587,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6342,9 +5599,7 @@ InData-CPEN2019##
 | ##2##
 | ##modellingAndValidation/complianceDeclarations/other##
 
-| ##176.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##179##
 | ##C##
 | ##D##
 | ##v1.0##
@@ -6362,9 +5617,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2025-05-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6375,9 +5629,7 @@ InData-CPEN2019##
 | ##1##
 | ##modellingAndValidation/administrativeInformation##
 
-| ##177.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##180##
 | ##C1##
 | ##D.1##
 | ##v1.2##
@@ -6395,9 +5647,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2024-05-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6408,9 +5659,7 @@ InData-CPEN2019##
 | ##1##
 | ##modellingAndValidation/commissionerAndGoal##
 
-| ##178.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##181##
 | ##C1.1##
 | ##D.1.1##
 | ##v1.2##
@@ -6425,8 +5674,6 @@ InData-CPEN2019##
 | ##~##
 | ##{nbsp}##
 | ##o##
-| ##EN 15804+A2: chapter 7.1 a##
-| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6434,6 +5681,7 @@ InData-CPEN2019##
 | ##BBSR##
 | ##7.1 a##
 | ##Name and address of the manufacturer(s)##
+| ##EN 15804+A2: chapter 7.1 a##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6441,9 +5689,7 @@ InData-CPEN2019##
 | ##2##
 | ##modellingAndValidation/commissionerAndGoal/referenceToCommissioner##
 
-| ##179.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##182##
 | ##C1.2##
 | ##D.1.2##
 | ##v1.2##
@@ -6458,14 +5704,13 @@ InData-CPEN2019##
 | ##(Construction) project within which the EPD was generated.##
 | ##{nbsp}##
 | ##o##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##minor##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1-5-24-97##
 | ##This EPD has been created +
 specifically for a tunnel project in Northern Norway.##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##0HDajCo4z5ceHjuLiivf0A##
@@ -6475,9 +5720,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##2##
 | ##modellingAndValidation/commissionerAndGoal/project##
 
-| ##180.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##183##
 | ##C1.3##
 | ##D.1.3##
 | ##v1.2##
@@ -6495,9 +5738,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-24-98##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6508,9 +5750,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##2##
 | ##modellingAndValidation/commissionerAndGoal/intendedApplications##
 
-| ##181.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##184##
 | ##new##
 | ##D.1.4##
 | ##v1.2##
@@ -6528,9 +5768,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6541,9 +5780,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##2##
 | ##modellingAndValidation/commissionerAndGoal/other##
 
-| ##182.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##185##
 | ##new##
 | ##D.2##
 | ##v1.2##
@@ -6561,9 +5798,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2026-05-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6574,9 +5810,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##1##
 | ##modellingAndValidation/dataGenerator##
 
-| ##183.0##
-| ##{nbsp}##
-| ##Field previously after 'Data entry by##
+| ##186##
 | ##C2.3##
 | ##D.2.1##
 | ##v1.2##
@@ -6593,8 +5827,6 @@ specifically for a tunnel project in Northern Norway.##
 | ##m##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##replaces 43 'Data entry by'##
 | ##1-5-26-99##
 | ##Gerald Newman##
@@ -6604,12 +5836,11 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/dataGenerator/referenceToPersonOrEntityGeneratingTheDataSet##
 
-| ##184.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##187##
 | ##new##
 | ##D.2.2##
 | ##v1.2##
@@ -6627,9 +5858,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6640,9 +5870,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##2##
 | ##modellingAndValidation/dataGenerator/other##
 
-| ##185.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##188##
 | ##C2##
 | ##D.3##
 | ##v1.0##
@@ -6660,9 +5888,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2028-05-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6673,9 +5900,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##1##
 | ##modellingAndValidation/dataEntryBy##
 
-| ##186.0##
-| ##{nbsp}##
-| ##none##
+| ##189##
 | ##C2.1##
 | ##D.3.1##
 | ##v1.0##
@@ -6693,8 +5918,6 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-28-104##
 | ##2014-08- +
 08T15:24:23.515+02:00##
@@ -6704,12 +5927,11 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/dataEntryBy/timeStamp##
 
-| ##187.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##190##
 | ##C2.2##
 | ##D.3.2##
 | ##v1.0##
@@ -6727,8 +5949,6 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-28-105##
 | ##ILCD format 1.1 +
 EPD Data Format Extensions##
@@ -6738,12 +5958,11 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/dataEntryBy/referenceToDataSetFormat##
 
-| ##188.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##191##
 | ##new##
 | ##D.3.3##
 | ##v1.0##
@@ -6761,9 +5980,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6774,9 +5992,7 @@ EPD Data Format Extensions##
 | ##2##
 | ##modellingAndValidation/dataEntryBy/other##
 
-| ##189.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##192##
 | ##C3##
 | ##D.4##
 | ##v1.0##
@@ -6794,9 +6010,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1930-05-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6807,9 +6022,7 @@ EPD Data Format Extensions##
 | ##1##
 | ##modellingAndValidation/publicationAndOwnership##
 
-| ##190.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##193##
 | ##C3.2##
 | ##D.4.1##
 | ##v1.0##
@@ -6827,10 +6040,9 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-111##
 | ##00.03.000##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6840,9 +6052,7 @@ EPD Data Format Extensions##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/dataSetVersion##
 
-| ##191.0##
-| ##{nbsp}##
-| ##old definition was replaced by ILCD+EPD original##
+| ##194##
 | ##C3.3##
 | ##D.4.2##
 | ##v1.2##
@@ -6859,8 +6069,6 @@ EPD Data Format Extensions##
 | ##m##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##The implementation of this data field for the +
 generic ÖKOBAUDAT data may take place after a delay.##
 | ##1-5-30-112##
@@ -6871,12 +6079,11 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/referenceToPrecedingDataSetVersion##
 
-| ##192.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##195##
 | ##{nbsp}##
 | ##D.4.3##
 | ##v1.0##
@@ -6894,9 +6101,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-300##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6907,9 +6113,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/permanentDataSetURI##
 
-| ##193.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##196##
 | ##C3.1##
 | ##D.4.4##
 | ##v1.0##
@@ -6927,10 +6131,9 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-113##
 | ##2012-12-18T12:36:17+01:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -6940,9 +6143,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/dateOfLastRevision##
 
-| ##194.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##197##
 | ##C3.6##
 | ##D.4.5##
 | ##v1.2##
@@ -6957,13 +6158,12 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##~##
 | ##e.g. Program Operator##
 | ##m##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##semantic##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1-5-30-200##
 | ##sphera##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##04JOWJlvj49ebQ1ftBh3$_##
@@ -6973,9 +6173,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/referenceToRegistrationAuthority##
 
-| ##195.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##198##
 | ##C3.7##
 | ##D.4.6##
 | ##v1.2##
@@ -6990,10 +6188,6 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##ID number of EPD or project##
 | ##Not relevant (and thus not mandatory) for generic data.##
 | ##m##
-| ##EPD identification (registration number of the EPD on +
-programme operator level).##
-| ##EPD identification (registration number of the EPD on +
-programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##not applicable for generic data##
@@ -7001,6 +6195,8 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##EPD identification (registration number of the EPD on +
+programme operator level).##
 | ##2txQS3gq114gZSFxVagfsC (EPD) 0HDajCo4z5ceHjuLiivf0A (project ID)##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7008,9 +6204,7 @@ programme operator level).##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/registrationNumber##
 
-| ##196.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##199##
 | ##C3.8##
 | ##D.4.7##
 | ##v1.0##
@@ -7028,10 +6222,9 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-115##
 | ##German Cement Association##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##02xb3mjHD7VPQu6muPWLF5##
@@ -7041,9 +6234,7 @@ programme operator level).##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/referenceToOwnershipOfDataSet##
 
-| ##197.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##200##
 | ##C3.9##
 | ##D.4.8##
 | ##v1.0##
@@ -7061,10 +6252,9 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-116##
 | ##yes##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7074,9 +6264,7 @@ programme operator level).##
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/copyright##
 
-| ##198.0##
-| ##{nbsp}##
-| ##the specified type of license was shifted to further explanation##
+| ##201##
 | ##C3.10##
 | ##D.4.9##
 | ##v1.2##
@@ -7098,10 +6286,9 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##m##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##Proposal: for InData compliant datasets, only values other than "License fee" and "Other" allowed##
 | ##1-5-30-119##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7112,9 +6299,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/licenseType##
 
-| ##199.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##202##
 | ##C3.11##
 | ##D.4.10##
 | ##v1.2##
@@ -7132,9 +6317,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-5-30-118##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7145,9 +6329,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/accessRestrictions##
 
-| ##200.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##203##
 | ##new##
 | ##D.4.11##
 | ##v1.0##
@@ -7165,9 +6347,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7178,9 +6359,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##2##
 | ##modellingAndValidation/publicationAndOwnership/other##
 
-| ##201.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##204##
 | ##C3.4##
 | ##D.4.12##
 | ##v1.2##
@@ -7195,8 +6374,6 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##Organisation which publishes the EPD data set.##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 e##
-| ##EN 15804+A2: chapter 7.1 e##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -7204,6 +6381,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##BBSR##
 | ##7.1 e##
 | ##Name of the program, address of the program operator, and, where available and relevant, the logo and web address##
+| ##EN 15804+A2: chapter 7.1 e##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7211,9 +6389,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##3##
 | ##modellingAndValidation/publicationAndOwnership/other/referenceToPublisher##
 
-| ##202.0##
-| ##Defintion and explanation altered.##
-| ##{nbsp}##
+| ##205##
 | ##D##
 | ##E##
 | ##v1.0##
@@ -7231,9 +6407,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2025-07-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7244,9 +6419,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##0##
 | ##exchanges##
 
-| ##203.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##206##
 | ##new##
 | ##E.1##
 | ##v1.0##
@@ -7264,9 +6437,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1932-07-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7277,9 +6449,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##1##
 | ##exchanges/exchange##
 
-| ##204.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##207##
 | ##new##
 | ##E.1.1##
 | ##v1.0##
@@ -7297,9 +6467,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-7-32-120##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7310,9 +6479,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##2##
 | ##exchanges/exchange/@dataSetInternalID##
 
-| ##205.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##208##
 | ##new##
 | ##E.1.2##
 | ##v1.0##
@@ -7330,9 +6497,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-7-32-119##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7343,9 +6509,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##2##
 | ##exchanges/exchange/referenceToFlowDataSet##
 
-| ##206.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##209##
 | ##new##
 | ##E.1.3##
 | ##v1.0##
@@ -7373,13 +6537,10 @@ General reminder flowReminder flow on the amount of (selected) product and waste
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##2##
 | ##exchanges/exchange/functionType##
 
-| ##207.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##210##
 | ##new##
 | ##E.1.4##
 | ##v1.0##
@@ -7399,9 +6560,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-7-32-123##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7412,9 +6572,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##exchanges/exchange/exchangeDirection##
 
-| ##208.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##211##
 | ##new##
 | ##E.1.5##
 | ##v1.0##
@@ -7432,9 +6590,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-7-32-125##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7445,9 +6602,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##exchanges/exchange/meanAmount##
 
-| ##209.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##212##
 | ##D1.6##
 | ##E.1.6##
 | ##v1.0##
@@ -7465,9 +6620,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-7-32-136##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7478,9 +6632,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##exchanges/exchange/generalComment##
 
-| ##210.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##213##
 | ##new##
 | ##E.1.7##
 | ##v1.0##
@@ -7498,9 +6650,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7511,44 +6662,9 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##exchanges/exchange/other##
 
-| ##211.0##
-| ##not in original table##
-| ##{nbsp}##
-| ##D1.1##
-| ##E.1.8##
-| ##v1.1##
-| ##Indikator##
-| ##Indicator##
-| ##{nbsp}##
-| ##m##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Reference to the LCIA method dataset describing the indicator.##
-| ##{nbsp}##
-| ##~##
-| ##{nbsp}##
-| ##m##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##212.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##214##
 | ##D1.4##
-| ##E.1.9##
+| ##E.1.8##
 | ##v1.1##
 | ##Wert##
 | ##Value##
@@ -7562,8 +6678,6 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##m##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7574,14 +6688,13 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
-| ##nan/epd:amount##
+| ##exchanges/exchange/epd:amount##
 
-| ##213.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##215##
 | ##D1.2##
-| ##E.1.10##
+| ##E.1.8.1##
 | ##v1.1##
 | ##Modul/Phase##
 | ##Module/Phase##
@@ -7594,8 +6707,6 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##Module or phase (e.g. "A1-A3")##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 g##
-| ##EN 15804+A2: chapter 7.1 g##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -7603,18 +6714,17 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##7.1 g##
 | ##Information on which life cycle phases of the product are not considered, if the declaration does not cover all life cycle phases##
+| ##EN 15804+A2: chapter 7.1 g##
 | ##0iG86Nq4v6v9psJFRlyam9##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##2##
-| ##nan/@epd:module##
+| ##exchanges/exchange/@epd:module##
 
-| ##214.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##216##
 | ##D1.3##
-| ##E.1.11##
+| ##E.1.8.2##
 | ##v1.1##
 | ##Szenario##
 | ##Scenario##
@@ -7628,8 +6738,6 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7640,14 +6748,13 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
-| ##nan/@epd:scenario##
+| ##exchanges/exchange/@epd:scenario##
 
-| ##215.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##217##
 | ##D1.5##
-| ##E.1.12##
+| ##E.1.9##
 | ##v1.1##
 | ##Einheitengruppe##
 | ##Unit group##
@@ -7661,8 +6768,6 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##Given as a function of the respective parameter##
 | ##m##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7673,12 +6778,11 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
+| ##{nbsp}##
 | ##2##
-| ##nan/epd:referenceToUnitGroupDataSet##
+| ##exchanges/exchange/epd:referenceToUnitGroupDataSet##
 
-| ##216.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##218##
 | ##E##
 | ##F##
 | ##v1.0##
@@ -7696,9 +6800,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2025-08-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7709,9 +6812,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##0##
 | ##LCIAResults##
 
-| ##217.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##219##
 | ##{nbsp}##
 | ##F.1##
 | ##v1.0##
@@ -7729,9 +6830,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##2001-08-01 00:00:00##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7742,9 +6842,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##1##
 | ##LCIAResults/LCIAResult##
 
-| ##218.0##
-| ##{nbsp}##
-| ##new field name; red: title 'repaired' according to original table##
+| ##220##
 | ##E1.1##
 | ##F.1.1##
 | ##v1.0##
@@ -7762,9 +6860,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-8-1-100##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7775,9 +6872,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##LCIAResults/LCIAResult/referenceToLCIAMethodDataSet##
 
-| ##219.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##221##
 | ##new##
 | ##F.1.2##
 | ##v1.0##
@@ -7795,9 +6890,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##1-8-1-104##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7808,9 +6902,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##LCIAResults/LCIAResult/generalComment##
 
-| ##220.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##222##
 | ##new##
 | ##F.1.3##
 | ##v1.0##
@@ -7828,9 +6920,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##0##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7841,9 +6932,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##LCIAResults/LCIAResult/other##
 
-| ##221.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##223##
 | ##E1.4##
 | ##F.1.4##
 | ##v1.1##
@@ -7859,9 +6948,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##m##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7874,9 +6962,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##2##
 | ##LCIAResults/LCIAResult/epd:amount##
 
-| ##222.0##
-| ##Pleas check hierarchy; changes in definition 'repaired'##
-| ##{nbsp}##
+| ##224##
 | ##E1.2##
 | ##F.1.4.1##
 | ##v1.1##
@@ -7891,8 +6977,6 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##Module or phase according to EN 15804 (e.g. "A1-A3")##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: tables 3, 4, 6 & 7##
-| ##EN 15804+A2: tables 3, 4, 6 & 7##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -7904,6 +6988,7 @@ LCIA - add env indicators +
 LCIA - ressource use parameters +
 LCIA - waste categories +
 ##
+| ##EN 15804+A2: tables 3, 4, 6 & 7##
 | ##0iG86Nq4v6v9psJFRlyam9##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7911,9 +6996,7 @@ LCIA - waste categories +
 | ##2##
 | ##LCIAResults/LCIAResult/@epd:module##
 
-| ##223.0##
-| ##Pleas check hierarchy##
-| ##{nbsp}##
+| ##225##
 | ##E1.3##
 | ##F.1.4.2##
 | ##v1.1##
@@ -7929,9 +7012,8 @@ LCIA - waste categories +
 | ##{nbsp}##
 | ##o##
 | ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
 | ##x##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7944,9 +7026,7 @@ LCIA - waste categories +
 | ##2##
 | ##LCIAResults/LCIAResult/@epd:scenario##
 
-| ##224.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##226##
 | ##E1.5##
 | ##F.1.5##
 | ##v1.1##
@@ -7961,8 +7041,6 @@ LCIA - waste categories +
 | ##"unit group data set" with the units used to measure the LCIA results. Given as a function of the respective parameter##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: tables 3, 4, 6 & 7##
-| ##EN 15804+A2: tables 3, 4, 6 & 7##
 | ##{nbsp}##
 | ##x##
 | ##{nbsp}##
@@ -7974,6 +7052,7 @@ LCIA - add env indicators +
 LCIA - ressource use parameters +
 LCIA - waste categories +
 ##
+| ##EN 15804+A2: tables 3, 4, 6 & 7##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -7981,9 +7060,7 @@ LCIA - waste categories +
 | ##2##
 | ##LCIAResults/LCIAResult/epd:referenceToUnitGroupDataSet##
 
-| ##225.0##
-| ##not part of the data format, in the old table of definition indicated as 'flow'##
-| ##{nbsp}##
+| ##227##
 | ##F##
 | ##G##
 | ##{nbsp}##
@@ -8010,13 +7087,10 @@ LCIA - waste categories +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##0##
 | ##nan##
 
-| ##226.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##228##
 | ##F1##
 | ##G.1##
 | ##{nbsp}##
@@ -8040,8 +7114,6 @@ The following material properties are currently supported: +
 | ##~##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: chapter 7.1 b##
-| ##EN 15804+A2: chapter 7.1 b##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##Recommendation: Declare at least the conversion factor to 1 kg and in addition as many material properties as appropriate for your product. LCA calculation tools for buildings operate with different declared units and conversion factors, most commonly used: indicators per kg in combination with density in kg/m3. Thus different data bases will prescribe corresponding material properties depending on the fed LCA calculation tool. Find further explanations in FAQ##
@@ -8049,6 +7121,7 @@ The following material properties are currently supported: +
 | ##{nbsp}##
 | ##7.1 b##
 | ##declared or functional unit to which the data refers##
+| ##EN 15804+A2: chapter 7.1 b##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -8056,9 +7129,7 @@ The following material properties are currently supported: +
 | ##0##
 | ##nan##
 
-| ##227.0##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##229##
 | ##F2##
 | ##G.2##
 | ##{nbsp}##
@@ -8085,13 +7156,10 @@ The following material properties are currently supported: +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##{nbsp}##
 | ##0##
 | ##nan##
 
-| ##228.0##
-| ##ok check: is "-1000" in case of ommission still valid?##
-| ##{nbsp}##
+| ##230##
 | ##F2.1##
 | ##G.2.1##
 | ##{nbsp}##
@@ -8106,15 +7174,14 @@ The following material properties are currently supported: +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: table 9##
-| ##EN 15804+A2: table 9##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##If ommited according to EN 15804+A2, specify -1000##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##T9##
 | ##biog. C-content product##
+| ##EN 15804+A2: table 9##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
@@ -8122,9 +7189,7 @@ The following material properties are currently supported: +
 | ##0##
 | ##nan##
 
-| ##229.0##
-| ##ok check: is "-1000" in case of ommission still valid?##
-| ##{nbsp}##
+| ##231##
 | ##F2.3##
 | ##G.2.2##
 | ##{nbsp}##
@@ -8140,181 +7205,14 @@ accompanying packaging##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##m##
-| ##EN 15804+A2: table 9##
-| ##EN 15804+A2: table 9##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##If ommited according to EN 15804+A2, specify -1000##
+| ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##T9##
 | ##biog. C-content packaging##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##230.0##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##new##
-| ##G.2.3##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Information on where explanatory material can be obtained.##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##https://github.com/InDataWG/ILCD-EPD-Data-Format/issues/19##
-| ##{nbsp}##
-| ##~##
-| ##{nbsp}##
-| ##o##
-| ##EN 15804+A2: chapter 7.1 l##
-| ##EN 15804+A2: chapter 7.1 l##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##7.1 l##
-| ##Information on where explanatory material can be obtained.##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##231.0##
-| ##We don't understand the meaning of this line, please check our proposal of editors below +
-You can contact Gundi if you are interested in the reasons why this data cannot be so easily quantified.##
-| ##{nbsp}##
-| ##new##
-| ##G.3##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Indoor air##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##https://github.com/InDataWG/ILCD-EPD-Data-Format/issues/9##
-| ##{nbsp}##
-| ##~##
-| ##{nbsp}##
-| ##o##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##7.4.1##
-| ##Indoor air##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##232.0##
-| ##Definition of content by editors - please check and supplement technical information; if yes: same kind of information as impacts on soil and water (B9 for the moment)##
-| ##{nbsp}##
-| ##new##
-| ##G.3##
-| ##{nbsp}##
-| ##Indoor air##
-| ##Indoor air##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##https://github.com/InDataWG/ILCD-EPD-Data-Format/issues/9##
-| ##{nbsp}##
-| ##~##
-| ##{nbsp}##
-| ##o##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##7.4.1##
-| ##Indoor air##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##235.0##
-| ##Definition of content by editors - please check and supplement technical information##
-| ##{nbsp}##
-| ##new##
-| ##G.3.1##
-| ##{nbsp}##
-| ##Indoor air - Stellungnahme ##
-| ##Indoor air statement##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Statement regarding emissions to indoor air, according to the horizontal standards on measurement of release of regulated dangerous substances from construction products using harmonised testing methods according to the provisions of the respective Technical Committees for European product standards, when available.##
-| ##{nbsp}##
-| ##o##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##The product fulfils the indoor air standards of natureplus guideline  RL5010 - Low-emission building products##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##0##
-| ##nan##
-
-| ##236.0##
-| ##Definition of content by editors - please check and supplement technical information##
-| ##{nbsp}##
-| ##new##
-| ##G.3.2##
-| ##{nbsp}##
-| ##Indoor air - Quelle zur Stellungnahme##
-| ##Indoor air source for statement##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Source für statement regarding indoor air (e.g. report on a test chamber investigation)##
-| ##{nbsp}##
-| ##o##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##EN 15804+A2: chapter 7.4.1##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##{nbsp}##
-| ##Report to the test chamber test xyz for product exz ... ##
-| ##{nbsp}##
-| ##{nbsp}##
+| ##EN 15804+A2: table 9##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##

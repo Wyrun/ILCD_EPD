@@ -383,8 +383,8 @@ if __name__ == "__main__":
     # Ensure output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # Define file paths - using the file from the conversion script
-    xlsx_file = os.path.join(DATA_DIR, 'ILCD_Format_Documentation_v1.3_reformatted_final_2025-09-12.xlsx')
+    # Define file paths - using the latest file
+    xlsx_file = os.path.join(DATA_DIR, 'ILCD_Format_Documentation_v1.3_2025-10-16_final_for_InData-Meeting.xlsx')
     combined_adoc_file = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
     roundtrip_xlsx_file = os.path.join(OUTPUT_DIR, 'roundtrip.xlsx')
     comparison_log_file = os.path.join(OUTPUT_DIR, 'comparison_log.txt')
