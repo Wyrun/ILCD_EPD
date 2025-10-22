@@ -72,7 +72,7 @@ The conversion script successfully extracted hierarchy from Excel background col
 ### Row Count
 - **Previous**: 241 rows (from older Excel file)
 - **Current**: 231 rows (from new Excel file)
-- **Difference**: -10 rows (elements removed or consolidated by boss)
+- **Difference**: -10 rows (elements removed or consolidated by project lead)
 
 ### Column Structure
 The new file has a slightly different column structure:
@@ -148,7 +148,7 @@ GitHub Actions will automatically:
 **Live site will update within 1-2 minutes** at: https://wyrun.github.io/ILCD_EPD/
 
 ### For Future Updates
-When you receive another Excel file from boss:
+When you receive another Excel file from project lead:
 1. Place it in `data/` directory
 2. Update `scripts/convert_xlsx_to_adoc.py` line 387 with new filename
 3. Run: `python scripts/convert_xlsx_to_adoc.py`

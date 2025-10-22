@@ -95,7 +95,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Version##
 | ##Version##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@version##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}@version##
 | ##m##
 | ##{nbsp}##
 | ##SchemaVersion##
@@ -116,7 +116,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
+| ##1##
 | ##processDataSet/@version##
 
 | ##3##
@@ -125,7 +125,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.2##
 | ##EPD-Format-Version##
 | ##EPD format version##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:epd-version##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}@epd2:epd-version##
 | ##m##
 | ##{nbsp}##
 | ##SchemaVersion##
@@ -146,7 +146,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
+| ##1##
 | ##processDataSet/@epd2:epd-version##
 
 | ##4##
@@ -185,7 +185,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Nur Metadaten##
 | ##Meta data only##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@metaDataOnly##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}@metaDataOnly##
 | ##o##
 | ##{nbsp}##
 | ##boolean##
@@ -206,8 +206,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processDataSet/@locations/@metaDataOnly##
+| ##1##
+| ##processDataSet/@metaDataOnly##
 
 | ##6##
 | ##A##
@@ -215,7 +215,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Datensatzinformation##
 | ##Process information##
-| ##processInformation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}processInformation##
 | ##m##
 | ##[1,1]##
 | ##{nbsp}##
@@ -236,8 +236,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##0##
-| ##processInformation##
+| ##1##
+| ##processDataSet/processInformation##
 
 | ##7##
 | ##A1##
@@ -245,7 +245,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Kerninformationen des Datensatzes##
 | ##Key Data Set Information##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}dataSetInformation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetInformation##
 | ##m##
 | ##[1,1]##
 | ##{nbsp}##
@@ -266,8 +266,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/dataSetInformation##
+| ##2##
+| ##processDataSet/processInformation/dataSetInformation##
 
 | ##8##
 | ##A1.1##
@@ -275,7 +275,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##UUID des Datensatzes##
 | ##UUID of Process data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}UUID##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}UUID##
 | ##m##
 | ##[1,1]##
 | ##UUID##
@@ -296,8 +296,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/UUID##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/UUID##
 
 | ##9##
 | ##new##
@@ -305,7 +305,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}name##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -326,8 +326,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/name##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/name##
 
 | ##10##
 | ##A1.2##
@@ -335,7 +335,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}baseName##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}baseName##
 | ##r##
 | ##[1,1]##
 | ##StringMultiLang##
@@ -356,8 +356,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/baseName##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/name/baseName##
 
 | ##11##
 | ##new##
@@ -365,7 +365,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Quantitative Produkt-/ Prozeßeigenschaften##
 | ##Quantitative product or process properties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionalUnitFlowProperties##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionalUnitFlowProperties##
 | ##o##
 | ##[0,1]##
 | ##StringMultiLang##
@@ -386,8 +386,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/functionalUnitFlowProperties##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/name/functionalUnitFlowProperties##
 
 | ##12##
 | ##new##
@@ -395,7 +395,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -416,8 +416,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/other##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/other##
 
 | ##13##
 | ##new##
@@ -425,7 +425,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Synonyme##
 | ##Synonyms##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}synonyms##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}synonyms##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -446,8 +446,8 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/synonyms##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/synonyms##
 
 | ##14##
 | ##A1.3##
@@ -455,7 +455,7 @@ This document is generated from the EPD_DataSet.xlsx file.
 | ##v1.0##
 | ##Klassifizierungsinformation##
 | ##Classification information##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}classificationInformation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}classificationInformation##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -479,8 +479,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/classificationInformation##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation##
 
 | ##15##
 | ##A1.3##
@@ -488,7 +488,7 @@ Cement##
 | ##v1.0##
 | ##Klassifizierung##
 | ##Classification##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}classification##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}classification##
 | ##r##
 | ##[0,n]##
 | ##{nbsp}##
@@ -509,8 +509,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/classification##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification##
 
 | ##16##
 | ##new##
@@ -518,7 +518,7 @@ Cement##
 | ##v1.0##
 | ##Gliederungssystem##
 | ##Classification system name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@name##
 | ##r##
 | ##{nbsp}##
 | ##string##
@@ -539,8 +539,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/dataSetInformation/classification/@name##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/@name##
 
 | ##17##
 | ##new##
@@ -548,7 +548,7 @@ Cement##
 | ##v1.0##
 | ##Gliederungsklassen##
 | ##Classes##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@classes##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@classes##
 | ##r##
 | ##{nbsp}##
 | ##anyURI##
@@ -569,8 +569,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/dataSetInformation/classification/@classes##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/@classes##
 
 | ##18##
 | ##new##
@@ -578,7 +578,7 @@ Cement##
 | ##v1.0##
 | ##Klassenname##
 | ##Class name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}class##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}class##
 | ##r##
 | ##[1,n]##
 | ##{nbsp}##
@@ -599,8 +599,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/dataSetInformation/classification/class##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class##
 
 | ##19##
 | ##new##
@@ -608,7 +608,7 @@ Cement##
 | ##v1.0##
 | ##Hierarchieebene##
 | ##Hierarchy level##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@level##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@level##
 | ##r##
 | ##{nbsp}##
 | ##LevelType##
@@ -629,8 +629,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/dataSetInformation/classification/@level##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class/@level##
 
 | ##20##
 | ##new##
@@ -638,7 +638,7 @@ Cement##
 | ##v1.0##
 | ##Eindeutiger Klassenidentifizierer##
 | ##Unique class identifier##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@classId##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@classId##
 | ##r##
 | ##{nbsp}##
 | ##string##
@@ -659,8 +659,8 @@ Cement##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/dataSetInformation/classification/@classId##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/classificationInformation/classification/class/@classId##
 
 | ##21##
 | ##A1.4##
@@ -668,7 +668,7 @@ Cement##
 | ##v1.0##
 | ##Allgemeine Anmerkungen zum Datensatz##
 | ##General comment on data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -703,8 +703,8 @@ data.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/generalComment##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/generalComment##
 
 | ##22##
 | ##A1.5##
@@ -712,7 +712,7 @@ data.##
 | ##v1.0##
 | ##Hintergrundbericht / Ökobilanzbericht##
 | ##Data set LCA report, background info##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToExternalDocumentation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToExternalDocumentation##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -736,8 +736,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/referenceToExternalDocumentation##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/referenceToExternalDocumentation##
 
 | ##23##
 | ##new##
@@ -745,7 +745,7 @@ the modular approach##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -766,8 +766,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/dataSetInformation/other##
+| ##3##
+| ##processDataSet/processInformation/dataSetInformation/other##
 
 | ##24##
 | ##new##
@@ -775,7 +775,7 @@ the modular approach##
 | ##v1.3##
 | ##Referenz-Nutzungsdauer in Jahren##
 | ##Reference Service Life in years##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceServiceLife##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceServiceLife##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -796,8 +796,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:referenceServiceLife##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife##
 
 | ##25##
 | ##new##
@@ -805,7 +805,7 @@ the modular approach##
 | ##v1.3##
 | ##Jahre##
 | ##Years##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:years##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:years##
 | ##m##
 | ##[1]##
 | ##xs:double##
@@ -826,8 +826,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/@epd24:years##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/@epd24:years##
 
 | ##26##
 | ##new##
@@ -835,7 +835,7 @@ the modular approach##
 | ##v1.3##
 | ##Nutzungsbedingungsfaktor##
 | ##Use Condition factor##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useConditionFactor##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useConditionFactor##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -856,8 +856,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/epd24:useConditionFactor##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor##
 
 | ##27##
 | ##new##
@@ -865,7 +865,7 @@ the modular approach##
 | ##v1.3##
 | ##Faktor-Kategorie##
 | ##Factor category##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factorCategory##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factorCategory##
 | ##m##
 | ##[1,1]##
 | ##Restricted xs:string: +
@@ -893,8 +893,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/@epd24:factorCategory##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/@epd24:factorCategory##
 
 | ##28##
 | ##new##
@@ -902,7 +902,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Objekt-spezifischer Nutzungsgrad##
 | ##Object specific use condition grade##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:objectSpecificGrade##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:objectSpecificGrade##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:int: +
@@ -929,8 +929,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/@epd24:objectSpecificGrade##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/@epd24:objectSpecificGrade##
 
 | ##29##
 | ##new##
@@ -938,7 +938,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenzgrad der Nutzung##
 | ##Reference use condition grade##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:referenceGrade##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:referenceGrade##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:int: +
@@ -965,8 +965,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/@epd24:referenceGrade##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/@epd24:referenceGrade##
 
 | ##30##
 | ##new##
@@ -974,7 +974,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Faktor##
 | ##Factor##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factor##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factor##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -995,8 +995,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/@epd24:factor##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:useConditionFactor/@epd24:factor##
 
 | ##31##
 | ##new##
@@ -1004,7 +1004,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Kommentar##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -1025,8 +1025,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/epd24:comment##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:comment##
 
 | ##32##
 | ##new##
@@ -1034,7 +1034,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenz zum Standard##
 | ##Reference to standard##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToStandard##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToStandard##
 | ##o##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -1055,8 +1055,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/epd24:referenceToStandard##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:referenceToStandard##
 
 | ##33##
 | ##new##
@@ -1064,7 +1064,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenz zur Dokumentation der Einbaubedingungen##
 | ##Reference to use conditions documentation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToUseConditionsDocumentation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToUseConditionsDocumentation##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -1085,8 +1085,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/epd24:referenceToUseConditionsDocumentation##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:referenceToUseConditionsDocumentation##
 
 | ##34##
 | ##new##
@@ -1094,7 +1094,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Kommentar##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -1115,8 +1115,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:referenceServiceLife/epd24:comment##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:referenceServiceLife/epd24:comment##
 
 | ##35##
 | ##new##
@@ -1124,7 +1124,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Angenommene Nutzungsdauer in Jahren##
 | ##Estimated Service Life in years##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:estimatedServiceLife##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:estimatedServiceLife##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1145,8 +1145,8 @@ G - maintenance level##
 | ##'Estimated Service Life (ESL)'##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:estimatedServiceLife##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife##
 
 | ##36##
 | ##new##
@@ -1154,7 +1154,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Jahre##
 | ##Years##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:years##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:years##
 | ##m##
 | ##[1]##
 | ##xs:double##
@@ -1175,8 +1175,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/@epd24:years##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/@epd24:years##
 
 | ##37##
 | ##new##
@@ -1184,7 +1184,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Nutzungsbedingungsfaktor##
 | ##Use Condition factor##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useConditionFactor##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useConditionFactor##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -1205,8 +1205,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/epd24:useConditionFactor##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor##
 
 | ##38##
 | ##new##
@@ -1214,7 +1214,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Faktor-Kategorie##
 | ##Factor category##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factorCategory##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factorCategory##
 | ##m##
 | ##[1,1]##
 | ##Restricted xs:string: +
@@ -1242,8 +1242,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/@epd24:factorCategory##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/@epd24:factorCategory##
 
 | ##39##
 | ##new##
@@ -1251,7 +1251,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Objekt-spezifischer Nutzungsgrad##
 | ##Object specific use condition grade##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:objectSpecificGrade##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:objectSpecificGrade##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:int: +
@@ -1278,8 +1278,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/@epd24:objectSpecificGrade##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/@epd24:objectSpecificGrade##
 
 | ##40##
 | ##new##
@@ -1287,7 +1287,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenzgrad der Nutzung##
 | ##Reference use condition grade##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:referenceGrade##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:referenceGrade##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:int: +
@@ -1314,8 +1314,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/@epd24:referenceGrade##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/@epd24:referenceGrade##
 
 | ##41##
 | ##new##
@@ -1323,7 +1323,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Faktor##
 | ##Factor##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factor##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:factor##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -1344,8 +1344,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/@epd24:factor##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:useConditionFactor/@epd24:factor##
 
 | ##42##
 | ##new##
@@ -1353,7 +1353,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Kommentar##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -1374,8 +1374,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/epd24:comment##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:comment##
 
 | ##43##
 | ##new##
@@ -1383,7 +1383,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenz zum Standard##
 | ##Reference to standard##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToStandard##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToStandard##
 | ##o##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -1404,8 +1404,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/epd24:referenceToStandard##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:referenceToStandard##
 
 | ##44##
 | ##new##
@@ -1413,7 +1413,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Referenz zur Dokumentation der Einbaubedingungen##
 | ##Reference to use conditions documentation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToUseConditionsDocumentation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:referenceToUseConditionsDocumentation##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -1434,8 +1434,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/epd24:referenceToUseConditionsDocumentation##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:referenceToUseConditionsDocumentation##
 
 | ##45##
 | ##new##
@@ -1443,7 +1443,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Kommentar##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -1464,8 +1464,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:estimatedServiceLife/epd24:comment##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:estimatedServiceLife/epd24:comment##
 
 | ##46##
 | ##new##
@@ -1473,7 +1473,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Produktkennungen##
 | ##Product identifiers##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:productIds##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:productIds##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1494,8 +1494,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:productIds##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:productIds##
 
 | ##47##
 | ##new##
@@ -1503,7 +1503,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Produktkennung##
 | ##Product identifier##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:productId##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:productId##
 | ##m##
 | ##[1]##
 | ##String##
@@ -1524,8 +1524,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:productIds/epd24:productId##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:productIds/epd24:productId##
 
 | ##48##
 | ##new##
@@ -1533,7 +1533,7 @@ G - maintenance level##
 | ##v1.3##
 | ##Kennungstyp##
 | ##Identifier type##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
 | ##m##
 | ##[1]##
 | ##String##
@@ -1554,8 +1554,8 @@ G - maintenance level##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:productIds/@epd24:type##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:productIds/epd24:productId/@epd24:type##
 
 | ##49##
 | ##A1.6##
@@ -1563,7 +1563,7 @@ G - maintenance level##
 | ##v1.1##
 | ##Sicherheitszuschläge##
 | ##Generic data uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd:safetyMargins##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:safetyMargins##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1585,8 +1585,8 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd:safetyMargins##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:safetyMargins##
 
 | ##50##
 | ##A1.6##
@@ -1594,7 +1594,7 @@ For further details see FAQ.##
 | ##v1.1##
 | ##Sicherheitszuschläge##
 | ##Uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:margins##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:margins##
 | ##o##
 | ##[0,1]##
 | ##Percentage##
@@ -1615,8 +1615,8 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:safetyMargins/epd:margins##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:safetyMargins/epd:margins##
 
 | ##51##
 | ##A1.7##
@@ -1624,7 +1624,7 @@ For further details see FAQ.##
 | ##v1.1##
 | ##Beschreibung##
 | ##Description of generic data uncertainty penalties##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:description##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:description##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -1646,8 +1646,8 @@ For further details see FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:safetyMargins/epd:description##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:safetyMargins/epd:margins/epd:description##
 
 | ##52##
 | ##A2##
@@ -1655,7 +1655,7 @@ For further details see FAQ.##
 | ##v1.1##
 | ##Szenarien##
 | ##Scenarios##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd:scenarios##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:scenarios##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1678,8 +1678,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd:scenarios##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios##
 
 | ##53##
 | ##A2.1##
@@ -1687,7 +1687,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Szenario##
 | ##Scenario##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:scenario##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:scenario##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -1708,8 +1708,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:scenarios/epd:scenario##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario##
 
 | ##54##
 | ##A2.2##
@@ -1717,7 +1717,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:name##
 | ##m##
 | ##{nbsp}##
 | ##string##
@@ -1738,8 +1738,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:scenarios/@epd:name##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/@epd:name##
 
 | ##55##
 | ##A2.3##
@@ -1747,7 +1747,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Standardszenario##
 | ##Default##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:default##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:default##
 | ##o##
 | ##{nbsp}##
 | ##boolean##
@@ -1768,8 +1768,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:scenarios/@epd:default##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/@epd:default##
 
 | ##56##
 | ##A2.4##
@@ -1777,7 +1777,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Gruppe##
 | ##Group##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:group##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:group##
 | ##o##
 | ##{nbsp}##
 | ##string##
@@ -1798,8 +1798,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:scenarios/@epd:group##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/@epd:group##
 
 | ##57##
 | ##A2.5##
@@ -1807,7 +1807,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Beschreibung##
 | ##Description##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:description##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:description##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -1828,8 +1828,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:scenarios/epd:description##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:scenarios/epd:scenario/epd:description##
 
 | ##58##
 | ##A3##
@@ -1837,7 +1837,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Module##
 | ##Modules##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd:modules##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:modules##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1858,8 +1858,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd:modules##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:modules##
 
 | ##59##
 | ##A3.1##
@@ -1867,7 +1867,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Modul##
 | ##Module##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:module##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:module##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -1888,8 +1888,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:modules/epd:module##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:modules/epd:module##
 
 | ##60##
 | ##A3.2##
@@ -1897,7 +1897,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:name##
 | ##m##
 | ##{nbsp}##
 | ##string##
@@ -1918,8 +1918,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:modules/@epd:name##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:modules/epd:module/@epd:name##
 
 | ##61##
 | ##A3.3##
@@ -1927,7 +1927,7 @@ the declared modules in accordance with the project report.##
 | ##v1.1##
 | ##Produktsystem-ID##
 | ##Product system ID##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:productsystem-id##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:productsystem-id##
 | ##m##
 | ##{nbsp}##
 | ##string##
@@ -1948,8 +1948,8 @@ the declared modules in accordance with the project report.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd:modules/@epd:productsystem-id##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd:modules/epd:module/@epd:productsystem-id##
 
 | ##62##
 | ##A1.8##
@@ -1957,7 +1957,7 @@ the declared modules in accordance with the project report.##
 | ##v1.2##
 | ##Inhaltsangabe##
 | ##Content Declaration##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd2:contentDeclaration##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:contentDeclaration##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -1985,8 +1985,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd2:contentDeclaration##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration##
 
 | ##63##
 | ##new##
@@ -1994,7 +1994,7 @@ Total 100%##
 | ##v1.2##
 | ##Komponente##
 | ##Component##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:component##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:component##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -2015,8 +2015,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:component##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component##
 
 | ##64##
 | ##new##
@@ -2024,7 +2024,7 @@ Total 100%##
 | ##v1.2##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:name##
 | ##m##
 | ##[1,1]##
 | ##StringMultiLang##
@@ -2045,8 +2045,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:name##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name##
 
 | ##65##
 | ##new##
@@ -2054,7 +2054,7 @@ Total 100%##
 | ##v1.2##
 | ##Massenanteil in %##
 | ##Mass percentage##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:weightPerc##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:weightPerc##
 | ##m##
 | ##[1,1]##
 | ##{nbsp}##
@@ -2075,8 +2075,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:weightPerc##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc##
 
 | ##66##
 | ##new##
@@ -2084,7 +2084,7 @@ Total 100%##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2105,8 +2105,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:value##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:value##
 
 | ##67##
 | ##new##
@@ -2114,7 +2114,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2135,8 +2135,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:lowerValue##
 
 | ##68##
 | ##new##
@@ -2144,7 +2144,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2165,8 +2165,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:upperValue##
 
 | ##69##
 | ##new##
@@ -2174,7 +2174,7 @@ Total 100%##
 | ##v1.2##
 | ##Masse in kg##
 | ##Mass in kg##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:mass##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:mass##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -2195,8 +2195,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:mass##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass##
 
 | ##70##
 | ##new##
@@ -2204,7 +2204,7 @@ Total 100%##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2225,8 +2225,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:value##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:value##
 
 | ##71##
 | ##new##
@@ -2234,7 +2234,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2255,8 +2255,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:lowerValue##
 
 | ##72##
 | ##new##
@@ -2264,7 +2264,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2285,8 +2285,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:upperValue##
 
 | ##73##
 | ##new##
@@ -2294,7 +2294,7 @@ Total 100%##
 | ##v1.2##
 | ##Bemerkungen##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -2315,8 +2315,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:comment##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:comment##
 
 | ##74##
 | ##new##
@@ -2324,7 +2324,7 @@ Total 100%##
 | ##v1.2##
 | ##Material \| Substanz##
 | ##Material \| Substance##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:material \| epd2:substance##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:material \| epd2:substance##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -2345,8 +2345,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:material_\|_epd2:substance##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:material_\|_epd2:substance##
 
 | ##75##
 | ##new##
@@ -2354,7 +2354,7 @@ Total 100%##
 | ##v1.2##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:name##
 | ##m##
 | ##[1,1]##
 | ##StringMultiLang##
@@ -2375,8 +2375,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:name##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name##
 
 | ##76##
 | ##new##
@@ -2384,7 +2384,7 @@ Total 100%##
 | ##v1.2##
 | ##Massenanteil in %##
 | ##Mass percentage##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:weightPerc##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:weightPerc##
 | ##m##
 | ##[1,1]##
 | ##{nbsp}##
@@ -2405,8 +2405,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:weightPerc##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc##
 
 | ##77##
 | ##new##
@@ -2414,7 +2414,7 @@ Total 100%##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2435,8 +2435,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:value##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:value##
 
 | ##78##
 | ##new##
@@ -2444,7 +2444,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2465,8 +2465,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:lowerValue##
 
 | ##79##
 | ##new##
@@ -2474,7 +2474,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2495,8 +2495,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:weightPerc/@epd2:upperValue##
 
 | ##80##
 | ##new##
@@ -2504,7 +2504,7 @@ Total 100%##
 | ##v1.2##
 | ##Masse in kg##
 | ##Mass in kg##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:mass##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:mass##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -2525,8 +2525,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:mass##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass##
 
 | ##81##
 | ##new##
@@ -2534,7 +2534,7 @@ Total 100%##
 | ##v1.2##
 | ##Diskreter Wert##
 | ##Discrete value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:value##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2555,8 +2555,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:value##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:value##
 
 | ##82##
 | ##new##
@@ -2564,7 +2564,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: unterer Wert##
 | ##Range: lower value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:lowerValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2585,8 +2585,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:lowerValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:lowerValue##
 
 | ##83##
 | ##new##
@@ -2594,7 +2594,7 @@ Total 100%##
 | ##v1.2##
 | ##Wertebereich: oberer Wert##
 | ##Range: upper value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:upperValue##
 | ##o##
 | ##{nbsp}##
 | ##Real##
@@ -2615,8 +2615,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:upperValue##
+| ##8##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:mass/@epd2:upperValue##
 
 | ##84##
 | ##new##
@@ -2624,7 +2624,7 @@ Total 100%##
 | ##v1.2##
 | ##CAS-Nummer##
 | ##CAS number##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:CASNumber##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:CASNumber##
 | ##o##
 | ##{nbsp}##
 | ##CAS Number##
@@ -2645,8 +2645,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:CASNumber##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:CASNumber##
 
 | ##85##
 | ##new##
@@ -2654,7 +2654,7 @@ Total 100%##
 | ##v1.2##
 | ##EC-Nummer##
 | ##EC number##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:ECNumber##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:ECNumber##
 | ##o##
 | ##{nbsp}##
 | ##String with pattern 000-000-0##
@@ -2675,8 +2675,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:ECNumber##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:ECNumber##
 
 | ##86##
 | ##new##
@@ -2684,7 +2684,7 @@ Total 100%##
 | ##v1.2##
 | ##Gefahrencode##
 | ##Hazard code##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:hazardCode##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:hazardCode##
 | ##o##
 | ##{nbsp}##
 | ##String##
@@ -2705,8 +2705,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:hazardCode##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:hazardCode##
 
 | ##87##
 | ##new##
@@ -2714,7 +2714,7 @@ Total 100%##
 | ##v1.2##
 | ##Anteil erneuerbarer Ressourcen##
 | ##Percentage of renewable resources##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:renewable##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:renewable##
 | ##o##
 | ##{nbsp}##
 | ##Percentage##
@@ -2735,8 +2735,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:renewable##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:renewable##
 
 | ##88##
 | ##new##
@@ -2744,7 +2744,7 @@ Total 100%##
 | ##v1.2##
 | ##Anteil recycelter Materialien##
 | ##Percentage of recycled materials##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:recycled##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:recycled##
 | ##o##
 | ##{nbsp}##
 | ##Percentage##
@@ -2765,8 +2765,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:recycled##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:recycled##
 
 | ##89##
 | ##new##
@@ -2774,7 +2774,7 @@ Total 100%##
 | ##v1.2##
 | ##Anteil recycelbarer Materialien##
 | ##Percentage of potentially recyclable materials##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:recyclable##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:recyclable##
 | ##o##
 | ##{nbsp}##
 | ##Percentage##
@@ -2795,8 +2795,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:recyclable##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:recyclable##
 
 | ##90##
 | ##new##
@@ -2804,7 +2804,7 @@ Total 100%##
 | ##v1.2##
 | ##Verpackung##
 | ##Packaging##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:packaging##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd2:packaging##
 | ##o##
 | ##{nbsp}##
 | ##boolean##
@@ -2825,8 +2825,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/@epd2:packaging##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/@epd2:packaging##
 
 | ##91##
 | ##new##
@@ -2834,7 +2834,7 @@ Total 100%##
 | ##v1.2##
 | ##Bemerkungen##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:comment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:comment##
 | ##o##
 | ##[0,n]##
 | ##FTMultiLang##
@@ -2855,8 +2855,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd2:comment##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd2:contentDeclaration/epd2:component/epd2:name/epd2:comment##
 
 | ##92##
 | ##new##
@@ -2864,7 +2864,7 @@ Total 100%##
 | ##v1.3##
 | ##Enthält SVHC##
 | ##Contains SVHC##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:SVHC##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:SVHC##
 | ##m##
 | ##[1,1]##
 | ##boolean##
@@ -2885,8 +2885,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd2:contentDeclaration/epd24:SVHC##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:SVHC##
 
 | ##93##
 | ##new##
@@ -2894,7 +2894,7 @@ Total 100%##
 | ##v1.3##
 | ##Quantitative Angaben zu Szenarien##
 | ##Quantitative scenario data##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:scenarioData##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:scenarioData##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -2915,8 +2915,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:scenarioData##
+| ##4##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData##
 
 | ##94##
 | ##new##
@@ -2924,7 +2924,7 @@ Total 100%##
 | ##v1.3##
 | ##Angaben zu Use-Stage-Szenarien##
 | ##Use stage scenario data##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useStageScenarioData##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:useStageScenarioData##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -2945,8 +2945,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:scenarioData/epd24:useStageScenarioData##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData##
 
 | ##95##
 | ##new##
@@ -2954,7 +2954,7 @@ Total 100%##
 | ##v1.3##
 | ##Szenario-Name##
 | ##scenario name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:scenario##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:scenario##
 | ##o##
 | ##[0,1]##
 | ##string##
@@ -2975,8 +2975,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:scenarioData/@epd24:scenario##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/@epd24:scenario##
 
 | ##96##
 | ##new##
@@ -2984,7 +2984,7 @@ Total 100%##
 | ##v1.3##
 | ##Wirkungen auf Boden und Wasser##
 | ##Impacts on soil and water##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:soilAndWaterImpacts##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:soilAndWaterImpacts##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3005,8 +3005,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:soilAndWaterImpacts##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/epd24:soilAndWaterImpacts##
 
 | ##97##
 | ##new##
@@ -3014,7 +3014,7 @@ Total 100%##
 | ##v1.3##
 | ##Beschreibung der Wirkungen auf Boden und Wasser##
 | ##Description of impacts on soil and water##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:soilAndWaterImpactsDescription##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:soilAndWaterImpactsDescription##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -3035,8 +3035,8 @@ Total 100%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:soilAndWaterImpacts/epd24:soilAndWaterImpactsDescription##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:useStageScenarioData/epd24:soilAndWaterImpacts/epd24:soilAndWaterImpactsDescription##
 
 | ##98##
 | ##new##
@@ -3044,7 +3044,7 @@ Total 100%##
 | ##v1.3##
 | ##Angaben zu EoL-Szenarien##
 | ##EoL scenario data##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:eolScenarioData##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:eolScenarioData##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -3067,8 +3067,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/epd24:eolScenarioData##
+| ##5##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData##
 
 | ##99##
 | ##new##
@@ -3076,7 +3076,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##Szenario-Name##
 | ##scenario name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:scenario##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:scenario##
 | ##o##
 | ##[0,1]##
 | ##string##
@@ -3097,8 +3097,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:scenario##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/@epd24:scenario##
 
 | ##100##
 | ##new##
@@ -3106,7 +3106,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##Sammlung##
 | ##Collection##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:collection##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:collection##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3127,8 +3127,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/epd24:collection##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection##
 
 | ##101##
 | ##new##
@@ -3136,7 +3136,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##getrennt##
 | ##separate##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:separate##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:separate##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3157,8 +3157,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:separate##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection/@epd24:separate##
 
 | ##102##
 | ##new##
@@ -3166,7 +3166,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##als gemischter Abfall##
 | ##with mixed waste##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:withMixedWaste##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:withMixedWaste##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3187,8 +3187,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:withMixedWaste##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:collection/@epd24:withMixedWaste##
 
 | ##103##
 | ##new##
@@ -3196,7 +3196,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##Rückholung##
 | ##Recovery##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:recovery##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:recovery##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3217,8 +3217,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/epd24:recovery##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery##
 
 | ##104##
 | ##new##
@@ -3226,7 +3226,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##zur Wiederverwendung##
 | ##for re-use##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:reuse##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:reuse##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3247,8 +3247,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:reuse##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/@epd24:reuse##
 
 | ##105##
 | ##new##
@@ -3256,7 +3256,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##zum Recycling##
 | ##for recycling##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:recycling##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:recycling##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3277,8 +3277,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:recycling##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/@epd24:recycling##
 
 | ##106##
 | ##new##
@@ -3286,7 +3286,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##zur Energierückgewinnung##
 | ##for energy recovery##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:energyRecovery##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:energyRecovery##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3307,8 +3307,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:energyRecovery##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:recovery/@epd24:energyRecovery##
 
 | ##107##
 | ##new##
@@ -3316,7 +3316,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##Beseitigung##
 | ##Disposal##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:disposal##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:disposal##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3337,8 +3337,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/epd24:disposal##
+| ##6##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:disposal##
 
 | ##108##
 | ##new##
@@ -3346,7 +3346,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.3##
 | ##zur Deponierung##
 | ##for final deposition##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:finalDeposition##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:finalDeposition##
 | ##o##
 | ##[0,1]##
 | ##xs:double##
@@ -3367,8 +3367,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/epd24:eolScenarioData/@epd24:finalDeposition##
+| ##7##
+| ##processDataSet/processInformation/dataSetInformation/other/epd24:scenarioData/epd24:eolScenarioData/epd24:disposal/@epd24:finalDeposition##
 
 | ##109##
 | ##A4##
@@ -3376,7 +3376,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.0##
 | ##Quantitative Referenz##
 | ##Quantitative reference##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}quantitativeReference##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}quantitativeReference##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3397,8 +3397,8 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/quantitativeReference##
+| ##2##
+| ##processDataSet/processInformation/quantitativeReference##
 
 | ##110##
 | ##new##
@@ -3406,7 +3406,7 @@ Geographical area, i.e. market range, where the product end-of-life is assumed##
 | ##v1.0##
 | ##Art der quantitativen Referenz##
 | ##Type of quantitative reference##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@type##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@type##
 | ##r##
 | ##{nbsp}##
 | ##TypeOfQuantitativeReferenceValues +
@@ -3431,8 +3431,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/quantitativeReference/@type##
+| ##4##
+| ##processDataSet/processInformation/quantitativeReference/@type##
 
 | ##111##
 | ##A4.1##
@@ -3440,7 +3440,7 @@ Production period##
 | ##v1.0##
 | ##Referenzfluß##
 | ##Reference flow(s)##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToReferenceFlow##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToReferenceFlow##
 | ##r##
 | ##[0,n]##
 | ##Int6##
@@ -3461,8 +3461,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/quantitativeReference/referenceToReferenceFlow##
+| ##3##
+| ##processDataSet/processInformation/quantitativeReference/referenceToReferenceFlow##
 
 | ##112##
 | ##A4.2##
@@ -3470,7 +3470,7 @@ Production period##
 | ##v1.0##
 | ##Funktionelle Einheit##
 | ##Functional unit, Production period, or Other parameter##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionalUnitOrOther##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionalUnitOrOther##
 | ##r##
 | ##[0,n]##
 | ##StringMultiLang##
@@ -3491,8 +3491,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/quantitativeReference/functionalUnitOrOther##
+| ##3##
+| ##processDataSet/processInformation/quantitativeReference/functionalUnitOrOther##
 
 | ##113##
 | ##new##
@@ -3500,7 +3500,7 @@ Production period##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3521,8 +3521,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/quantitativeReference/other##
+| ##3##
+| ##processDataSet/processInformation/quantitativeReference/other##
 
 | ##114##
 | ##A5##
@@ -3530,7 +3530,7 @@ Production period##
 | ##v1.0##
 | ##Zeitliche Repräsentativität##
 | ##Time representativeness##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}time##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}time##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3551,8 +3551,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/time##
+| ##2##
+| ##processDataSet/processInformation/time##
 
 | ##115##
 | ##A5.1##
@@ -3560,7 +3560,7 @@ Production period##
 | ##v1.0##
 | ##Referenzjahr##
 | ##Reference year##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceYear##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceYear##
 | ##r##
 | ##[0,1]##
 | ##Year##
@@ -3581,8 +3581,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/time/referenceYear##
+| ##3##
+| ##processDataSet/processInformation/time/referenceYear##
 
 | ##116##
 | ##A5.2##
@@ -3590,7 +3590,7 @@ Production period##
 | ##v1.0##
 | ##Gültig bis##
 | ##Data set valid until:##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetValidUntil##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetValidUntil##
 | ##r##
 | ##[0,1]##
 | ##Year##
@@ -3611,8 +3611,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/time/dataSetValidUntil##
+| ##3##
+| ##processDataSet/processInformation/time/dataSetValidUntil##
 
 | ##117##
 | ##A5.3##
@@ -3620,7 +3620,7 @@ Production period##
 | ##v1.0##
 | ##Erläuterungen zur zeitlichen Repräsentativität##
 | ##Time representativeness description##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeRepresentativenessDescription##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeRepresentativenessDescription##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -3641,8 +3641,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/time/timeRepresentativenessDescription##
+| ##3##
+| ##processDataSet/processInformation/time/timeRepresentativenessDescription##
 
 | ##118##
 | ##new##
@@ -3650,7 +3650,7 @@ Production period##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3671,8 +3671,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/time/other##
+| ##3##
+| ##processDataSet/processInformation/time/other##
 
 | ##119##
 | ##C3.5##
@@ -3680,7 +3680,7 @@ Production period##
 | ##v1.2##
 | ##Veröffentlichungsdatum der EPD##
 | ##Publication date of EPD##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:publicationDateOfEPD##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:publicationDateOfEPD##
 | ##o##
 | ##[0,1]##
 | ##xs:date##
@@ -3701,8 +3701,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##processInformation/time/other/epd2:publicationDateOfEPD##
+| ##4##
+| ##processDataSet/processInformation/time/other/epd2:publicationDateOfEPD##
 
 | ##120##
 | ##new##
@@ -3710,7 +3710,7 @@ Production period##
 | ##v1.3##
 | ##Ablaufdatum der EPD##
 | ##Expiration date of EPD##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:expirationDateOfEPD##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:expirationDateOfEPD##
 | ##o##
 | ##[0,1]##
 | ##xs:date##
@@ -3731,8 +3731,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/time/epd2:expirationDateOfEPD##
+| ##4##
+| ##processDataSet/processInformation/time/other/epd2:expirationDateOfEPD##
 
 | ##121##
 | ##A6##
@@ -3740,7 +3740,7 @@ Production period##
 | ##v1.0##
 | ##Geographische Repräsentativität##
 | ##Geographical representativeness##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}geography##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}geography##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3761,8 +3761,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/geography##
+| ##2##
+| ##processDataSet/processInformation/geography##
 
 | ##122##
 | ##new##
@@ -3770,7 +3770,7 @@ Production period##
 | ##v1.0##
 | ##Ort##
 | ##Location##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}locationOfOperationSupplyOrProduction##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}locationOfOperationSupplyOrProduction##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3791,8 +3791,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/geography/locationOfOperationSupplyOrProduction##
+| ##3##
+| ##processDataSet/processInformation/geography/locationOfOperationSupplyOrProduction##
 
 | ##123##
 | ##A6.1##
@@ -3800,7 +3800,7 @@ Production period##
 | ##v1.0##
 | ##Ort##
 | ##Location##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@location##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@location##
 | ##r##
 | ##{nbsp}##
 | ##NullableString##
@@ -3821,8 +3821,8 @@ Production period##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/geography/@location##
+| ##4##
+| ##processDataSet/processInformation/geography/locationOfOperationSupplyOrProduction/@location##
 
 | ##124##
 | ##A6.2##
@@ -3830,7 +3830,7 @@ Production period##
 | ##v1.0##
 | ##Erläuterungen zur geographischen Repräsentativität##
 | ##Geographical representativeness description##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}descriptionOfRestrictions##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}descriptionOfRestrictions##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -3852,8 +3852,8 @@ were considered for modelling .##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/geography/descriptionOfRestrictions##
+| ##4##
+| ##processDataSet/processInformation/geography/locationOfOperationSupplyOrProduction/descriptionOfRestrictions##
 
 | ##125##
 | ##new##
@@ -3861,7 +3861,7 @@ were considered for modelling .##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3882,8 +3882,8 @@ were considered for modelling .##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/geography/other##
+| ##3##
+| ##processDataSet/processInformation/geography/other##
 
 | ##126##
 | ##A7##
@@ -3891,7 +3891,7 @@ were considered for modelling .##
 | ##v1.0##
 | ##Technische Repräsentativität##
 | ##Technological representativeness##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}technology##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}technology##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -3912,8 +3912,8 @@ were considered for modelling .##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##processInformation/technology##
+| ##2##
+| ##processDataSet/processInformation/technology##
 
 | ##127##
 | ##A7.1##
@@ -3921,7 +3921,7 @@ were considered for modelling .##
 | ##v1.0##
 | ##Technische Beschreibung inklusive der Hintergrundsysteme##
 | ##Technology description including background system##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}technologyDescriptionAndIncludedProcesses##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}technologyDescriptionAndIncludedProcesses##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -3958,8 +3958,8 @@ the analysed processes to the life cycle modules##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/technology/technologyDescriptionAndIncludedProcesses##
+| ##3##
+| ##processDataSet/processInformation/technology/technologyDescriptionAndIncludedProcesses##
 
 | ##128##
 | ##A7.2##
@@ -3967,7 +3967,7 @@ the analysed processes to the life cycle modules##
 | ##v1.0##
 | ##Technisches Anwendungsgebiet##
 | ##Technical purpose of product or process##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}technologicalApplicability##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}technologicalApplicability##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -3994,8 +3994,8 @@ Noe 3: For other related product groups such as upstream products (e.g., plastic
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/technology/technologicalApplicability##
+| ##3##
+| ##processDataSet/processInformation/technology/technologicalApplicability##
 
 | ##129##
 | ##A7.3##
@@ -4003,7 +4003,7 @@ Noe 3: For other related product groups such as upstream products (e.g., plastic
 | ##v1.0##
 | ##Piktogramm##
 | ##Pictogramme of technology##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToTechnologyPictogramme##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToTechnologyPictogramme##
 | ##o##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -4025,8 +4025,8 @@ cement.jpg##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/technology/referenceToTechnologyPictogramme##
+| ##3##
+| ##processDataSet/processInformation/technology/referenceToTechnologyPictogramme##
 
 | ##130##
 | ##A7.4##
@@ -4034,7 +4034,7 @@ cement.jpg##
 | ##v1.0##
 | ##Flußdiagramm(e) oder Abbildung(en)##
 | ##Flow diagramm(s) or picture(s)##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToTechnologyFlowDiagrammOrPicture##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToTechnologyFlowDiagrammOrPicture##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -4059,8 +4059,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/technology/referenceToTechnologyFlowDiagrammOrPicture##
+| ##3##
+| ##processDataSet/processInformation/technology/referenceToTechnologyFlowDiagrammOrPicture##
 
 | ##131##
 | ##new##
@@ -4068,7 +4068,7 @@ the modular approach##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4089,8 +4089,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##processInformation/technology/other##
+| ##3##
+| ##processDataSet/processInformation/technology/other##
 
 | ##132##
 | ##B##
@@ -4098,7 +4098,7 @@ the modular approach##
 | ##v1.0##
 | ##Modellierung und Validierung##
 | ##Modelling and validation##
-| ##modellingAndValidation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}modellingAndValidation##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4119,8 +4119,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##0##
-| ##modellingAndValidation##
+| ##1##
+| ##processDataSet/modellingAndValidation##
 
 | ##133##
 | ##new##
@@ -4128,7 +4128,7 @@ the modular approach##
 | ##v1.0##
 | ##LCI-Methode und Allokation##
 | ##LCI method and allocation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}LCIMethodAndAllocation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}LCIMethodAndAllocation##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4149,8 +4149,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/LCIMethodAndAllocation##
+| ##2##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation##
 
 | ##134##
 | ##new##
@@ -4158,7 +4158,7 @@ the modular approach##
 | ##v1.0##
 | ##Art des Datensatzes##
 | ##Type of data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}typeOfDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}typeOfDataSet##
 | ##r##
 | ##[0,1]##
 | ##EPD##
@@ -4179,8 +4179,8 @@ the modular approach##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/typeOfDataSet##
+| ##3##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/typeOfDataSet##
 
 | ##135##
 | ##B1.1##
@@ -4188,7 +4188,7 @@ the modular approach##
 | ##v1.0##
 | ##LCA-Methodenbericht##
 | ##LCA methodology report##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToLCAMethodDetails##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToLCAMethodDetails##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -4212,8 +4212,8 @@ PCR name  and PCR version (MM YYYY)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/referenceToLCAMethodDetails##
+| ##3##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/referenceToLCAMethodDetails##
 
 | ##136##
 | ##B1.5##
@@ -4221,7 +4221,7 @@ PCR name  and PCR version (MM YYYY)##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4261,8 +4261,8 @@ If electricity accounts for more than 30 % of the total energy use in stage A1-A
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/other##
+| ##3##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other##
 
 | ##137##
 | ##B1.2##
@@ -4270,7 +4270,7 @@ If electricity accounts for more than 30 % of the total energy use in stage A1-A
 | ##v1.1##
 | ##Subtyp##
 | ##Subtype##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:subType##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:subType##
 | ##r##
 | ##[0,1]##
 | ##generic dataset/ Generischer Datensatz +
@@ -4303,8 +4303,8 @@ worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##modellingAndValidation/LCIMethodAndAllocation/other/epd:subType##
+| ##4##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd:subType##
 
 | ##138##
 | ##new##
@@ -4312,7 +4312,7 @@ worst-case product);##
 | ##v1.3##
 | ##PCR-Konformität##
 | ##PCR Compliance##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:pcrCompliance##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:pcrCompliance##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4333,8 +4333,8 @@ worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd24:pcrCompliance##
+| ##4##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance##
 
 | ##139##
 | ##new##
@@ -4342,7 +4342,7 @@ worst-case product);##
 | ##v1.3##
 | ##Allokation##
 | ##Allocation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:allocation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:allocation##
 | ##o##
 | ##[0,1]##
 | ##boolean##
@@ -4363,8 +4363,8 @@ worst-case product);##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:allocation##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/@epd24:allocation##
 
 | ##140##
 | ##new##
@@ -4372,7 +4372,7 @@ worst-case product);##
 | ##v1.3##
 | ##Abschneidekriterien##
 | ##Cut-off rules##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:cutOffRules##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:cutOffRules##
 | ##o##
 | ##[0,1]##
 | ##boolean##
@@ -4394,8 +4394,8 @@ Cut-off by classification or Cut-off, EN 15804+A2##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:cutOffRules##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/@epd24:cutOffRules##
 
 | ##141##
 | ##new##
@@ -4403,7 +4403,7 @@ Cut-off by classification or Cut-off, EN 15804+A2##
 | ##v1.3##
 | ##Vorgelagerte Daten abweichend##
 | ##Upstream data deviating##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:upstreamDataDeviatingFromAllocationPrinciples##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:upstreamDataDeviatingFromAllocationPrinciples##
 | ##o##
 | ##[0,1]##
 | ##boolean##
@@ -4426,8 +4426,8 @@ Rules.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:upstreamDataDeviatingFromAllocationPrinciples##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:pcrCompliance/@epd24:upstreamDataDeviatingFromAllocationPrinciples##
 
 | ##142##
 | ##new##
@@ -4435,7 +4435,7 @@ Rules.##
 | ##v1.3##
 | ##Variabilität##
 | ##Variability##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:variability##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:variability##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4457,8 +4457,8 @@ not applicable for generic data##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd24:variability##
+| ##4##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability##
 
 | ##143##
 | ##new##
@@ -4466,7 +4466,7 @@ not applicable for generic data##
 | ##v1.3##
 | ##Herstellervariabilität##
 | ##Manufacturer variability##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturerVariability##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturerVariability##
 | ##m##
 | ##[1]##
 | ##{nbsp}##
@@ -4487,8 +4487,8 @@ not applicable for generic data##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd24:manufacturerVariability##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability##
 
 | ##144##
 | ##new##
@@ -4496,7 +4496,7 @@ not applicable for generic data##
 | ##v1.3##
 | ##Art der Variabilität##
 | ##Type of variability##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
 | ##m##
 | ##[1]##
 | ##Single production site +
@@ -4519,8 +4519,8 @@ Multiple manufacturers##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:type##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/@epd24:type##
 
 | ##145##
 | ##new##
@@ -4528,7 +4528,7 @@ Multiple manufacturers##
 | ##v1.3##
 | ##Variation##
 | ##Variation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variation##
 | ##o##
 | ##[0,1]##
 | ##common:Perc##
@@ -4549,8 +4549,8 @@ Multiple manufacturers##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variation##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/@epd24:variation##
 
 | ##146##
 | ##new##
@@ -4558,7 +4558,7 @@ Multiple manufacturers##
 | ##v1.3##
 | ##Variationsspanne##
 | ##Variation range##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variationRange##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variationRange##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:string: +
@@ -4584,8 +4584,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variationRange##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:manufacturerVariability/@epd24:variationRange##
 
 | ##147##
 | ##new##
@@ -4593,7 +4593,7 @@ E - more than 50%##
 | ##v1.3##
 | ##Produktvariabilität##
 | ##Product variability##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:productVariability##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:productVariability##
 | ##m##
 | ##[1]##
 | ##{nbsp}##
@@ -4614,8 +4614,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd24:productVariability##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability##
 
 | ##148##
 | ##new##
@@ -4623,7 +4623,7 @@ E - more than 50%##
 | ##v1.3##
 | ##Art der Variabilität##
 | ##Type of variability##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:type##
 | ##m##
 | ##[1]##
 | ##Single product +
@@ -4645,8 +4645,8 @@ Range of products where variability is described##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:type##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/@epd24:type##
 
 | ##149##
 | ##new##
@@ -4654,7 +4654,7 @@ Range of products where variability is described##
 | ##v1.3##
 | ##Variation##
 | ##Variation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variation##
 | ##o##
 | ##[0,1]##
 | ##common:Perc##
@@ -4675,8 +4675,8 @@ Range of products where variability is described##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variation##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/@epd24:variation##
 
 | ##150##
 | ##new##
@@ -4684,7 +4684,7 @@ Range of products where variability is described##
 | ##v1.3##
 | ##Variationsspanne##
 | ##Variation range##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variationRange##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd24:variationRange##
 | ##o##
 | ##[0,1]##
 | ##Restricted xs:string: +
@@ -4710,8 +4710,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/@epd24:variationRange##
+| ##6##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:productVariability/@epd24:variationRange##
 
 | ##151##
 | ##new##
@@ -4719,7 +4719,7 @@ E - more than 50%##
 | ##v1.3##
 | ##Variabilitätsbeschreibung##
 | ##Variability description##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:variabilityDescription##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:variabilityDescription##
 | ##o##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -4740,8 +4740,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/LCIMethodAndAllocation/epd24:variabilityDescription##
+| ##5##
+| ##processDataSet/modellingAndValidation/LCIMethodAndAllocation/other/epd24:variability/epd24:variabilityDescription##
 
 | ##152##
 | ##B2##
@@ -4749,7 +4749,7 @@ E - more than 50%##
 | ##v1.0##
 | ##Datenquellen und Repräsentativität##
 | ##Data sources, treatment, and representativeness##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}dataSourcesTreatmentAndRepresentativeness##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSourcesTreatmentAndRepresentativeness##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4770,8 +4770,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness##
+| ##2##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness##
 
 | ##153##
 | ##B3.5##
@@ -4779,7 +4779,7 @@ E - more than 50%##
 | ##v1.2##
 | ##Dokumentation des Datenqualitätsmanagements##
 | ##Documentation of data quality management##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataHandlingPrinciples##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataHandlingPrinciples##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -4800,8 +4800,8 @@ E - more than 50%##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataHandlingPrinciples##
+| ##3##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataHandlingPrinciples##
 
 | ##154##
 | ##B2.1##
@@ -4809,7 +4809,7 @@ E - more than 50%##
 | ##v1.0##
 | ##Datenquellen##
 | ##Data source(s) used for this data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataSource##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataSource##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -4843,8 +4843,8 @@ evidence)##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataSource##
+| ##3##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/referenceToDataSource##
 
 | ##155##
 | ##B2.2##
@@ -4852,7 +4852,7 @@ evidence)##
 | ##v1.0##
 | ##Anwendungshinweis für Datensatz##
 | ##Use advice for data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}useAdviceForDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}useAdviceForDataSet##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -4880,8 +4880,8 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/useAdviceForDataSet##
+| ##3##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/useAdviceForDataSet##
 
 | ##156##
 | ##new##
@@ -4889,7 +4889,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4910,8 +4910,8 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other##
+| ##3##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other##
 
 | ##157##
 | ##B2.3##
@@ -4919,7 +4919,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##v1.2##
 | ##Verweis auf die originale EPD##
 | ##Reference to original EPD##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:referenceToOriginalEPD##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd2:referenceToOriginalEPD##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -4940,8 +4940,8 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/epd2:referenceToOriginalEPD##
+| ##4##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd2:referenceToOriginalEPD##
 
 | ##158##
 | ##new##
@@ -4949,7 +4949,7 @@ Statement that EPDs of construction products might not be comparable unless they
 | ##v1.3##
 | ##Liste der Hersteller##
 | ##List of manufacturers##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturers##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturers##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -4973,8 +4973,8 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/epd24:manufacturers##
+| ##4##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers##
 
 | ##159##
 | ##new##
@@ -4982,7 +4982,7 @@ average of several manufacturers.##
 | ##v1.3##
 | ##Hersteller##
 | ##manufacturer##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturer##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:manufacturer##
 | ##r##
 | ##[0,n]##
 | ##{nbsp}##
@@ -5003,8 +5003,8 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:manufacturer##
+| ##5##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer##
 
 | ##160##
 | ##new##
@@ -5012,7 +5012,7 @@ average of several manufacturers.##
 | ##v1.3##
 | ##Kontaktdatenreferenz des Herstellers##
 | ##Contact data reference of the manufacturer##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:contact##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:contact##
 | ##r##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -5033,8 +5033,8 @@ average of several manufacturers.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:contact##
+| ##6##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:contact##
 
 | ##161##
 | ##new##
@@ -5042,7 +5042,7 @@ average of several manufacturers.##
 | ##v1.3##
 | ##Produktionsstätten##
 | ##Manufacturing sites##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:sites##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:sites##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5066,8 +5066,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:sites##
+| ##6##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites##
 
 | ##162##
 | ##new##
@@ -5075,7 +5075,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##Produktionsstätte##
 | ##Manufacturing site##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:site##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:site##
 | ##r##
 | ##[0,n]##
 | ##{nbsp}##
@@ -5096,8 +5096,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:site##
+| ##7##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site##
 
 | ##163##
 | ##new##
@@ -5105,7 +5105,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##Name##
 | ##Name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:name##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:name##
 | ##m##
 | ##[1]##
 | ##xs:string##
@@ -5126,8 +5126,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:name##
+| ##8##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:name##
 
 | ##164##
 | ##new##
@@ -5135,7 +5135,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##Kennung der Produktionsstätte##
 | ##Facility identifier##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:facilityIdentifier##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:facilityIdentifier##
 | ##o##
 | ##[0,1]##
 | ##xs:string##
@@ -5156,8 +5156,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:facilityIdentifier##
+| ##8##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:facilityIdentifier##
 
 | ##165##
 | ##new##
@@ -5165,7 +5165,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##OLC Standortkennung##
 | ##OLC Location code##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:olc##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:olc##
 | ##m##
 | ##[1]##
 | ##xs:string (Open Location Code)##
@@ -5186,8 +5186,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:olc##
+| ##8##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:olc##
 
 | ##166##
 | ##new##
@@ -5195,7 +5195,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##Länderkennung##
 | ##Countrycode##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:geoCode##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:geoCode##
 | ##r##
 | ##[0,1]##
 | ##xs:string##
@@ -5216,8 +5216,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:geoCode##
+| ##8##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:geoCode##
 
 | ##167##
 | ##new##
@@ -5225,7 +5225,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.3##
 | ##Anschrift##
 | ##Street address##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:streetAddress##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd24:streetAddress##
 | ##r##
 | ##[0,1]##
 | ##xs:string##
@@ -5246,8 +5246,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/epd24:manufacturers/epd24:streetAddress##
+| ##8##
+| ##processDataSet/modellingAndValidation/dataSourcesTreatmentAndRepresentativeness/other/epd24:manufacturers/epd24:manufacturer/epd24:sites/epd24:site/epd24:streetAddress##
 
 | ##168##
 | ##B3##
@@ -5255,7 +5255,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.0##
 | ##Validierung##
 | ##Validation##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}validation##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}validation##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5276,8 +5276,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/validation##
+| ##2##
+| ##processDataSet/modellingAndValidation/validation##
 
 | ##169##
 | ##new##
@@ -5285,7 +5285,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.0##
 | ##Review##
 | ##Review##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}review##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}review##
 | ##r##
 | ##[0,n]##
 | ##{nbsp}##
@@ -5306,8 +5306,8 @@ is produced, [Name and location of production site(s).]##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/review##
+| ##3##
+| ##processDataSet/modellingAndValidation/validation/review##
 
 | ##170##
 | ##B3.1##
@@ -5315,7 +5315,7 @@ is produced, [Name and location of production site(s).]##
 | ##v1.0##
 | ##Art der Prüfung##
 | ##Type of review##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@type##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@type##
 | ##r##
 | ##{nbsp}##
 | ##TypeOfReviewValues +
@@ -5351,8 +5351,8 @@ Find further explanations in FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/@type##
+| ##4##
+| ##processDataSet/modellingAndValidation/validation/review/@type##
 
 | ##171##
 | ##B3.2##
@@ -5360,7 +5360,7 @@ Find further explanations in FAQ.##
 | ##v1.0##
 | ##Prüfungsdetails##
 | ##Review details##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}reviewDetails##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}reviewDetails##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -5381,8 +5381,8 @@ Find further explanations in FAQ.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/reviewDetails##
+| ##4##
+| ##processDataSet/modellingAndValidation/validation/review/reviewDetails##
 
 | ##172##
 | ##B3.3##
@@ -5390,7 +5390,7 @@ Find further explanations in FAQ.##
 | ##v1.0##
 | ##Name von Prüfer und Prüfinstitution##
 | ##Reviewer name and institution##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToNameOfReviewerAndInstitution##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToNameOfReviewerAndInstitution##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -5415,8 +5415,8 @@ Type of review##
 | ##The name of the reviewer is stated in the referenced contact dataset under [name], their organisation in a nested contact under [name] dataset referenced therein under [referenceToContact]             ##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/referenceToNameOfReviewerAndInstitution##
+| ##4##
+| ##processDataSet/modellingAndValidation/validation/review/referenceToNameOfReviewerAndInstitution##
 
 | ##173##
 | ##B3.4##
@@ -5424,7 +5424,7 @@ Type of review##
 | ##v1.0##
 | ##vollständiger Prüfbericht##
 | ##Complete review report##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToCompleteReviewReport##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToCompleteReviewReport##
 | ##r##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -5445,8 +5445,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/referenceToCompleteReviewReport##
+| ##4##
+| ##processDataSet/modellingAndValidation/validation/review/referenceToCompleteReviewReport##
 
 | ##174##
 | ##new##
@@ -5454,7 +5454,7 @@ Type of review##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5475,8 +5475,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/validation/other##
+| ##3##
+| ##processDataSet/modellingAndValidation/validation/other##
 
 | ##175##
 | ##B4##
@@ -5484,7 +5484,7 @@ Type of review##
 | ##v1.0##
 | ##Konformitätsdeklarationen##
 | ##Compliance declarations##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}complianceDeclarations##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}complianceDeclarations##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5505,8 +5505,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/complianceDeclarations##
+| ##2##
+| ##processDataSet/modellingAndValidation/complianceDeclarations##
 
 | ##176##
 | ##new##
@@ -5514,7 +5514,7 @@ Type of review##
 | ##v1.0##
 | ##Konformität##
 | ##Compliance##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}compliance##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}compliance##
 | ##r##
 | ##[1,n]##
 | ##{nbsp}##
@@ -5535,8 +5535,8 @@ Type of review##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/complianceDeclarations/compliance##
+| ##3##
+| ##processDataSet/modellingAndValidation/complianceDeclarations/compliance##
 
 | ##177##
 | ##B4.1##
@@ -5544,7 +5544,7 @@ Type of review##
 | ##v1.0##
 | ##Name des Konformitätssystems##
 | ##Compliance system name##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToComplianceSystem##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToComplianceSystem##
 | ##r##
 | ##[1,1]##
 | ##GlobalReferenceType##
@@ -5566,8 +5566,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/complianceDeclarations/referenceToComplianceSystem##
+| ##4##
+| ##processDataSet/modellingAndValidation/complianceDeclarations/compliance/referenceToComplianceSystem##
 
 | ##178##
 | ##new##
@@ -5575,7 +5575,7 @@ InData-CPEN2019##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5596,8 +5596,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/complianceDeclarations/other##
+| ##3##
+| ##processDataSet/modellingAndValidation/complianceDeclarations/other##
 
 | ##179##
 | ##C##
@@ -5627,7 +5627,7 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##1##
-| ##modellingAndValidation/administrativeInformation##
+| ##processDataSet/administrativeInformation##
 
 | ##180##
 | ##C1##
@@ -5635,7 +5635,7 @@ InData-CPEN2019##
 | ##v1.2##
 | ##Auftraggeber und Ziel##
 | ##Commissioner and goal##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}commissionerAndGoal##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}commissionerAndGoal##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5656,8 +5656,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/commissionerAndGoal##
+| ##2##
+| ##processDataSet/administrativeInformation/commissionerAndGoal##
 
 | ##181##
 | ##C1.1##
@@ -5665,7 +5665,7 @@ InData-CPEN2019##
 | ##v1.2##
 | ##Auftraggeber##
 | ##Commissioner of data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToCommissioner##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToCommissioner##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -5686,8 +5686,8 @@ InData-CPEN2019##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/commissionerAndGoal/referenceToCommissioner##
+| ##3##
+| ##processDataSet/administrativeInformation/commissionerAndGoal/referenceToCommissioner##
 
 | ##182##
 | ##C1.2##
@@ -5695,7 +5695,7 @@ InData-CPEN2019##
 | ##v1.2##
 | ##Projekt##
 | ##Project##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}project##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}project##
 | ##o##
 | ##[0,1]##
 | ##StringMultiLang##
@@ -5717,8 +5717,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/commissionerAndGoal/project##
+| ##3##
+| ##processDataSet/administrativeInformation/commissionerAndGoal/project##
 
 | ##183##
 | ##C1.3##
@@ -5726,7 +5726,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.2##
 | ##Anwendungen##
 | ##Intended applications##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}intendedApplications##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}intendedApplications##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -5747,8 +5747,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/commissionerAndGoal/intendedApplications##
+| ##3##
+| ##processDataSet/administrativeInformation/commissionerAndGoal/intendedApplications##
 
 | ##184##
 | ##new##
@@ -5756,7 +5756,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.2##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5777,8 +5777,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/commissionerAndGoal/other##
+| ##3##
+| ##processDataSet/administrativeInformation/commissionerAndGoal/other##
 
 | ##185##
 | ##new##
@@ -5786,7 +5786,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.2##
 | ##Generierer/Modellierer des Datensatzes##
 | ##Data set generator / modeller##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}dataGenerator##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataGenerator##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5807,8 +5807,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/dataGenerator##
+| ##2##
+| ##processDataSet/administrativeInformation/dataGenerator##
 
 | ##186##
 | ##C2.3##
@@ -5816,7 +5816,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.2##
 | ##Generierer/Modellierer des Datensatzes##
 | ##Data set generator / modeller##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPersonOrEntityGeneratingTheDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPersonOrEntityGeneratingTheDataSet##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -5837,8 +5837,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataGenerator/referenceToPersonOrEntityGeneratingTheDataSet##
+| ##3##
+| ##processDataSet/administrativeInformation/dataGenerator/referenceToPersonOrEntityGeneratingTheDataSet##
 
 | ##187##
 | ##new##
@@ -5846,7 +5846,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.2##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5867,8 +5867,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataGenerator/other##
+| ##3##
+| ##processDataSet/administrativeInformation/dataGenerator/other##
 
 | ##188##
 | ##C2##
@@ -5876,7 +5876,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.0##
 | ##Dateneingabe##
 | ##Data entry by##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}dataEntryBy##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataEntryBy##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5897,8 +5897,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/dataEntryBy##
+| ##2##
+| ##processDataSet/administrativeInformation/dataEntryBy##
 
 | ##189##
 | ##C2.1##
@@ -5906,7 +5906,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.0##
 | ##Zeitstempel (zuletzt gespeichert)##
 | ##Time stamp (last saved)##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeStamp##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}timeStamp##
 | ##r##
 | ##[0,1]##
 | ##dateTime##
@@ -5928,8 +5928,8 @@ specifically for a tunnel project in Northern Norway.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataEntryBy/timeStamp##
+| ##3##
+| ##processDataSet/administrativeInformation/dataEntryBy/timeStamp##
 
 | ##190##
 | ##C2.2##
@@ -5937,7 +5937,7 @@ specifically for a tunnel project in Northern Norway.##
 | ##v1.0##
 | ##Datenformat##
 | ##Data set format(s)##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataSetFormat##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToDataSetFormat##
 | ##r##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -5959,8 +5959,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataEntryBy/referenceToDataSetFormat##
+| ##3##
+| ##processDataSet/administrativeInformation/dataEntryBy/referenceToDataSetFormat##
 
 | ##191##
 | ##new##
@@ -5968,7 +5968,7 @@ EPD Data Format Extensions##
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -5989,8 +5989,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/dataEntryBy/other##
+| ##3##
+| ##processDataSet/administrativeInformation/dataEntryBy/other##
 
 | ##192##
 | ##C3##
@@ -5998,7 +5998,7 @@ EPD Data Format Extensions##
 | ##v1.0##
 | ##Veröffentlichung und Eigentümer##
 | ##Publication and ownership##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}publicationAndOwnership##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}publicationAndOwnership##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6019,8 +6019,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##modellingAndValidation/publicationAndOwnership##
+| ##2##
+| ##processDataSet/administrativeInformation/publicationAndOwnership##
 
 | ##193##
 | ##C3.2##
@@ -6028,7 +6028,7 @@ EPD Data Format Extensions##
 | ##v1.0##
 | ##Datensatzversion##
 | ##Data set version##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetVersion##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dataSetVersion##
 | ##m##
 | ##[1,1]##
 | ##Version##
@@ -6049,8 +6049,8 @@ EPD Data Format Extensions##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/dataSetVersion##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/dataSetVersion##
 
 | ##194##
 | ##C3.3##
@@ -6058,7 +6058,7 @@ EPD Data Format Extensions##
 | ##v1.2##
 | ##Vorhergehende Datensatzversion##
 | ##Preceding data set version##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPrecedingDataSetVersion##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPrecedingDataSetVersion##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -6080,8 +6080,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/referenceToPrecedingDataSetVersion##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/referenceToPrecedingDataSetVersion##
 
 | ##195##
 | ##{nbsp}##
@@ -6089,7 +6089,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##v1.0##
 | ##Permanente Datensatz-URI##
 | ##Permanent data set URI##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}permanentDataSetURI##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}permanentDataSetURI##
 | ##r##
 | ##[0,1]##
 | ##anyURI##
@@ -6110,8 +6110,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/permanentDataSetURI##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/permanentDataSetURI##
 
 | ##196##
 | ##C3.1##
@@ -6119,7 +6119,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##v1.0##
 | ##Zeitpunkt der letzten Änderung##
 | ##Date of last revision##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dateOfLastRevision##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}dateOfLastRevision##
 | ##r##
 | ##[0,1]##
 | ##dateTime##
@@ -6140,8 +6140,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/dateOfLastRevision##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/dateOfLastRevision##
 
 | ##197##
 | ##C3.6##
@@ -6149,7 +6149,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##v1.2##
 | ##Herausgeber##
 | ##Issuer##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToRegistrationAuthority##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToRegistrationAuthority##
 | ##o##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -6170,8 +6170,8 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/referenceToRegistrationAuthority##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/referenceToRegistrationAuthority##
 
 | ##198##
 | ##C3.7##
@@ -6179,7 +6179,7 @@ generic ÖKOBAUDAT data may take place after a delay.##
 | ##v1.2##
 | ##Registrierungsnummer##
 | ##Registration number##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}registrationNumber##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}registrationNumber##
 | ##o##
 | ##[0,1]##
 | ##String##
@@ -6201,8 +6201,8 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/registrationNumber##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/registrationNumber##
 
 | ##199##
 | ##C3.8##
@@ -6210,7 +6210,7 @@ programme operator level).##
 | ##v1.0##
 | ##Eigner des Datensatzes##
 | ##Owner of data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToOwnershipOfDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToOwnershipOfDataSet##
 | ##r##
 | ##[0,1]##
 | ##GlobalReferenceType##
@@ -6231,8 +6231,8 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/referenceToOwnershipOfDataSet##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/referenceToOwnershipOfDataSet##
 
 | ##200##
 | ##C3.9##
@@ -6240,7 +6240,7 @@ programme operator level).##
 | ##v1.0##
 | ##Copyright?##
 | ##Copyright?##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}copyright##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}copyright##
 | ##r##
 | ##[0,1]##
 | ##boolean##
@@ -6261,8 +6261,8 @@ programme operator level).##
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/copyright##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/copyright##
 
 | ##201##
 | ##C3.10##
@@ -6270,7 +6270,7 @@ programme operator level).##
 | ##v1.2##
 | ##Lizenztyp##
 | ##License type##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}licenseType##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}licenseType##
 | ##r##
 | ##[0,1]##
 | ##LicenseTypeValues +
@@ -6296,8 +6296,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/licenseType##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/licenseType##
 
 | ##202##
 | ##C3.11##
@@ -6305,7 +6305,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.2##
 | ##Zugriffs- und Nutzungsbeschränkungen##
 | ##Access and use restrictions##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}accessRestrictions##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}accessRestrictions##
 | ##r##
 | ##[0,1]##
 | ##FTMultiLang##
@@ -6326,8 +6326,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/accessRestrictions##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/accessRestrictions##
 
 | ##203##
 | ##new##
@@ -6335,7 +6335,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6356,8 +6356,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##modellingAndValidation/publicationAndOwnership/other##
+| ##3##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/other##
 
 | ##204##
 | ##C3.4##
@@ -6365,7 +6365,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.2##
 | ##Datensatz veröffentlicht bei##
 | ##publisher of the data set##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPublisher##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToPublisher##
 | ##o##
 | ##[0,n]##
 | ##GlobalReferenceType##
@@ -6386,8 +6386,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##3##
-| ##modellingAndValidation/publicationAndOwnership/other/referenceToPublisher##
+| ##4##
+| ##processDataSet/administrativeInformation/publicationAndOwnership/other/referenceToPublisher##
 
 | ##205##
 | ##D##
@@ -6395,7 +6395,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##Inputs und Outputs##
 | ##Inputs and Outputs##
-| ##exchanges##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}exchanges##
 | ##r##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6416,8 +6416,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##0##
-| ##exchanges##
+| ##1##
+| ##processDataSet/exchanges##
 
 | ##206##
 | ##new##
@@ -6425,7 +6425,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##Inputs und Outputs##
 | ##Inputs and Outputs##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}exchange##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}exchange##
 | ##r##
 | ##[0,n]##
 | ##{nbsp}##
@@ -6446,8 +6446,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##exchanges/exchange##
+| ##2##
+| ##processDataSet/exchanges/exchange##
 
 | ##207##
 | ##new##
@@ -6455,7 +6455,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##datensatzinterne ID##
 | ##Data set internal ID##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@dataSetInternalID##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@dataSetInternalID##
 | ##r##
 | ##{nbsp}##
 | ##Int6##
@@ -6476,8 +6476,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/@dataSetInternalID##
+| ##3##
+| ##processDataSet/exchanges/exchange/@dataSetInternalID##
 
 | ##208##
 | ##new##
@@ -6485,7 +6485,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##Referenz zum Flußdatensatz##
 | ##Flow##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToFlowDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToFlowDataSet##
 | ##r##
 | ##[1,1]##
 | ##GlobalReferenceType##
@@ -6506,8 +6506,8 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/referenceToFlowDataSet##
+| ##3##
+| ##processDataSet/exchanges/exchange/referenceToFlowDataSet##
 
 | ##209##
 | ##new##
@@ -6515,7 +6515,7 @@ OtherAnother LCI method approach is used. This is named in "Deviations from LCI 
 | ##v1.0##
 | ##Funktionstyp##
 | ##Exchange Function Type##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionType##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}functionType##
 | ##o##
 | ##[0,1]##
 | ##ExchangeFunctionTypeValues +
@@ -6537,8 +6537,8 @@ General reminder flowReminder flow on the amount of (selected) product and waste
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/functionType##
+| ##3##
+| ##processDataSet/exchanges/exchange/functionType##
 
 | ##210##
 | ##new##
@@ -6546,7 +6546,7 @@ General reminder flowReminder flow on the amount of (selected) product and waste
 | ##v1.0##
 | ##Richtung##
 | ##Exchange direction##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}exchangeDirection##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}exchangeDirection##
 | ##r##
 | ##[0,1]##
 | ##ExchangeDirectionValues +
@@ -6569,8 +6569,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/exchangeDirection##
+| ##3##
+| ##processDataSet/exchanges/exchange/exchangeDirection##
 
 | ##211##
 | ##new##
@@ -6578,7 +6578,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Mittelwert##
 | ##Mean amount##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}meanAmount##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}meanAmount##
 | ##r##
 | ##[1,1]##
 | ##Real##
@@ -6599,8 +6599,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/meanAmount##
+| ##3##
+| ##processDataSet/exchanges/exchange/meanAmount##
 
 | ##212##
 | ##D1.6##
@@ -6608,7 +6608,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Allgemeine Erläuterungen##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
 | ##o##
 | ##[0,1]##
 | ##StringMultiLang##
@@ -6629,8 +6629,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/generalComment##
+| ##3##
+| ##processDataSet/exchanges/exchange/generalComment##
 
 | ##213##
 | ##new##
@@ -6638,7 +6638,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6659,8 +6659,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/other##
+| ##3##
+| ##processDataSet/exchanges/exchange/other##
 
 | ##214##
 | ##D1.4##
@@ -6668,7 +6668,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Wert##
 | ##Value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:amount##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:amount##
 | ##m##
 | ##[0,n]##
 | ##Real##
@@ -6689,8 +6689,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/epd:amount##
+| ##4##
+| ##processDataSet/exchanges/exchange/other/epd:amount##
 
 | ##215##
 | ##D1.2##
@@ -6698,7 +6698,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Modul/Phase##
 | ##Module/Phase##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:module##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:module##
 | ##m##
 | ##{nbsp}##
 | ##String##
@@ -6719,8 +6719,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/@epd:module##
+| ##5##
+| ##processDataSet/exchanges/exchange/other/epd:amount/@epd:module##
 
 | ##216##
 | ##D1.3##
@@ -6728,7 +6728,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Szenario##
 | ##Scenario##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:scenario##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:scenario##
 | ##o##
 | ##{nbsp}##
 | ##String##
@@ -6749,8 +6749,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/@epd:scenario##
+| ##5##
+| ##processDataSet/exchanges/exchange/other/epd:amount/@epd:scenario##
 
 | ##217##
 | ##D1.5##
@@ -6758,7 +6758,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Einheitengruppe##
 | ##Unit group##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:referenceToUnitGroupDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:referenceToUnitGroupDataSet##
 | ##m##
 | ##[1,1]##
 | ##GlobalReferenceType##
@@ -6779,8 +6779,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##exchanges/exchange/epd:referenceToUnitGroupDataSet##
+| ##4##
+| ##processDataSet/exchanges/exchange/other/epd:referenceToUnitGroupDataSet##
 
 | ##218##
 | ##E##
@@ -6788,7 +6788,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Wirkbilanz-Ergebnisse##
 | ##LCIA results##
-| ##LCIAResults##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}LCIAResults##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6809,8 +6809,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##0##
-| ##LCIAResults##
+| ##1##
+| ##processDataSet/LCIAResults##
 
 | ##219##
 | ##{nbsp}##
@@ -6818,7 +6818,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Wirkbilanz-Ergebnis##
 | ##LCIA result##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}LCIAResult##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}LCIAResult##
 | ##o##
 | ##[0,n]##
 | ##{nbsp}##
@@ -6839,8 +6839,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##1##
-| ##LCIAResults/LCIAResult##
+| ##2##
+| ##processDataSet/LCIAResults/LCIAResult##
 
 | ##220##
 | ##E1.1##
@@ -6848,7 +6848,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##LCIA-Methode##
 | ##LCIA method/Indicator##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToLCIAMethodDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}referenceToLCIAMethodDataSet##
 | ##o##
 | ##[1,1]##
 | ##GlobalReferenceType##
@@ -6869,8 +6869,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/referenceToLCIAMethodDataSet##
+| ##3##
+| ##processDataSet/LCIAResults/LCIAResult/referenceToLCIAMethodDataSet##
 
 | ##221##
 | ##new##
@@ -6878,7 +6878,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Erläuterungen##
 | ##Comment##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}generalComment##
 | ##o##
 | ##[0,1]##
 | ##StringMultiLang##
@@ -6899,8 +6899,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/generalComment##
+| ##3##
+| ##processDataSet/LCIAResults/LCIAResult/generalComment##
 
 | ##222##
 | ##new##
@@ -6908,7 +6908,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.0##
 | ##Anderer Inhalt##
 | ##Other content##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}other##
 | ##o##
 | ##[0,1]##
 | ##{nbsp}##
@@ -6929,8 +6929,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/other##
+| ##3##
+| ##processDataSet/LCIAResults/LCIAResult/other##
 
 | ##223##
 | ##E1.4##
@@ -6938,7 +6938,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Wert##
 | ##Value##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:amount##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:amount##
 | ##m##
 | ##[0,n]##
 | ##Real##
@@ -6959,8 +6959,8 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/epd:amount##
+| ##4##
+| ##processDataSet/LCIAResults/LCIAResult/other/epd:amount##
 
 | ##224##
 | ##E1.2##
@@ -6968,7 +6968,7 @@ OutputFlow in output list of the process, e.g. emissions to nature, or products 
 | ##v1.1##
 | ##Modul/Phase##
 | ##Module/Phase##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:module##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:module##
 | ##m##
 | ##{nbsp}##
 | ##String##
@@ -6993,8 +6993,8 @@ LCIA - waste categories +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/@epd:module##
+| ##5##
+| ##processDataSet/LCIAResults/LCIAResult/other/epd:amount/@epd:module##
 
 | ##225##
 | ##E1.3##
@@ -7002,7 +7002,7 @@ LCIA - waste categories +
 | ##v1.1##
 | ##Szenario##
 | ##Scenario##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:scenario##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}@epd:scenario##
 | ##o##
 | ##{nbsp}##
 | ##String##
@@ -7023,8 +7023,8 @@ LCIA - waste categories +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/@epd:scenario##
+| ##5##
+| ##processDataSet/LCIAResults/LCIAResult/other/epd:amount/@epd:scenario##
 
 | ##226##
 | ##E1.5##
@@ -7032,7 +7032,7 @@ LCIA - waste categories +
 | ##v1.1##
 | ##Einheitengruppe##
 | ##Unit group##
-| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:referenceToUnitGroupDataSet##
+| ##{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}epd:referenceToUnitGroupDataSet##
 | ##m##
 | ##[1,1]##
 | ##GlobalReferenceType##
@@ -7057,8 +7057,8 @@ LCIA - waste categories +
 | ##{nbsp}##
 | ##{nbsp}##
 | ##{nbsp}##
-| ##2##
-| ##LCIAResults/LCIAResult/epd:referenceToUnitGroupDataSet##
+| ##4##
+| ##processDataSet/LCIAResults/LCIAResult/other/epd:referenceToUnitGroupDataSet##
 
 | ##227##
 | ##F##

@@ -59,143 +59,49 @@ def clean_text(data):
         text = text.replace('\n', ' +\n')
     return text
 
-def get_indentation_from_excel_colors(xlsx_path, sheet_name, element_col_name='Element/Attribute Name'):
-    """
-    Extract indentation levels from Excel cell background colors.
-    Returns a dict mapping element names to indent levels.
-    """
-    print(f"Extracting indentation from Excel colors in {xlsx_path}...")
-    
-    wb = openpyxl.load_workbook(xlsx_path)
-    ws = wb[sheet_name]
-    
-    # Find the header row
-    header_row = None
-    for i in range(1, min(15, ws.max_row + 1)):
-        for col in range(1, min(20, ws.max_column + 1)):
-            cell_value = ws.cell(i, col).value
-            if cell_value and element_col_name in str(cell_value):
-                header_row = i
-                element_col = col
-                break
-        if header_row:
-            break
-    
-    if not header_row:
-        print(f"Warning: Could not find header row with '{element_col_name}' column")
-        wb.close()
-        return {}
-    
-    print(f"Found header at row {header_row}, element column {element_col}")
-    
-    # Collect all unique colors in order of appearance
-    color_order = []
-    color_to_elements = {}
-    
-    for i in range(header_row + 1, ws.max_row + 1):
-        cell = ws.cell(i, element_col)
-        element_name = cell.value
-        
-        if not element_name or pd.isna(element_name):
-            continue
-        
-        element_name = str(element_name).strip()
-        
-        color_rgb = None
-        if cell.fill and cell.fill.start_color:
-            if isinstance(cell.fill.start_color.rgb, str):
-                color_rgb = cell.fill.start_color.rgb
-        
-        if not color_rgb:
-            color_rgb = "00000000"  # Default to black/no fill
-        
-        # Track this color
-        if color_rgb not in color_to_elements:
-            color_order.append(color_rgb)
-            color_to_elements[color_rgb] = []
-        
-        color_to_elements[color_rgb].append(element_name)
-    
-    wb.close()
-    
-    print(f"\nFound {len(color_order)} unique colors")
-    
-    # Build a smart color-to-indent mapping
-    # Strategy: Use a combination of color analysis and hierarchical position tracking
-    
-    # Common color patterns in EPD files (from analysis)
-    color_to_indent_map = {
-        'FFFFC000': 0,  # Orange - root level
-        'FFFFB951': 0,  # Orange variant
-        'FFFFD783': 1,  # Lighter orange - second level
-        'FFFFF3D9': 2,  # Pale orange - third level
-        'FFFFFFCC': 2,  # Yellow - also third level
-        'FFD7F7BD': 2,  # Green - EPD24 namespace third level
-        'FFEED6F6': 2,  # Purple - EPD2 namespace third level
-        'FFDEE7F7': 2,  # Blue - EPD namespace third level
-        '00000000': 3,  # White/no fill - attributes (deepest)
-    }
-    
-    # Re-open the workbook to build the actual indent map by analyzing structure
-    wb = openpyxl.load_workbook(xlsx_path)
-    ws = wb[sheet_name]
-    
+def get_indentation_from_html(html_path):
+    """Parses the HTML file to extract indentation levels for each element."""
     indent_map = {}
-    parent_stack = {}  # Maps indent level to parent element name
+    try:
+        print(f"Extracting indentation from HTML file: {html_path}")
+        with open(html_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Use regex to find all table rows and their padding-left values
+        rows = re.findall(r'<tr.*?>(.*?)</tr>', content, re.DOTALL)
+        for row_content in rows:
+            # Find the element name (usually the 3rd <td> content)
+            tds = re.findall(r'<td.*?>(.*?)</td>', row_content, re.DOTALL)
+            if len(tds) > 2:
+                element_name_html = tds[2]
+                # Clean up the element name - remove HTML tags
+                element_name = re.sub('<.*?>', '', element_name_html).strip()
+
+                # Find the padding-left value in the style attribute of the <td>
+                style_match = re.search(r'style="padding-left:\s*(\d+)px;', row_content)
+                if style_match:
+                    pixels = int(style_match.group(1))
+                    indent_level = pixels // 10  # 10px per indent level
+                    if element_name:  # Only add if element name is not empty
+                        indent_map[element_name] = indent_level
+
+    except FileNotFoundError:
+        print(f"Warning: HTML file not found at {html_path}. Indentation will be 0.")
+    except Exception as e:
+        print(f"An error occurred while parsing HTML for indentation: {e}")
     
-    for i in range(header_row + 1, ws.max_row + 1):
-        cell = ws.cell(i, element_col)
-        element_name = cell.value
-        
-        if not element_name or pd.isna(element_name):
-            continue
-        
-        element_name = str(element_name).strip()
-        
-        color_rgb = None
-        if cell.fill and cell.fill.start_color:
-            if isinstance(cell.fill.start_color.rgb, str):
-                color_rgb = cell.fill.start_color.rgb
-        
-        if not color_rgb:
-            color_rgb = "00000000"
-        
-        # Determine indent level
-        if color_rgb in color_to_indent_map:
-            indent_level = color_to_indent_map[color_rgb]
-        else:
-            # Try to infer based on known patterns
-            # Darker/more saturated colors = higher level (lower indent)
-            # Lighter/less saturated colors = lower level (higher indent)
-            if color_rgb.startswith('FFFF') and int(color_rgb[4:6], 16) < 200:
-                indent_level = 0  # Dark colors
-            elif color_rgb.startswith('FFFF') and int(color_rgb[4:6], 16) < 240:
-                indent_level = 1
-            elif color_rgb.startswith('FFFF'):
-                indent_level = 2
-            elif color_rgb == '00000000':
-                indent_level = 3
-            else:
-                indent_level = 2  # Default to middle level
-        
-        indent_map[element_name] = indent_level
-        parent_stack[indent_level] = element_name
-    
-    wb.close()
-    
-    print(f"Built indent map for {len(indent_map)} elements")
-    
+    print(f"Built indent map for {len(indent_map)} elements from HTML")
     # Print a sample
-    print("\nSample indent mappings:")
+    print("\nSample indent mappings from HTML:")
     for i, (elem, indent) in enumerate(list(indent_map.items())[:15]):
         print(f"  {elem:<40} indent={indent}")
-    
+
     return indent_map
 
 # --- Core Conversion Functions ---
 
-def convert_xlsx_to_adoc(xlsx_path, output_path, sheet_name='ILCD EPD Format v1.3 Doc'):
-    """Converts the XLSX file to a single combined AsciiDoc file with indentation from colors."""
+def convert_xlsx_to_adoc(xlsx_path, html_path, output_path, sheet_name='ILCD EPD Format v1.3 Doc'):
+    """Converts the XLSX file to a single combined AsciiDoc file with indentation from HTML file."""
     try:
         df = pd.read_excel(xlsx_path, sheet_name=sheet_name, header=0)
     except FileNotFoundError:
@@ -206,8 +112,8 @@ def convert_xlsx_to_adoc(xlsx_path, output_path, sheet_name='ILCD EPD Format v1.
         print(f"Available sheets: {pd.ExcelFile(xlsx_path).sheet_names}")
         return False, None
 
-    # Get indentation map from Excel colors
-    indent_map = get_indentation_from_excel_colors(xlsx_path, sheet_name)
+    # Get indentation map from HTML file
+    indent_map = get_indentation_from_html(html_path)
 
     # Add 'Indent' column and populate it
     df['Indent'] = df['Element/Attribute Name'].map(indent_map).fillna(0).astype(int)
@@ -383,14 +289,15 @@ if __name__ == "__main__":
     # Ensure output directory exists
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    # Define file paths - using the latest file
+    # Define file paths
     xlsx_file = os.path.join(DATA_DIR, 'ILCD_Format_Documentation_v1.3_2025-10-16_final_for_InData-Meeting.xlsx')
+    html_file = os.path.join(DATA_DIR, 'ILCD Format 1.1 Documentation.html')
     combined_adoc_file = os.path.join(DATA_DIR, 'epd_documentation_from_xlsx_combined.adoc')
     roundtrip_xlsx_file = os.path.join(OUTPUT_DIR, 'roundtrip.xlsx')
     comparison_log_file = os.path.join(OUTPUT_DIR, 'comparison_log.txt')
 
-    # Step 1: Convert XLSX to combined AsciiDoc
-    success, columns = convert_xlsx_to_adoc(xlsx_file, combined_adoc_file)
+    # Step 1: Convert XLSX to combined AsciiDoc using indentation from HTML
+    success, columns = convert_xlsx_to_adoc(xlsx_file, html_file, combined_adoc_file)
     if success:
         # Step 2: Convert back to XLSX for verification
         if convert_adoc_to_xlsx(combined_adoc_file, roundtrip_xlsx_file, columns):
