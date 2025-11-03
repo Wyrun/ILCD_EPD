@@ -133,14 +133,8 @@ def generate_html_report(df_source, presentation_columns, column_map):
         if value_str is None:
             return ''
         
-        # Replace '~' in Definition (en) column with the original definition
-        if col_name == 'Definition (en)' and str(value_str).strip() == '~' and original_definition:
-            escaped_value = html.escape(str(original_definition))
-        elif str(value_str).strip() == '~' and original_definition:
-            # Also replace '~' in any column if we have an original definition
-            escaped_value = html.escape(str(original_definition))
-        else:
-            escaped_value = html.escape(str(value_str))
+        # Escape HTML special characters
+        escaped_value = html.escape(str(value_str))
         
         # Apply gray styling to Original ILCD Format Definition when identical to Definition
         if col_name == 'Original ILCD Format Definition (en)' and is_definitions_identical:
@@ -283,26 +277,40 @@ def generate_html_report(df_source, presentation_columns, column_map):
 
 # --- Main Execution ---
 if __name__ == "__main__":
+    # Include ALL columns from Excel source (27 columns total)
     PRESENTATION_COLUMNS = [
-        'Field Name (en)',
+        'order',
+        'ID previous',
+        'ID new',
+        'Format version ID (when introduced)',
         'Field Name (de)',
+        'Field Name (en)',
         'Element/Attribute Name',
-        'Requ.',
+        'Technically Required',
         'Occ.',
         'Datatype',
-        'Definition (en)',
-        'Definition (de)',
         'Original ILCD Format Definition (en)',
+        'Definition (de)',
+        'InData Definition (en)',
+        'Further explanations (EN)',
+        'InData compliance CP-2020',
+        'Deviation to ILCD format definition',
+        'Extension of ILCD format',
+        'InData Compliance Construction Products CPEN2020',
         'eDoc ID',
-        'EN15804+A2 mapping comment',
-        'ISO 22057 GUID',
-        'ISO 22057 mapping comment',
+        'Example of expected information in the field',
+        'EN15804+A2 mapping (chapter number)',
+        'EN15804+A2 required information',
+        'ECO Platform conformity',
+        'ISO 22057 mapping (GUID)',
+        'ISO 22057 required information',
+        'ISO 21930 mapping',
+        'ISO 21930 required information',
     ]
 
+    # Column mapping for any renamed columns (if needed for display)
     COLUMN_MAPPING = {
-        'Requ.': 'Technically Required',
-        'Definition (en)': 'IndData Definition (en)\u00a0- new ones',
-        'Original ILCD Format Definition (en)': 'InData / ÖKOBAUDAT Definition and explanation (EN)\u00a0- old ones'
+        # No renaming needed - using exact Excel column names
     }
 
     try:

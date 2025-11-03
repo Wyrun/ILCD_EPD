@@ -100,11 +100,15 @@ def generate_attribute_page(row_data, index):
 
     # Dynamically iterate over all fields in the row data
     for field_name, field_value in row_data.items():
-        # Skip internal fields, the name itself, or empty/NaN values
-        if field_name in ['Path', 'Indent', 'order', 'Element/Attribute Name'] or pd.isna(field_value) or str(field_value).strip() == '':
+        # Skip only internal fields and the name itself; include even empty values for visibility
+        if field_name in ['Path', 'Indent', 'Element/Attribute Name']:
             continue
 
-        field_value_str = str(field_value).strip()
+        # Normalize value to string and allow empty display
+        if pd.isna(field_value):
+            field_value_str = ''
+        else:
+            field_value_str = str(field_value).strip()
 
         # Handle boolean-like fields for better display
         if field_name in ['Technically Required']:
@@ -127,14 +131,16 @@ def generate_attribute_page(row_data, index):
             clean_field_name = field_name.replace(' (de)', '').strip()
             field_class += ' lang-de'
 
-        # Special formatting for multiline values to render as a list
-        if '\n' in field_value_str:
-            # Split by newlines and create an unordered list
+        # Build field value HTML (list for multiline, placeholder for empty)
+        if field_value_str and '\n' in field_value_str:
             items = field_value_str.split('\n')
             items_html = "<ul>" + "".join(f"<li>{html.escape(item.strip())}</li>" for item in items if item.strip()) + "</ul>"
             field_html = f'<div class="field-value">{items_html}</div>'
-        else:
+        elif field_value_str:
             field_html = f'<div class="field-value">{html.escape(field_value_str)}</div>'
+        else:
+            field_class += ' empty'
+            field_html = '<div class="field-value">&mdash;</div>'
 
         # Add the field to the page content
         page_content += f"""
